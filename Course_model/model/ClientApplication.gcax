@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<ApplicationModelRoot name="ClientApplication" id="G1336567970313"
+	Description=""
+	ModelVersion="9.1.4"
+	CaseSensitive="True"
+>
+	<Application name="Course" id="{A846C0C3-6806-43d8-BA37-9D1B47FB3FC9}"
+		Description=""
+		PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+		PackageRefName="application/office"
+		ComponentPackage="application/office"
+		ExternalElement="False"
+	>
+	</Application>
+	<DialogModelRef name="CourseApp" id="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"
+		Description=""
+		PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+		PackageRefName="application/office"
+		DialogType="Dialog"
+		ComponentPackage="application/office"
+		ExternalElement="False"
+		ExternallyUsed="False"
+		ModelFilename=""
+	>
+	</DialogModelRef>
+	<DialogModelRef name="Student" id="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"
+		Description=""
+		PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+		PackageRefName="application/office"
+		DialogType="Dialog"
+		ComponentPackage="application/office"
+		ExternalElement="False"
+		ExternallyUsed="False"
+		ModelFilename=""
+	>
+	</DialogModelRef>
+	<Contains>
+		<Reference name="From" IdRef="{A846C0C3-6806-43d8-BA37-9D1B47FB3FC9}"/>
+		<Reference name="To" IdRef="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"/>
+	</Contains>
+	<Activates>
+		<Reference name="From" IdRef="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"/>
+		<Reference name="To" IdRef="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"/>
+	</Activates>
+</ApplicationModelRoot>

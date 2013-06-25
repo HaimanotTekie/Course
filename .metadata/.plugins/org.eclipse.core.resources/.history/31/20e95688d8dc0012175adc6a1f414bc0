@@ -1,0 +1,37 @@
+// Generated with Genova.
+
+package no.course.domain.generated;
+
+
+/**
+ * This file will be overwritten the next time it is generated from Genova.
+ */
+@SuppressWarnings("all")
+public abstract class StudentCourseDefault {
+    
+    private int id;
+    
+    /** Default constructor. */
+    protected StudentCourseDefault() {
+        super();
+    }
+    
+    /**
+     * Access method for id.
+     *
+     * @return the current value of id
+     */
+    public int getId() {
+        return id;
+    }
+    
+    /**
+     * Setter method for id.
+     *
+     * @param aId the new value for id
+     */
+    public void setId(final int aId) {
+        id = aId;
+    }
+    
+}

@@ -1,0 +1,174 @@
+!SESSION 2013-06-24 14:08:12.846 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 0 0 2013-06-24 14:09:35.173
+!MESSAGE Result of converting legacy STS 2.x workspace preferences to 3.x
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2013-06-24 14:09:35.173
+!MESSAGE Converted legacy STS plugin preferences
+!SUBENTRY 1 unknown 0 0 2013-06-24 14:09:35.173
+!MESSAGE OK
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2013-06-24 14:09:35.173
+!MESSAGE Converted legacy Roo plugin state locations
+!SUBENTRY 1 org.springsource.ide.eclipse.commons.frameworks.core 0 0 2013-06-24 14:09:35.173
+!MESSAGE Converted legacy STS plugin state locations
+
+!ENTRY org.eclipse.jface 2 0 2013-06-24 14:13:21.541
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-06-24 14:13:21.541
+!MESSAGE A conflict occurred for SHIFT+F5:
+Binding(SHIFT+F5,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.ToggleStepFilters,Use Step Filters,
+		Toggles enablement of debug step filters,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@f77a0a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+F5,
+	ParameterizedCommand(Command(no.esito.g9.command.Preview,Preview,
+		Preview in a separate Dialog window,
+		Category(no.esito.g9.GCategory,g9,g9 Commands and Keys,true),
+		org.eclipse.ui.internal.MakeHandlersGo@a3f90c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	no.esito.g9.GContext,,,system)
+
+!ENTRY org.eclipse.jface.text 4 0 2013-06-24 15:34:30.543
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.Signature.getTypeSignatureKind(Signature.java:2496)
+	at org.eclipse.jdt.core.Signature.getTypeSignatureKind(Signature.java:2513)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendTypeSignatureLabel(JavaElementLabelComposer.java:825)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendFieldLabel(JavaElementLabelComposer.java:678)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLabelComposer.appendElementLabel(JavaElementLabelComposer.java:273)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLinks.getElementLabel(JavaElementLinks.java:559)
+	at org.eclipse.jdt.internal.ui.viewsupport.JavaElementLinks.getElementLabel(JavaElementLinks.java:541)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:679)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY no.esito.g9 4 0 2013-06-24 16:18:34.819
+!MESSAGE GSN background process died..
+
+!ENTRY no.esito.g9 4 0 2013-06-24 16:33:42.969
+!MESSAGE Internal: Generation without any InitGeneration
+
+!ENTRY no.esito.g9 4 0 2013-06-24 16:35:23.420
+!MESSAGE Internal: AddElement without any InitGeneration
+
+!ENTRY no.esito.g9 4 0 2013-06-24 16:37:34.007
+!MESSAGE GSN background process died..
+
+!ENTRY org.eclipse.ui.workbench 4 2 2013-06-24 16:40:06.557
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.internal.views.properties.tabbed.view.OverridableTabListContentProvider.init(OverridableTabListContentProvider.java:110)
+	at org.eclipse.ui.internal.views.properties.tabbed.view.OverridableTabListContentProvider.inputChanged(OverridableTabListContentProvider.java:97)
+	at org.eclipse.jface.viewers.ContentViewer.handleDispose(ContentViewer.java:171)
+	at org.eclipse.jface.viewers.StructuredViewer.handleDispose(StructuredViewer.java:2328)
+	at org.eclipse.jface.viewers.ContentViewer$2.widgetDisposed(ContentViewer.java:214)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:123)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:808)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:446)
+	at org.eclipse.ui.internal.views.properties.tabbed.view.TabbedPropertyComposite.dispose(TabbedPropertyComposite.java:191)
+	at org.eclipse.ui.part.PageBookView.removePage(PageBookView.java:865)
+	at org.eclipse.ui.part.PageBookView.partClosed(PageBookView.java:796)
+	at org.eclipse.ui.views.properties.PropertySheet.partClosed(PropertySheet.java:287)
+	at org.eclipse.ui.part.PageBookView$4.partClosed(PageBookView.java:1056)
+	at org.eclipse.ui.internal.WorkbenchPage$18.run(WorkbenchPage.java:4546)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.WorkbenchPage.firePartClosed(WorkbenchPage.java:4544)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart$1.handleEvent(CompatibilityPart.java:99)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4687)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:187)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setWidget(UIElementImpl.java:248)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.unbindWidget(SWTPartRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.disposeWidget(SWTPartRenderer.java:135)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.disposeWidget(ContributedPartRenderer.java:285)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$3(PartRenderingEngine.java:774)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$8.run(PartRenderingEngine.java:769)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:754)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.handleEvent(PartRenderingEngine.java:148)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:41)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:180)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:150)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4687)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:187)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:58)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:290)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1161)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1096)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1088)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.access$9(StackRenderer.java:1070)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$10.close(StackRenderer.java:953)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1829)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4169)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3758)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1053)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:942)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)

@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SetupModelRoot
+	ModelVersion=" 9.00"
+	id="setup"
+	name="Build">
+	<User
+		id="Default"
+		name="Default"
+	/>
+	<ParamCategory
+		id="G1372076209861"
+		name="Behavior">
+		<Param
+			id="G1372076209863"
+			name="Set new role attributes excluded">
+			<ParamValue
+				id="G1372076209866"
+				name="No"
+			/>
+			<UserParam
+				id="G1372076209865"
+				name="Default">
+				<Reference name="ParamValue" IdRef="G1372076209866"/>
+				<Reference name="User" IdRef="Default"/>
+			</UserParam>
+		</Param>
+		<Param
+			id="G1372076209868"
+			name="Autocreate object selections">
+			<ParamValue
+				id="G1372076209871"
+				name="No"
+			/>
+			<UserParam
+				id="G1372076209870"
+				name="Default">
+				<Reference name="ParamValue" IdRef="G1372076209871"/>
+				<Reference name="User" IdRef="Default"/>
+			</UserParam>
+		</Param>
+		<Param
+			id="G1372076209873"
+			name="Default role name in Object Selection">
+			<ParamValue
+				id="G1372076209876"
+				name="Role name"
+			/>
+			<UserParam
+				id="G1372076209875"
+				name="Default">
+				<Reference name="ParamValue" IdRef="G1372076209876"/>
+				<Reference name="User" IdRef="Default"/>
+			</UserParam>
+		</Param>
+		<Param
+			id="G1372076209878"
+			name="Case sensitive names in Dialog Designer">
+			<ParamValue
+				id="G1372076209881"
+				name="No"
+			/>
+			<UserParam
+				id="G1372076209880"
+				name="Default">
+				<Reference name="ParamValue" IdRef="G1372076209881"/>
+				<Reference name="User" IdRef="Default"/>
+			</UserParam>
+		</Param>
+		<Param
+			id="G1372076209883"
+			name="Use Component View package when generating code">
+			<ParamValue
+				id="G1372076209886"
+				name="No"
+			/>
+			<UserParam
+				id="G1372076209885"
+				name="Default">
+				<Reference name="ParamValue" IdRef="G1372076209886"/>
+				<Reference name="User" IdRef="Default"/>
+			</UserParam>
+		</Param>
+	</ParamCategory>
+	<ParamCategory
+		id="G1372076209887"
+		name="Type Mapping From Modeling Types">
+		<ParamCategory
+			id="G1372076209888"
+			name="Genova Data Types">
+			<Param
+				id="TM_longtext"
+				name="longtext"
+			/>
+			<Param
+				id="TM_vartext"
+				name="vartext"
+			/>
+			<Param
+				id="TM_text"
+				name="text"
+			/>
+			<Param
+				id="TM_numeric"
+				name="numeric"
+			/>
+			<Param
+				id="TM_shortint"
+				name="shortint"
+			/>
+			<Param
+				id="TM_longint"
+				name="longint"
+			/>
+			<Param
+				id="TM_boolean"
+				name="boolean"
+			/>
+			<Param
+				id="TM_double"
+				name="double"
+			/>
+			<Param
+				id="TM_real"
+				name="real"
+			/>
+			<Param
+				id="TM_enumeration"
+				name="enumeration"
+			/>
+			<Param
+				id="TM_time"
+				name="time"
+			/>
+			<Param
+				id="TM_timestamp"
+				name="timestamp"
+			/>
+			<Param
+				id="TM_blob"
+				name="blob"
+			/>
+			<Param
+				id="TM_date"
+				name="date"
+			/>
+		</ParamCategory>
+		<ParamCategory
+			id="G1372076209903"
+			name="Type Mapping">
+			<Param
+				id="G1372076209905"
+				name="Double">
+				<ParamValue
+					id="G1372076209908"
+					name="double"
+				/>
+				<UserParam
+					id="G1372076209907"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209908"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209910"
+				name="Shortint">
+				<ParamValue
+					id="G1372076209913"
+					name="shortint"
+				/>
+				<UserParam
+					id="G1372076209912"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209913"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209915"
+				name="numeric">
+				<ParamValue
+					id="G1372076209918"
+					name="numeric"
+				/>
+				<UserParam
+					id="G1372076209917"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209918"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209920"
+				name="Bool">
+				<ParamValue
+					id="G1372076209923"
+					name="boolean"
+				/>
+				<UserParam
+					id="G1372076209922"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209923"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209925"
+				name="char">
+				<ParamValue
+					id="G1372076209928"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076209927"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209928"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209930"
+				name="longtext">
+				<ParamValue
+					id="G1372076209933"
+					name="longtext"
+				/>
+				<UserParam
+					id="G1372076209932"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209933"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209935"
+				name="Short">
+				<ParamValue
+					id="G1372076209938"
+					name="shortint"
+				/>
+				<UserParam
+					id="G1372076209937"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209938"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209940"
+				name="long">
+				<ParamValue
+					id="G1372076209943"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076209942"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209943"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209945"
+				name="date">
+				<ParamValue
+					id="G1372076209948"
+					name="date"
+				/>
+				<UserParam
+					id="G1372076209947"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209948"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209950"
+				name="float">
+				<ParamValue
+					id="G1372076209953"
+					name="real"
+				/>
+				<UserParam
+					id="G1372076209952"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209953"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209955"
+				name="longint">
+				<ParamValue
+					id="G1372076209958"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076209957"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209958"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209960"
+				name="timestamp">
+				<ParamValue
+					id="G1372076209963"
+					name="timestamp"
+				/>
+				<UserParam
+					id="G1372076209962"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209963"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209965"
+				name="short">
+				<ParamValue
+					id="G1372076209968"
+					name="shortint"
+				/>
+				<UserParam
+					id="G1372076209967"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209968"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209970"
+				name="real">
+				<ParamValue
+					id="G1372076209973"
+					name="real"
+				/>
+				<UserParam
+					id="G1372076209972"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209973"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209975"
+				name="time">
+				<ParamValue
+					id="G1372076209978"
+					name="time"
+				/>
+				<UserParam
+					id="G1372076209977"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209978"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209980"
+				name="Time">
+				<ParamValue
+					id="G1372076209983"
+					name="time"
+				/>
+				<UserParam
+					id="G1372076209982"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209983"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209985"
+				name="byte">
+				<ParamValue
+					id="G1372076209988"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076209987"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209988"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209990"
+				name="DateTime">
+				<ParamValue
+					id="G1372076209993"
+					name="timestamp"
+				/>
+				<UserParam
+					id="G1372076209992"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209993"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076209995"
+				name="Date">
+				<ParamValue
+					id="G1372076209998"
+					name="date"
+				/>
+				<UserParam
+					id="G1372076209997"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076209998"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210000"
+				name="boolean">
+				<ParamValue
+					id="G1372076210003"
+					name="boolean"
+				/>
+				<UserParam
+					id="G1372076210002"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210003"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210005"
+				name="Int">
+				<ParamValue
+					id="G1372076210008"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076210007"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210008"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210010"
+				name="Longtext">
+				<ParamValue
+					id="G1372076210013"
+					name="longtext"
+				/>
+				<UserParam
+					id="G1372076210012"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210013"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210015"
+				name="Float">
+				<ParamValue
+					id="G1372076210018"
+					name="real"
+				/>
+				<UserParam
+					id="G1372076210017"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210018"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210020"
+				name="Long">
+				<ParamValue
+					id="G1372076210023"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076210022"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210023"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210025"
+				name="text">
+				<ParamValue
+					id="G1372076210028"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076210027"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210028"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210030"
+				name="integer">
+				<ParamValue
+					id="G1372076210033"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076210032"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210033"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210035"
+				name="int">
+				<ParamValue
+					id="G1372076210038"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076210037"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210038"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210040"
+				name="Blob">
+				<ParamValue
+					id="G1372076210043"
+					name="blob"
+				/>
+				<UserParam
+					id="G1372076210042"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210043"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210045"
+				name="Numeric">
+				<ParamValue
+					id="G1372076210048"
+					name="numeric"
+				/>
+				<UserParam
+					id="G1372076210047"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210048"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210050"
+				name="DateMidnight">
+				<ParamValue
+					id="G1372076210053"
+					name="date"
+				/>
+				<UserParam
+					id="G1372076210052"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210053"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210055"
+				name="Char">
+				<ParamValue
+					id="G1372076210058"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076210057"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210058"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210060"
+				name="double">
+				<ParamValue
+					id="G1372076210063"
+					name="double"
+				/>
+				<UserParam
+					id="G1372076210062"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210063"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210065"
+				name="Boolean">
+				<ParamValue
+					id="G1372076210068"
+					name="boolean"
+				/>
+				<UserParam
+					id="G1372076210067"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210068"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210070"
+				name="Character">
+				<ParamValue
+					id="G1372076210073"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076210072"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210073"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210075"
+				name="Timestamp">
+				<ParamValue
+					id="G1372076210078"
+					name="timestamp"
+				/>
+				<UserParam
+					id="G1372076210077"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210078"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210080"
+				name="blob">
+				<ParamValue
+					id="G1372076210083"
+					name="blob"
+				/>
+				<UserParam
+					id="G1372076210082"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210083"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210085"
+				name="Byte">
+				<ParamValue
+					id="G1372076210088"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076210087"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210088"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210090"
+				name="vartext">
+				<ParamValue
+					id="G1372076210093"
+					name="vartext"
+				/>
+				<UserParam
+					id="G1372076210092"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210093"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210095"
+				name="Text">
+				<ParamValue
+					id="G1372076210098"
+					name="text"
+				/>
+				<UserParam
+					id="G1372076210097"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210098"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210100"
+				name="Real">
+				<ParamValue
+					id="G1372076210103"
+					name="real"
+				/>
+				<UserParam
+					id="G1372076210102"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210103"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210105"
+				name="Longint">
+				<ParamValue
+					id="G1372076210108"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076210107"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210108"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210110"
+				name="String">
+				<ParamValue
+					id="G1372076210113"
+					name="vartext"
+				/>
+				<UserParam
+					id="G1372076210112"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210113"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210115"
+				name="string">
+				<ParamValue
+					id="G1372076210118"
+					name="vartext"
+				/>
+				<UserParam
+					id="G1372076210117"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210118"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210120"
+				name="shortint">
+				<ParamValue
+					id="G1372076210123"
+					name="shortint"
+				/>
+				<UserParam
+					id="G1372076210122"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210123"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210125"
+				name="bool">
+				<ParamValue
+					id="G1372076210128"
+					name="boolean"
+				/>
+				<UserParam
+					id="G1372076210127"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210128"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210130"
+				name="Integer">
+				<ParamValue
+					id="G1372076210133"
+					name="longint"
+				/>
+				<UserParam
+					id="G1372076210132"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210133"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+			<Param
+				id="G1372076210135"
+				name="Vartext">
+				<ParamValue
+					id="G1372076210138"
+					name="vartext"
+				/>
+				<UserParam
+					id="G1372076210137"
+					name="Default">
+					<Reference name="ParamValue" IdRef="G1372076210138"/>
+					<Reference name="User" IdRef="Default"/>
+				</UserParam>
+			</Param>
+		</ParamCategory>
+	</ParamCategory>
+	<ParamCategory
+		id="G1372076210139"
+		name="Tagged Values">
+		<ParamCategory
+			id="G1372076210140"
+			name="Applications"
+		/>
+		<ParamCategory
+			id="G1372076210141"
+			name="Associations"
+		/>
+		<ParamCategory
+			id="G1372076210142"
+			name="Attributes"
+		/>
+		<ParamCategory
+			id="G1372076210143"
+			name="Classes"
+		/>
+		<ParamCategory
+			id="G1372076210144"
+			name="Converters"
+		/>
+		<ParamCategory
+			id="G1372076210145"
+			name="Dialogs"
+		/>
+		<ParamCategory
+			id="G1372076210146"
+			name="Domains"
+		/>
+		<ParamCategory
+			id="G1372076210147"
+			name="Enumerators"
+		/>
+		<ParamCategory
+			id="G1372076210148"
+			name="Enumerator Values"
+		/>
+		<ParamCategory
+			id="G1372076210149"
+			name="Generalizations"
+		/>
+		<ParamCategory
+			id="G1372076210150"
+			name="Groups"
+		/>
+		<ParamCategory
+			id="G1372076210151"
+			name="Interfaces"
+		/>
+		<ParamCategory
+			id="G1372076210152"
+			name="Methods"
+		/>
+		<ParamCategory
+			id="G1372076210153"
+			name="Realizations"
+		/>
+	</ParamCategory>
+	<Reference name="DefaultUser" IdRef="Default"/>
+</SetupModelRoot>

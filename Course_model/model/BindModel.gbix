@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ModelExport>
+	<Exporter>Genova</Exporter>
+	<ExporterVersion>902</ExporterVersion>
+	<ExporterTime></ExporterTime>
+	<ModelType>BindModel</ModelType>
+	<BindModelRoot
+		CaseSensitive="True"
+		ModelVersion="9.1.4"
+		id="G44172dc8037318"
+		name="BindModelRoot"
+	/>
+</ModelExport>

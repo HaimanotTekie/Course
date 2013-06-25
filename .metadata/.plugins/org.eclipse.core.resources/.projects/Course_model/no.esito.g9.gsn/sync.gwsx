@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<WorkspaceRoot id="{29B55109-7BF5-42c0-B5F3-9063EC11046C}"
+	Description=""
+	ModelTool="EA"
+	LogicalView="Model/Domain Model"
+	Unknown="User"
+	ModelVersion="9.1.4"
+	CaseSensitive="True"
+	ModelFilename="C:/Users/ht/Course/Course_UML.eap"
+	AllPackages="Model/Domain Model,Model/Domain Model::application,Model/Domain Model::no::course::domain,Model/Domain Model::no::course::service,Model/Domain Model::no::course,Model/Domain Model::no,Model/Domain Model::no::genova::support,Model/Domain Model::no::genova,Model/Domain Model::application::office"
+	SynchronizedPackages="Model/Domain Model::application,Model/Domain Model::no::course,Model/Domain Model::no::course::domain,Model/Domain Model::no::genova,Model/Domain Model,Model/Domain Model::no,Model/Domain Model::application::office,Model/Domain Model::no::course::service,Model/Domain Model::no::genova::support"
+>
+	<ApplicationModelRef name="ClientApplication" id="G1336567970313"
+		Description=""
+		ModelFilename="%PROJECT%/model/ClientApplication.gcax"
+	>
+	</ApplicationModelRef>
+	<ClassModelRef name="DomainModel" id="G44172dc8037614"
+		Description=""
+		ModelFilename="%PROJECT%/model/DomainModel.gdox"
+	>
+	</ClassModelRef>
+	<BindModelRef name="BindModel" id="G44172dc8037318"
+		Description=""
+		ModelFilename="%BUILD%/BindModel.gbix"
+	>
+	</BindModelRef>
+	<SysdulModelRef name="SysdulModel" id="G44172dc8037616"
+		Description=""
+		ModelFilename="%BUILD%/default.gsyx"
+	>
+	</SysdulModelRef>
+	<DatabaseMappings>
+	</DatabaseMappings>
+	<ObjectSelections>
+	</ObjectSelections>
+	<DialogModels>
+		<DialogModelRef name="CourseApp" id="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"
+			Description=""
+			PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+			PackageRefName="application/office"
+			DialogType="Dialog"
+			ComponentPackage="application/office"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			ModelFilename=""
+		>
+		</DialogModelRef>
+		<DialogModelRef name="Student" id="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"
+			Description=""
+			PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+			PackageRefName="application/office"
+			DialogType="Dialog"
+			ComponentPackage="application/office"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			ModelFilename=""
+		>
+		</DialogModelRef>
+	</DialogModels>
+	<ResourceModelRef name="resources" id="G41b5b14c02fb1"
+		Description=""
+		ModelFilename="%BUILD%/default.grdx"
+	>
+	</ResourceModelRef>
+	<SetupModelRef name="setup" id="setup"
+		Description=""
+		ModelFilename="%BUILD%/sync.gsdx"
+	>
+	</SetupModelRef>
+</WorkspaceRoot>

@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DialogModelRoot
+	CaseSensitive="True"
+	DesignProfileRefId="SN00002"
+	DesignProfileRefName="Java/JFC"
+	DialogTitle=""
+	DialogType="DocumentWindow"
+	ExternallyUsed="False"
+	IsConsistent="True"
+	MaximumNumberOfInstances="0"
+	ModelVersion="9.1.4"
+	ObjectSelectionRefId="G1372076193376"
+	ObjectSelectionRefName="Student_os"
+	PackageRefId=""
+	PackageRefName="application/office"
+	StyleGuideRefId="G41b5b14c0296193"
+	StyleGuideRefName="RegistrationStyleGuide"
+	id="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"
+	name="Student">
+	<WindowBlock
+		PreviewH="174"
+		PreviewW="402"
+		PreviewX="0"
+		PreviewY="1"
+		RoleId="G1372076193381"
+		RoleName="Student"
+		SkinRefId="G41b5b14c02961"
+		SkinRefName="Standard_Skin"
+		Title="Student"
+		WindowType="DocumentWindow"
+		id="G1372076193390"
+		name="Window">
+		<ToolBar
+			PreviewH="1"
+			PreviewW="391"
+			PreviewX="11"
+			PreviewY="0"
+			Title="Toolbar"
+			id="G1372076193391"
+			name="Toolbar"
+		/>
+		<SimpleBlock
+			CompType="EntityBlock"
+			PreviewFH="10"
+			PreviewFW="3"
+			PreviewH="152"
+			PreviewW="380"
+			PreviewX="11"
+			PreviewY="11"
+			RoleId="G1372076193381"
+			RoleName="Student"
+			Title="Student"
+			id="G1372076193392"
+			name="StudentClass">
+			<SimpleBlock
+				CompType="DataBlock"
+				NumColumns="1"
+				PreviewFH="0"
+				PreviewFW="0"
+				PreviewH="106"
+				PreviewW="213"
+				PreviewX="14"
+				PreviewY="17"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				Title="Student"
+				id="G1372076193393"
+				name="StudentData">
+				<LabelControl
+					ModelTitle=""
+					PreviewH="17"
+					PreviewW="22"
+					PreviewX="0"
+					PreviewY="0"
+					Title="age"
+					id="G1372076193394"
+					name="StudentAgeLabel">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+					<Reference name="GeneratedBy" IdRef="G1372076193395"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372076193382"
+					AttributeName="age"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					PreviewFH="10"
+					PreviewFW="3"
+					PreviewH="22"
+					PreviewW="145"
+					PreviewX="61"
+					PreviewY="0"
+					RoleId="G1372076193381"
+					RoleName="Student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					Title="age"
+					VarFieldType="Text"
+					id="G1372076193395"
+					name="age">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</VarField>
+				<LabelControl
+					ModelTitle=""
+					PreviewH="17"
+					PreviewW="11"
+					PreviewX="0"
+					PreviewY="28"
+					Title="id"
+					id="G1372076193396"
+					name="StudentIdLabel">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+					<Reference name="GeneratedBy" IdRef="G1372076193397"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372076193383"
+					AttributeName="id"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					PreviewFH="10"
+					PreviewFW="3"
+					PreviewH="22"
+					PreviewW="145"
+					PreviewX="61"
+					PreviewY="28"
+					RoleId="G1372076193381"
+					RoleName="Student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					Title="id"
+					VarFieldType="Text"
+					id="G1372076193397"
+					name="id">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</VarField>
+				<LabelControl
+					ModelTitle=""
+					PreviewH="17"
+					PreviewW="33"
+					PreviewX="0"
+					PreviewY="56"
+					Title="name"
+					id="G1372076193398"
+					name="StudentNameLabel">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+					<Reference name="GeneratedBy" IdRef="G1372076193399"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372076193384"
+					AttributeName="name"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					PreviewFH="10"
+					PreviewFW="3"
+					PreviewH="22"
+					PreviewW="152"
+					PreviewX="61"
+					PreviewY="56"
+					RoleId="G1372076193381"
+					RoleName="Student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					Title="name"
+					VarFieldType="Text"
+					id="G1372076193399"
+					name="name">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</VarField>
+				<LabelControl
+					ModelTitle=""
+					PreviewH="17"
+					PreviewW="56"
+					PreviewX="0"
+					PreviewY="84"
+					Title="studentNr"
+					id="G1372076193400"
+					name="StudentStudentNrLabel">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+					<Reference name="GeneratedBy" IdRef="G1372076193401"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372076193385"
+					AttributeName="studentNr"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					PreviewFH="10"
+					PreviewFW="3"
+					PreviewH="22"
+					PreviewW="145"
+					PreviewX="61"
+					PreviewY="84"
+					RoleId="G1372076193381"
+					RoleName="Student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					Title="studentNr"
+					VarFieldType="Text"
+					id="G1372076193401"
+					name="studentNr">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</VarField>
+				<CustomProperty
+					Generator="Jasper Reports"
+					Value="True"
+					name="Include in print"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Hide effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Show effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Enable effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Disable effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Clear Object effect"
+				/>
+				<CustomProperty
+					Generator="SpreadsheetExport"
+					Value="True"
+					name="IncludeInExport"
+				/>
+			</SimpleBlock>
+			<SimpleBlock
+				CompType="ButtonBlock"
+				PreviewFH="0"
+				PreviewFW="0"
+				PreviewH="108"
+				PreviewW="128"
+				PreviewX="238"
+				PreviewY="17"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				Title="Student"
+				id="G1372076193402"
+				name="StudentButton">
+				<ButtonControl
+					PreviewH="24"
+					PreviewW="128"
+					PreviewX="0"
+					PreviewY="0"
+					Title="StudentSearchButton"
+					id="G1372076193418"
+					name="StudentSearchButton">
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</ButtonControl>
+				<ButtonControl
+					HasIcon="True"
+					ImageId="G41b5b14c0296172"
+					ImageName="Clear"
+					PreviewH="22"
+					PreviewW="24"
+					PreviewX="0"
+					PreviewY="30"
+					Title="Clear"
+					id="G1372076193403"
+					name="StudentClearButton">
+					<Event
+						TriggerType="Clicked"
+						id="G1372076193406"
+						name="Clicked">
+						<Reference name="Method" IdRef="G1372076193404"/>
+					</Event>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</ButtonControl>
+				<ButtonControl
+					HasIcon="True"
+					ImageId="G41b5b14c0296177"
+					ImageName="Save"
+					PreviewH="22"
+					PreviewW="24"
+					PreviewX="0"
+					PreviewY="58"
+					Title="Save"
+					id="G1372076193407"
+					name="StudentSaveButton">
+					<Event
+						TriggerType="Clicked"
+						id="G1372076193410"
+						name="Clicked">
+						<Reference name="Method" IdRef="G1372076193408"/>
+					</Event>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</ButtonControl>
+				<ButtonControl
+					HasIcon="True"
+					ImageId="G41b5b14c0296189"
+					ImageName="Delete"
+					PreviewH="22"
+					PreviewW="24"
+					PreviewX="0"
+					PreviewY="86"
+					Title="Delete"
+					id="G1372076193411"
+					name="StudentDeleteButton">
+					<Event
+						TriggerType="Clicked"
+						id="G1372076193414"
+						name="Clicked">
+						<Reference name="Method" IdRef="G1372076193412"/>
+					</Event>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Hide effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Show effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Enable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Disable effect"
+					/>
+					<CustomProperty
+						Generator="Java/ICEfaces2"
+						Value=""
+						name="Clear Object effect"
+					/>
+				</ButtonControl>
+				<CustomProperty
+					Generator="Jasper Reports"
+					Value="True"
+					name="Include in print"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Hide effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Show effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Enable effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Disable effect"
+				/>
+				<CustomProperty
+					Generator="Java/ICEfaces2"
+					Value=""
+					name="Clear Object effect"
+				/>
+				<CustomProperty
+					Generator="SpreadsheetExport"
+					Value="True"
+					name="IncludeInExport"
+				/>
+			</SimpleBlock>
+			<CustomProperty
+				Generator="Jasper Reports"
+				Value="True"
+				name="Include in print"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Hide effect"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Show effect"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Enable effect"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Disable effect"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Clear Object effect"
+			/>
+			<CustomProperty
+				Generator="SpreadsheetExport"
+				Value="True"
+				name="IncludeInExport"
+			/>
+		</SimpleBlock>
+		<Event
+			TriggerType="WM Close"
+			id="G1372076193417"
+			name="WM Close">
+			<Reference name="Method" IdRef="G1372076193415"/>
+		</Event>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="mouseover"
+			name="Popup Window showEvent"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window showDelay"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window showEffect"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window showEffectLength"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="mouseout"
+			name="Popup Window hideEvent"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window hideDelay"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window hideEffect"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window hideEffectLength"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="topLeft"
+			name="Popup Window position"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="bottomRight"
+			name="Popup Window targetPosition"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="False"
+			name="Popup Window speechBubble"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="True"
+			name="Dialog Box draggable"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="False"
+			name="Dialog Box resizable"
+		/>
+		<CustomProperty
+			Generator="SpreadsheetExport"
+			Value="False"
+			name="GenerateSpreadsheet"
+		/>
+		<Reference name="TabSequence" IdRef="G1372076193395"/>
+		<Reference name="TabSequence" IdRef="G1372076193397"/>
+		<Reference name="TabSequence" IdRef="G1372076193399"/>
+		<Reference name="TabSequence" IdRef="G1372076193401"/>
+		<Reference name="TabSequence" IdRef="G1372076193418"/>
+		<Reference name="TabSequence" IdRef="G1372076193403"/>
+		<Reference name="TabSequence" IdRef="G1372076193407"/>
+		<Reference name="TabSequence" IdRef="G1372076193411"/>
+	</WindowBlock>
+	<DlgMethod
+		id="G1372076193404"
+		name="clearStudent">
+		<Action
+			ActionType="Clear"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372076193381"
+			TargetName="Student"
+			id="G1372076193405"
+			name="Clear"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372076193408"
+		name="saveStudent">
+		<Action
+			ActionType="Save"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372076193381"
+			TargetName="Student"
+			id="G1372076193409"
+			name="Save"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372076193412"
+		name="deleteStudent">
+		<Action
+			ActionType="Delete"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372076193381"
+			TargetName="Student"
+			id="G1372076193413"
+			name="Delete"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372076193415"
+		name="closeStudent">
+		<Action
+			ActionType="Close"
+			ModelType="WorkspaceModel"
+			TargetId="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"
+			TargetName="Student"
+			id="G1372076193416"
+			name="Close"
+		/>
+	</DlgMethod>
+</DialogModelRoot>

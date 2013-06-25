@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DatabaseMappingRoot
+	CaseSensitive="True"
+	DBModelTargetDb="MySQL"
+	MappingProfileRefId="SN10002"
+	MappingProfileRefName="MySQL"
+	ModelVersion="9.1.4"
+	id="G1372076198997"
+	name="courseDB"
+/>

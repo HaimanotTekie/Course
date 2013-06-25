@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ObjectSelectionRoot
+	CaseSensitive="True"
+	ModelCategory=""
+	ModelVersion="9.1.4"
+	PackageRefName="application/office"
+	id="G1372076193375"
+	name="CourseApp_os"
+/>

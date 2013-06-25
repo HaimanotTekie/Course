@@ -1,0 +1,76 @@
+// Generated with Genova.
+
+package no.course.domain.generated;
+
+import no.course.domain.Answer;
+
+/**
+ * This file will be overwritten the next time it is generated from Genova.
+ */
+@SuppressWarnings("all")
+public abstract class AssignmentDefault {
+    
+    private String assignmentText;
+    private int id;
+    private Answer theAnswer;
+    
+    /** Default constructor. */
+    protected AssignmentDefault() {
+        super();
+    }
+    
+    /**
+     * Access method for assignmentText.
+     *
+     * @return the current value of assignmentText
+     */
+    public String getAssignmentText() {
+        return assignmentText;
+    }
+    
+    /**
+     * Setter method for assignmentText.
+     *
+     * @param aAssignmentText the new value for assignmentText
+     */
+    public void setAssignmentText(final String aAssignmentText) {
+        assignmentText = aAssignmentText;
+    }
+    
+    /**
+     * Access method for id.
+     *
+     * @return the current value of id
+     */
+    public int getId() {
+        return id;
+    }
+    
+    /**
+     * Setter method for id.
+     *
+     * @param aId the new value for id
+     */
+    public void setId(final int aId) {
+        id = aId;
+    }
+    
+    /**
+     * Access method for theAnswer.
+     *
+     * @return the current value of theAnswer
+     */
+    public Answer getTheAnswer() {
+        return theAnswer;
+    }
+    
+    /**
+     * Setter method for theAnswer.
+     *
+     * @param aTheAnswer the new value for theAnswer
+     */
+    public void setTheAnswer(final Answer aTheAnswer) {
+        theAnswer = aTheAnswer;
+    }
+    
+}

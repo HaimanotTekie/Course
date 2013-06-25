@@ -1,0 +1,16 @@
+// Generated with Genova.
+
+package no.course.domain;
+
+import no.course.domain.generated.Student-CourseDefault;
+
+/**
+ */
+public class Student-Course extends Student-CourseDefault {
+    
+    /** Default constructor. */
+    public Student-Course() {
+        super();
+    }
+    
+}

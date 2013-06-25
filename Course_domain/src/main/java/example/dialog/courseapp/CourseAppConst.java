@@ -1,0 +1,79 @@
+// ---------------------------------------------------------------------
+// Generated with Genova.
+// ---------------------------------------------------------------------
+package example.dialog.courseapp;
+
+
+/**
+ * Interface declaring string constants used in the CourseApp.
+ */
+public interface CourseAppConst {
+
+
+    /**
+     * Name constants for all dialog objects in CourseApp except
+     * data items.
+     */
+    public static interface DialogObject {
+
+
+        // WindowBlock
+
+        /** The WindowBlock Window component */
+        String WINDOW = "Window";
+
+
+        // SimpleBlock
+
+
+        // MenuBar
+
+        /** The MenuBar Menu component */
+        String MENU = "Menu";
+
+
+        // Menu
+
+        /** The Menu FileMenu component */
+        String FILE_MENU = "FileMenu";
+
+        /** The Menu EditMenu component */
+        String EDIT_MENU = "EditMenu";
+
+        /** The Menu ViewMenu component */
+        String VIEW_MENU = "ViewMenu";
+
+        /** The Menu WindowMenu component */
+        String WINDOW_MENU = "WindowMenu";
+
+        /** The Menu HelpMenu component */
+        String HELP_MENU = "HelpMenu";
+
+
+        // MenuItem
+
+
+        // ToolBar
+
+        /** The ToolBar Toolbar component */
+        String TOOLBAR = "Toolbar";
+
+
+        // Notebook
+
+
+        // ListBlock
+
+
+        // Button
+
+
+        // Label
+
+
+        // Text
+
+
+        // ImageBox
+    }
+}
