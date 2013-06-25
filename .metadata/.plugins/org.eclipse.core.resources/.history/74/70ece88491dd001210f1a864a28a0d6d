@@ -1,0 +1,7 @@
+# CourseMain properties. Generated with Genova.
+#2013.06.25 13:14:51
+Answer_os=no.course.service.application.office.answer_os.Answer_osOsManager
+Assignment_os=no.course.service.application.office.assignment_os.Assignment_osOsManager
+Course_os=no.course.service.application.office.course_os.Course_osOsManager
+CourseApp_os=no.course.service.application.office.courseapp_os.CourseApp_osOsManager
+Student_os=no.course.service.application.office.student_os.Student_osOsManager

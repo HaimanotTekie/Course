@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ObjectSelectionRoot
+	CaseSensitive="True"
+	ModelCategory=""
+	ModelVersion="9.1.4"
+	PackageRefName="application/office"
+	id="G1372145902873"
+	name="Assignment_os">
+	<OSRole
+		ClassID="{7FE9A369-10CA-4b8b-BD35-3465C00809DE}"
+		ClassName="Assignment"
+		id="G1372145905337"
+		name="Assignment">
+		<OSAttribute
+			AttributeID="{A0EDA54D-253B-4908-867D-47EF199E1CAE}"
+			AttributeName="assignmentText"
+			ItemRemoved="False"
+			id="G1372145905338"
+			name="assignmentText"
+		/>
+		<OSAttribute
+			AttributeID="{4693C866-19C4-467b-99FC-76336204BABE}"
+			AttributeName="id"
+			ItemRemoved="False"
+			id="G1372145905339"
+			name="id"
+		/>
+	</OSRole>
+</ObjectSelectionRoot>

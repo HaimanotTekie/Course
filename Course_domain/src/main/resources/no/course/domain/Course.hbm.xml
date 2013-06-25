@@ -5,14 +5,13 @@
 
 	<class name="Course" table="Course">
 
+		<id name="id" column="id" type="integer">
+			<generator class="native">
+			</generator> 
+		</id>
+
 			<property name="code" column="code">
 				<type name="string">
-				</type>
-			</property>
-
-			<property name="id" column="id">
-				<type name="gva_int">
-					<param name="default">0</param>
 				</type>
 			</property>
 
@@ -26,6 +25,20 @@
 				<type name="string">
 				</type>
 			</property>
+
+		<set name="assignments" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="course_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.Assignment"/>
+		</set>
+
+		<set name="studentCourses" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="course_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.StudentCourse"/>
+		</set>
 
 	</class>
 

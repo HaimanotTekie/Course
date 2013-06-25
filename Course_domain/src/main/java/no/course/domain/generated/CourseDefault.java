@@ -6,6 +6,8 @@ import java.util.Set;
 import no.course.domain.StudentCourse;
 import no.course.domain.Assignment;
 import java.io.Serializable;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * This file will be overwritten the next time it is generated from Genova.
@@ -13,6 +15,8 @@ import java.io.Serializable;
 @SuppressWarnings("all")
 public abstract class CourseDefault implements Serializable {
     
+    /** Primary key. */
+    protected static final String PK = "id";
     private String code;
     private int id;
     private boolean isActive;
@@ -131,6 +135,81 @@ public abstract class CourseDefault implements Serializable {
      */
     public void setAssignments(final Set<Assignment> aAssignments) {
         assignments = aAssignments;
+    }
+    
+    /**
+     * Compares the key for this instance with another Course.
+     *
+     * @param other The object to compare to
+     * @return True if other object is instance of class Course and the key objects are equal.
+     */
+    private boolean equalKeys(Object other) {
+        if (this==other) {
+            return true;
+        }
+        if (!(other instanceof CourseDefault)) {
+            return false;
+        }
+        CourseDefault that = (CourseDefault) other;
+        Object myCode = this.getCode();
+        Object yourCode = that.getCode();
+        if (myCode==null ? yourCode!=null : !myCode.equals(yourCode)) {
+            return false;
+        }
+        return true;
+    }
+    
+    /**
+     * Compares this instance with another Course.
+     *
+     * @param other The object to compare to
+     * @return True if the objects are the same
+     */
+    @Override
+    public boolean equals(Object other) {
+        return this.equalKeys(other) && ((CourseDefault)other).equalKeys(this);
+    }
+    
+    /**
+     * Returns a hash code for this instance.
+     *
+     * @return Hash code
+     */
+    @Override
+    public int hashCode() {
+        int i;
+        int result = 17;
+        if (getCode() == null) {
+            i = 0;
+        } else {
+            i = getCode().hashCode();
+        }
+        result = 37*result + i;
+        return result;
+    }
+    
+    /**
+     * Returns a debug-friendly String representation of this instance
+     *
+     * @return String representation of this instance
+     */
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer("[Course |");
+        sb.append(" code=").append(getCode());
+        sb.append("]");
+        return sb.toString();
+    }
+    
+    /**
+     * Return all elements of the primary key.
+     *
+     * @return Map of key names to values
+     */
+    public Map<String, Object> getPrimaryKey() {
+        Map<String, Object> ret = new LinkedHashMap<String, Object>(6);
+        ret.put("id", new Integer(getId()));
+        return ret;
     }
     
 }

@@ -5,13 +5,12 @@
 
 	<class name="Student" table="Student">
 
-			<property name="age" column="age">
-				<type name="gva_int">
-					<param name="default">0</param>
-				</type>
-			</property>
+		<id name="id" column="id" type="integer">
+			<generator class="native">
+			</generator> 
+		</id>
 
-			<property name="id" column="id">
+			<property name="age" column="age">
 				<type name="gva_int">
 					<param name="default">0</param>
 				</type>
@@ -27,6 +26,20 @@
 					<param name="default">0</param>
 				</type>
 			</property>
+
+		<set name="answers" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="student_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.Answer"/>
+		</set>
+
+		<set name="studentCourses" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="student_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.StudentCourse"/>
+		</set>
 
 	</class>
 

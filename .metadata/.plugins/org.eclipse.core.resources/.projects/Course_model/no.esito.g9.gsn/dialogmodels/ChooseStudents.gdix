@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DialogModelRoot
+	CaseSensitive="True"
+	DesignProfileRefId="SN00002"
+	DesignProfileRefName="Java/JFC"
+	DialogTitle=""
+	DialogType="DocumentWindow"
+	ExternallyUsed="False"
+	IsConsistent="True"
+	MaximumNumberOfInstances="0"
+	ModelVersion="9.1.4"
+	ObjectSelectionRefId="G1372076193376"
+	ObjectSelectionRefName="Student_os"
+	PackageRefId=""
+	StyleGuideRefId="G41b5b14c0296195"
+	StyleGuideRefName="SearchStyleGuideComplex"
+	id="G1372157474761"
+	name="ChooseStudents">
+	<WindowBlock
+		Height="337"
+		PreviewH="367"
+		PreviewW="755"
+		PreviewX="0"
+		PreviewY="1"
+		RoleName=""
+		SkinRefId="G41b5b14c02961"
+		SkinRefName="Standard_Skin"
+		Title=""
+		Width="755"
+		WindowType="DocumentWindow"
+		id="G1372157474762"
+		name="Window">
+		<ToolBar
+			PreviewH="1"
+			PreviewW="744"
+			PreviewX="11"
+			PreviewY="0"
+			Title="Toolbar"
+			id="G1372157474763"
+			name="Toolbar"
+		/>
+		<Event
+			TriggerType="WM Close"
+			id="G1372157474766"
+			name="WM Close">
+			<Reference name="Method" IdRef="G1372157474764"/>
+		</Event>
+		<ListBlock
+			PreviewFH="0"
+			PreviewFW="0"
+			PreviewH="133"
+			PreviewHH="24"
+			PreviewLH="120"
+			PreviewRH="21"
+			PreviewW="424"
+			PreviewX="11"
+			PreviewY="11"
+			RoleId="G1372076193381"
+			RoleName="Student"
+			id="G1372157477908"
+			name="chooseStudentsListBloack">
+			<LabelControl
+				ModelTitle=""
+				Title="age"
+				id="G1372157478529"
+				name="StudentAgeLabel">
+				<Reference name="GeneratedBy" IdRef="G1372157478530"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372076193382"
+				AttributeName="age"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				PreviewCW="137"
+				PreviewCX="0"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				Title="age"
+				VarFieldType="Text"
+				id="G1372157478530"
+				name="age"
+			/>
+			<LabelControl
+				ModelTitle=""
+				Title="name"
+				id="G1372157478533"
+				name="StudentNameLabel">
+				<Reference name="GeneratedBy" IdRef="G1372157478534"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372076193384"
+				AttributeName="name"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				PreviewCW="144"
+				PreviewCX="137"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				Title="name"
+				VarFieldType="Text"
+				id="G1372157478534"
+				name="name"
+			/>
+			<LabelControl
+				ModelTitle=""
+				Title="Student nr"
+				id="G1372157478535"
+				name="StudentStudentNrLabel">
+				<Reference name="GeneratedBy" IdRef="G1372157478536"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372076193385"
+				AttributeName="studentNr"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				PreviewCW="137"
+				PreviewCX="281"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				Title="Student nr"
+				VarFieldType="Text"
+				id="G1372157478536"
+				name="studentNr"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value="True"
+				name="Paginator Always Visible"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value="Left"
+				name="Paginator Alignment"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Paginator Max Pages"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value="1"
+				name="Paginator Fast Step"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="Paginator Hook Method"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value="False"
+				name="Double Click Select"
+			/>
+			<CustomProperty
+				Generator="Java/ICEfaces2"
+				Value=""
+				name="DataTable Row Height"
+			/>
+			<Reference name="SortSequence" IdRef="G1372157478530"/>
+			<Reference name="SortSequence" IdRef="G1372157478534"/>
+			<Reference name="SortSequence" IdRef="G1372157478536"/>
+		</ListBlock>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="mouseover"
+			name="Popup Window showEvent"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window showDelay"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window showEffect"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window showEffectLength"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="mouseout"
+			name="Popup Window hideEvent"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window hideDelay"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window hideEffect"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value=""
+			name="Popup Window hideEffectLength"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="topLeft"
+			name="Popup Window position"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="bottomRight"
+			name="Popup Window targetPosition"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="False"
+			name="Popup Window speechBubble"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="True"
+			name="Dialog Box draggable"
+		/>
+		<CustomProperty
+			Generator="Java/ICEfaces2"
+			Value="False"
+			name="Dialog Box resizable"
+		/>
+		<CustomProperty
+			Generator="SpreadsheetExport"
+			Value="False"
+			name="GenerateSpreadsheet"
+		/>
+		<Reference name="TabSequence" IdRef="G1372157477908"/>
+	</WindowBlock>
+	<DlgMethod
+		id="G1372157474764"
+		name="closeChooseStudents">
+		<Action
+			ActionType="Close"
+			ModelType="WorkspaceModel"
+			TargetId="G1372157474761"
+			TargetName="ChooseStudents"
+			id="G1372157474765"
+			name="Close"
+		/>
+	</DlgMethod>
+</DialogModelRoot>

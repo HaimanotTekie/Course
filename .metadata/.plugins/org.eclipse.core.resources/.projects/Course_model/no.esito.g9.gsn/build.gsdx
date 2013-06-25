@@ -8,84 +8,84 @@
 		name="Default"
 	/>
 	<ParamCategory
-		id="G1372076243946"
+		id="G1372175598189"
 		name="Behavior">
 		<Param
-			id="G1372076243948"
+			id="G1372175598191"
 			name="Set new role attributes excluded">
 			<ParamValue
-				id="G1372076243951"
+				id="G1372175598194"
 				name="No"
 			/>
 			<UserParam
-				id="G1372076243950"
+				id="G1372175598193"
 				name="Default">
-				<Reference name="ParamValue" IdRef="G1372076243951"/>
+				<Reference name="ParamValue" IdRef="G1372175598194"/>
 				<Reference name="User" IdRef="Default"/>
 			</UserParam>
 		</Param>
 		<Param
-			id="G1372076243953"
+			id="G1372175598196"
 			name="Autocreate object selections">
 			<ParamValue
-				id="G1372076243956"
+				id="G1372175598199"
 				name="No"
 			/>
 			<UserParam
-				id="G1372076243955"
+				id="G1372175598198"
 				name="Default">
-				<Reference name="ParamValue" IdRef="G1372076243956"/>
+				<Reference name="ParamValue" IdRef="G1372175598199"/>
 				<Reference name="User" IdRef="Default"/>
 			</UserParam>
 		</Param>
 		<Param
-			id="G1372076243958"
+			id="G1372175598201"
 			name="Default role name in Object Selection">
 			<ParamValue
-				id="G1372076243961"
+				id="G1372175598204"
 				name="Role name"
 			/>
 			<UserParam
-				id="G1372076243960"
+				id="G1372175598203"
 				name="Default">
-				<Reference name="ParamValue" IdRef="G1372076243961"/>
+				<Reference name="ParamValue" IdRef="G1372175598204"/>
 				<Reference name="User" IdRef="Default"/>
 			</UserParam>
 		</Param>
 		<Param
-			id="G1372076243963"
+			id="G1372175598206"
 			name="Case sensitive names in Dialog Designer">
 			<ParamValue
-				id="G1372076243966"
+				id="G1372175598209"
 				name="No"
 			/>
 			<UserParam
-				id="G1372076243965"
+				id="G1372175598208"
 				name="Default">
-				<Reference name="ParamValue" IdRef="G1372076243966"/>
+				<Reference name="ParamValue" IdRef="G1372175598209"/>
 				<Reference name="User" IdRef="Default"/>
 			</UserParam>
 		</Param>
 		<Param
-			id="G1372076243968"
+			id="G1372175598211"
 			name="Use Component View package when generating code">
 			<ParamValue
-				id="G1372076243971"
+				id="G1372175598214"
 				name="No"
 			/>
 			<UserParam
-				id="G1372076243970"
+				id="G1372175598213"
 				name="Default">
-				<Reference name="ParamValue" IdRef="G1372076243971"/>
+				<Reference name="ParamValue" IdRef="G1372175598214"/>
 				<Reference name="User" IdRef="Default"/>
 			</UserParam>
 		</Param>
 	</ParamCategory>
 	<ParamCategory
-		id="G1372076243972"
+		id="G1372175598215"
 		name="Type Mapping From Modeling Types">
 		<ParamCategory
-			id="G1372076243973"
+			id="G1372175598216"
 			name="Genova Data Types">
 			<Param
 				id="TM_longtext"
@@ -145,1599 +145,1599 @@
 			/>
 		</ParamCategory>
 		<ParamCategory
-			id="G1372076243988"
+			id="G1372175598231"
 			name="Type Mapping">
 			<Param
-				id="G1372076243990"
+				id="G1372175598233"
 				name="Double">
 				<ParamValue
-					id="G1372076243993"
+					id="G1372175598236"
 					name="double"
 				/>
 				<UserParam
-					id="G1372076243992"
+					id="G1372175598235"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076243993"/>
+					<Reference name="ParamValue" IdRef="G1372175598236"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076243995"
+				id="G1372175598238"
 				name="Shortint">
 				<ParamValue
-					id="G1372076243998"
+					id="G1372175598241"
 					name="shortint"
 				/>
 				<UserParam
-					id="G1372076243997"
+					id="G1372175598240"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076243998"/>
+					<Reference name="ParamValue" IdRef="G1372175598241"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244000"
+				id="G1372175598243"
 				name="numeric">
 				<ParamValue
-					id="G1372076244003"
+					id="G1372175598246"
 					name="numeric"
 				/>
 				<UserParam
-					id="G1372076244002"
+					id="G1372175598245"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244003"/>
+					<Reference name="ParamValue" IdRef="G1372175598246"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244005"
+				id="G1372175598248"
 				name="Bool">
 				<ParamValue
-					id="G1372076244008"
+					id="G1372175598251"
 					name="boolean"
 				/>
 				<UserParam
-					id="G1372076244007"
+					id="G1372175598250"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244008"/>
+					<Reference name="ParamValue" IdRef="G1372175598251"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244010"
+				id="G1372175598253"
 				name="char">
 				<ParamValue
-					id="G1372076244013"
+					id="G1372175598256"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244012"
+					id="G1372175598255"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244013"/>
+					<Reference name="ParamValue" IdRef="G1372175598256"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244015"
+				id="G1372175598258"
 				name="longtext">
 				<ParamValue
-					id="G1372076244018"
+					id="G1372175598261"
 					name="longtext"
 				/>
 				<UserParam
-					id="G1372076244017"
+					id="G1372175598260"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244018"/>
+					<Reference name="ParamValue" IdRef="G1372175598261"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244020"
+				id="G1372175598263"
 				name="Short">
 				<ParamValue
-					id="G1372076244023"
+					id="G1372175598266"
 					name="shortint"
 				/>
 				<UserParam
-					id="G1372076244022"
+					id="G1372175598265"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244023"/>
+					<Reference name="ParamValue" IdRef="G1372175598266"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244025"
+				id="G1372175598268"
 				name="long">
 				<ParamValue
-					id="G1372076244028"
+					id="G1372175598271"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244027"
+					id="G1372175598270"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244028"/>
+					<Reference name="ParamValue" IdRef="G1372175598271"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244030"
+				id="G1372175598273"
 				name="date">
 				<ParamValue
-					id="G1372076244033"
+					id="G1372175598276"
 					name="date"
 				/>
 				<UserParam
-					id="G1372076244032"
+					id="G1372175598275"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244033"/>
+					<Reference name="ParamValue" IdRef="G1372175598276"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244035"
+				id="G1372175598278"
 				name="float">
 				<ParamValue
-					id="G1372076244038"
+					id="G1372175598281"
 					name="real"
 				/>
 				<UserParam
-					id="G1372076244037"
+					id="G1372175598280"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244038"/>
+					<Reference name="ParamValue" IdRef="G1372175598281"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244040"
+				id="G1372175598283"
 				name="longint">
 				<ParamValue
-					id="G1372076244043"
+					id="G1372175598286"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244042"
+					id="G1372175598285"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244043"/>
+					<Reference name="ParamValue" IdRef="G1372175598286"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244045"
+				id="G1372175598288"
 				name="timestamp">
 				<ParamValue
-					id="G1372076244048"
+					id="G1372175598291"
 					name="timestamp"
 				/>
 				<UserParam
-					id="G1372076244047"
+					id="G1372175598290"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244048"/>
+					<Reference name="ParamValue" IdRef="G1372175598291"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244050"
+				id="G1372175598293"
 				name="short">
 				<ParamValue
-					id="G1372076244053"
+					id="G1372175598296"
 					name="shortint"
 				/>
 				<UserParam
-					id="G1372076244052"
+					id="G1372175598295"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244053"/>
+					<Reference name="ParamValue" IdRef="G1372175598296"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244055"
+				id="G1372175598298"
 				name="real">
 				<ParamValue
-					id="G1372076244058"
+					id="G1372175598301"
 					name="real"
 				/>
 				<UserParam
-					id="G1372076244057"
+					id="G1372175598300"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244058"/>
+					<Reference name="ParamValue" IdRef="G1372175598301"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244060"
+				id="G1372175598303"
 				name="time">
 				<ParamValue
-					id="G1372076244063"
+					id="G1372175598306"
 					name="time"
 				/>
 				<UserParam
-					id="G1372076244062"
+					id="G1372175598305"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244063"/>
+					<Reference name="ParamValue" IdRef="G1372175598306"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244065"
+				id="G1372175598308"
 				name="Time">
 				<ParamValue
-					id="G1372076244068"
+					id="G1372175598311"
 					name="time"
 				/>
 				<UserParam
-					id="G1372076244067"
+					id="G1372175598310"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244068"/>
+					<Reference name="ParamValue" IdRef="G1372175598311"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244070"
+				id="G1372175598313"
 				name="byte">
 				<ParamValue
-					id="G1372076244073"
+					id="G1372175598316"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244072"
+					id="G1372175598315"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244073"/>
+					<Reference name="ParamValue" IdRef="G1372175598316"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244075"
+				id="G1372175598318"
 				name="DateTime">
 				<ParamValue
-					id="G1372076244078"
+					id="G1372175598321"
 					name="timestamp"
 				/>
 				<UserParam
-					id="G1372076244077"
+					id="G1372175598320"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244078"/>
+					<Reference name="ParamValue" IdRef="G1372175598321"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244080"
+				id="G1372175598323"
 				name="Date">
 				<ParamValue
-					id="G1372076244083"
+					id="G1372175598326"
 					name="date"
 				/>
 				<UserParam
-					id="G1372076244082"
+					id="G1372175598325"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244083"/>
+					<Reference name="ParamValue" IdRef="G1372175598326"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244085"
+				id="G1372175598328"
 				name="boolean">
 				<ParamValue
-					id="G1372076244088"
+					id="G1372175598331"
 					name="boolean"
 				/>
 				<UserParam
-					id="G1372076244087"
+					id="G1372175598330"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244088"/>
+					<Reference name="ParamValue" IdRef="G1372175598331"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244090"
+				id="G1372175598333"
 				name="Int">
 				<ParamValue
-					id="G1372076244093"
+					id="G1372175598336"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244092"
+					id="G1372175598335"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244093"/>
+					<Reference name="ParamValue" IdRef="G1372175598336"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244095"
+				id="G1372175598338"
 				name="Longtext">
 				<ParamValue
-					id="G1372076244098"
+					id="G1372175598341"
 					name="longtext"
 				/>
 				<UserParam
-					id="G1372076244097"
+					id="G1372175598340"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244098"/>
+					<Reference name="ParamValue" IdRef="G1372175598341"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244100"
+				id="G1372175598343"
 				name="Float">
 				<ParamValue
-					id="G1372076244103"
+					id="G1372175598346"
 					name="real"
 				/>
 				<UserParam
-					id="G1372076244102"
+					id="G1372175598345"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244103"/>
+					<Reference name="ParamValue" IdRef="G1372175598346"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244105"
+				id="G1372175598348"
 				name="Long">
 				<ParamValue
-					id="G1372076244108"
+					id="G1372175598351"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244107"
+					id="G1372175598350"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244108"/>
+					<Reference name="ParamValue" IdRef="G1372175598351"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244110"
+				id="G1372175598353"
 				name="text">
 				<ParamValue
-					id="G1372076244113"
+					id="G1372175598356"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244112"
+					id="G1372175598355"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244113"/>
+					<Reference name="ParamValue" IdRef="G1372175598356"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244115"
+				id="G1372175598358"
 				name="integer">
 				<ParamValue
-					id="G1372076244118"
+					id="G1372175598361"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244117"
+					id="G1372175598360"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244118"/>
+					<Reference name="ParamValue" IdRef="G1372175598361"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244120"
+				id="G1372175598363"
 				name="int">
 				<ParamValue
-					id="G1372076244123"
+					id="G1372175598366"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244122"
+					id="G1372175598365"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244123"/>
+					<Reference name="ParamValue" IdRef="G1372175598366"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244125"
+				id="G1372175598368"
 				name="Blob">
 				<ParamValue
-					id="G1372076244128"
+					id="G1372175598371"
 					name="blob"
 				/>
 				<UserParam
-					id="G1372076244127"
+					id="G1372175598370"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244128"/>
+					<Reference name="ParamValue" IdRef="G1372175598371"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244130"
+				id="G1372175598373"
 				name="Numeric">
 				<ParamValue
-					id="G1372076244133"
+					id="G1372175598376"
 					name="numeric"
 				/>
 				<UserParam
-					id="G1372076244132"
+					id="G1372175598375"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244133"/>
+					<Reference name="ParamValue" IdRef="G1372175598376"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244135"
+				id="G1372175598378"
 				name="DateMidnight">
 				<ParamValue
-					id="G1372076244138"
+					id="G1372175598381"
 					name="date"
 				/>
 				<UserParam
-					id="G1372076244137"
+					id="G1372175598380"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244138"/>
+					<Reference name="ParamValue" IdRef="G1372175598381"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244140"
+				id="G1372175598383"
 				name="Char">
 				<ParamValue
-					id="G1372076244143"
+					id="G1372175598386"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244142"
+					id="G1372175598385"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244143"/>
+					<Reference name="ParamValue" IdRef="G1372175598386"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244145"
+				id="G1372175598388"
 				name="double">
 				<ParamValue
-					id="G1372076244148"
+					id="G1372175598391"
 					name="double"
 				/>
 				<UserParam
-					id="G1372076244147"
+					id="G1372175598390"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244148"/>
+					<Reference name="ParamValue" IdRef="G1372175598391"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244150"
+				id="G1372175598393"
 				name="Boolean">
 				<ParamValue
-					id="G1372076244153"
+					id="G1372175598396"
 					name="boolean"
 				/>
 				<UserParam
-					id="G1372076244152"
+					id="G1372175598395"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244153"/>
+					<Reference name="ParamValue" IdRef="G1372175598396"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244155"
+				id="G1372175598398"
 				name="Character">
 				<ParamValue
-					id="G1372076244158"
+					id="G1372175598401"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244157"
+					id="G1372175598400"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244158"/>
+					<Reference name="ParamValue" IdRef="G1372175598401"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244160"
+				id="G1372175598403"
 				name="Timestamp">
 				<ParamValue
-					id="G1372076244163"
+					id="G1372175598406"
 					name="timestamp"
 				/>
 				<UserParam
-					id="G1372076244162"
+					id="G1372175598405"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244163"/>
+					<Reference name="ParamValue" IdRef="G1372175598406"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244165"
+				id="G1372175598408"
 				name="blob">
 				<ParamValue
-					id="G1372076244168"
+					id="G1372175598411"
 					name="blob"
 				/>
 				<UserParam
-					id="G1372076244167"
+					id="G1372175598410"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244168"/>
+					<Reference name="ParamValue" IdRef="G1372175598411"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244170"
+				id="G1372175598413"
 				name="Byte">
 				<ParamValue
-					id="G1372076244173"
+					id="G1372175598416"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244172"
+					id="G1372175598415"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244173"/>
+					<Reference name="ParamValue" IdRef="G1372175598416"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244175"
+				id="G1372175598418"
 				name="vartext">
 				<ParamValue
-					id="G1372076244178"
+					id="G1372175598421"
 					name="vartext"
 				/>
 				<UserParam
-					id="G1372076244177"
+					id="G1372175598420"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244178"/>
+					<Reference name="ParamValue" IdRef="G1372175598421"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244180"
+				id="G1372175598423"
 				name="Text">
 				<ParamValue
-					id="G1372076244183"
+					id="G1372175598426"
 					name="text"
 				/>
 				<UserParam
-					id="G1372076244182"
+					id="G1372175598425"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244183"/>
+					<Reference name="ParamValue" IdRef="G1372175598426"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244185"
+				id="G1372175598428"
 				name="Real">
 				<ParamValue
-					id="G1372076244188"
+					id="G1372175598431"
 					name="real"
 				/>
 				<UserParam
-					id="G1372076244187"
+					id="G1372175598430"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244188"/>
+					<Reference name="ParamValue" IdRef="G1372175598431"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244190"
+				id="G1372175598433"
 				name="Longint">
 				<ParamValue
-					id="G1372076244193"
+					id="G1372175598436"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244192"
+					id="G1372175598435"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244193"/>
+					<Reference name="ParamValue" IdRef="G1372175598436"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244195"
+				id="G1372175598438"
 				name="String">
 				<ParamValue
-					id="G1372076244198"
+					id="G1372175598441"
 					name="vartext"
 				/>
 				<UserParam
-					id="G1372076244197"
+					id="G1372175598440"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244198"/>
+					<Reference name="ParamValue" IdRef="G1372175598441"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244200"
+				id="G1372175598443"
 				name="string">
 				<ParamValue
-					id="G1372076244203"
+					id="G1372175598446"
 					name="vartext"
 				/>
 				<UserParam
-					id="G1372076244202"
+					id="G1372175598445"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244203"/>
+					<Reference name="ParamValue" IdRef="G1372175598446"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244205"
+				id="G1372175598448"
 				name="shortint">
 				<ParamValue
-					id="G1372076244208"
+					id="G1372175598451"
 					name="shortint"
 				/>
 				<UserParam
-					id="G1372076244207"
+					id="G1372175598450"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244208"/>
+					<Reference name="ParamValue" IdRef="G1372175598451"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244210"
+				id="G1372175598453"
 				name="bool">
 				<ParamValue
-					id="G1372076244213"
+					id="G1372175598456"
 					name="boolean"
 				/>
 				<UserParam
-					id="G1372076244212"
+					id="G1372175598455"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244213"/>
+					<Reference name="ParamValue" IdRef="G1372175598456"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244215"
+				id="G1372175598458"
 				name="Integer">
 				<ParamValue
-					id="G1372076244218"
+					id="G1372175598461"
 					name="longint"
 				/>
 				<UserParam
-					id="G1372076244217"
+					id="G1372175598460"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244218"/>
+					<Reference name="ParamValue" IdRef="G1372175598461"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244220"
+				id="G1372175598463"
 				name="Vartext">
 				<ParamValue
-					id="G1372076244223"
+					id="G1372175598466"
 					name="vartext"
 				/>
 				<UserParam
-					id="G1372076244222"
+					id="G1372175598465"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244223"/>
+					<Reference name="ParamValue" IdRef="G1372175598466"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 		</ParamCategory>
 	</ParamCategory>
 	<ParamCategory
-		id="G1372076244224"
+		id="G1372175598467"
 		name="Tagged Values">
 		<ParamCategory
-			id="G1372076244225"
+			id="G1372175598468"
 			name="Applications"
 		/>
 		<ParamCategory
-			id="G1372076244226"
+			id="G1372175598469"
 			name="Associations"
 		/>
 		<ParamCategory
-			id="G1372076244227"
+			id="G1372175598470"
 			name="Attributes"
 		/>
 		<ParamCategory
-			id="G1372076244228"
+			id="G1372175598471"
 			name="Classes"
 		/>
 		<ParamCategory
-			id="G1372076244229"
+			id="G1372175598472"
 			name="Converters"
 		/>
 		<ParamCategory
-			id="G1372076244230"
+			id="G1372175598473"
 			name="Dialogs"
 		/>
 		<ParamCategory
-			id="G1372076244231"
+			id="G1372175598474"
 			name="Domains"
 		/>
 		<ParamCategory
-			id="G1372076244232"
+			id="G1372175598475"
 			name="Enumerators"
 		/>
 		<ParamCategory
-			id="G1372076244233"
+			id="G1372175598476"
 			name="Enumerator Values"
 		/>
 		<ParamCategory
-			id="G1372076244234"
+			id="G1372175598477"
 			name="Generalizations"
 		/>
 		<ParamCategory
-			id="G1372076244235"
+			id="G1372175598478"
 			name="Groups"
 		/>
 		<ParamCategory
-			id="G1372076244236"
+			id="G1372175598479"
 			name="Interfaces"
 		/>
 		<ParamCategory
-			id="G1372076244237"
+			id="G1372175598480"
 			name="Methods"
 		/>
 		<ParamCategory
-			id="G1372076244238"
+			id="G1372175598481"
 			name="Realizations"
 		/>
 	</ParamCategory>
 	<ParamCategory
-		id="G1372076244239"
+		id="G1372175598482"
 		name="Domain Designer">
 		<ParamCategory
-			id="G1372076244242"
+			id="G1372175598485"
 			name="Java/Domain">
 			<ParamCategory
-				id="G1372076244243"
+				id="G1372175598486"
 				name="Template Parameters">
 				<Param
-					id="G1372076244245"
+					id="G1372175598488"
 					name="JavaDirectory">
 					<ParamValue
-						id="G1372076244248"
+						id="G1372175598491"
 						name="java"
 					/>
 					<UserParam
-						id="G1372076244247"
+						id="G1372175598490"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244248"/>
+						<Reference name="ParamValue" IdRef="G1372175598491"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244250"
+					id="G1372175598493"
 					name="GeneratedPackage">
 					<ParamValue
-						id="G1372076244253"
+						id="G1372175598496"
 						name="generated"
 					/>
 					<UserParam
-						id="G1372076244252"
+						id="G1372175598495"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244253"/>
+						<Reference name="ParamValue" IdRef="G1372175598496"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244255"
+					id="G1372175598498"
 					name="PersistentClass">
 					<ParamValue
-						id="G1372076244258"
+						id="G1372175598501"
 						name=""
 					/>
 					<UserParam
-						id="G1372076244257"
+						id="G1372175598500"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244258"/>
+						<Reference name="ParamValue" IdRef="G1372175598501"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244260"
+					id="G1372175598503"
 					name="PersistentInterfaces">
 					<ParamValue
-						id="G1372076244263"
+						id="G1372175598506"
 						name="java.io.Serializable"
 					/>
 					<UserParam
-						id="G1372076244262"
+						id="G1372175598505"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244263"/>
+						<Reference name="ParamValue" IdRef="G1372175598506"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244265"
+					id="G1372175598508"
 					name="CommentFile">
 					<ParamValue
-						id="G1372076244268"
+						id="G1372175598511"
 						name=""
 					/>
 					<UserParam
-						id="G1372076244267"
+						id="G1372175598510"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244268"/>
+						<Reference name="ParamValue" IdRef="G1372175598511"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244270"
+					id="G1372175598513"
 					name="GenerateLockflag">
 					<ParamValue
-						id="G1372076244273"
+						id="G1372175598516"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244272"
+						id="G1372175598515"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244273"/>
+						<Reference name="ParamValue" IdRef="G1372175598516"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244275"
+					id="G1372175598518"
 					name="GenerateSingleClass">
 					<ParamValue
-						id="G1372076244278"
+						id="G1372175598521"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244277"
+						id="G1372175598520"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244278"/>
+						<Reference name="ParamValue" IdRef="G1372175598521"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244280"
+					id="G1372175598523"
 					name="GenerateJavaStyleEnums">
 					<ParamValue
-						id="G1372076244283"
+						id="G1372175598526"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244282"
+						id="G1372175598525"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244283"/>
+						<Reference name="ParamValue" IdRef="G1372175598526"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244285"
+					id="G1372175598528"
 					name="UppercaseEnumValueNames">
 					<ParamValue
-						id="G1372076244288"
+						id="G1372175598531"
 						name="True"
 					/>
 					<UserParam
-						id="G1372076244287"
+						id="G1372175598530"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244288"/>
+						<Reference name="ParamValue" IdRef="G1372175598531"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244290"
+					id="G1372175598533"
 					name="GenerateIsAsBooleanPrefix">
 					<ParamValue
-						id="G1372076244293"
+						id="G1372175598536"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244292"
+						id="G1372175598535"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244293"/>
+						<Reference name="ParamValue" IdRef="G1372175598536"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244295"
+					id="G1372175598538"
 					name="GenerateAttributeInfo">
 					<ParamValue
-						id="G1372076244298"
+						id="G1372175598541"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244297"
+						id="G1372175598540"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244298"/>
+						<Reference name="ParamValue" IdRef="G1372175598541"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244300"
+					id="G1372175598543"
 					name="GeneratePublicSetGet">
 					<ParamValue
-						id="G1372076244303"
+						id="G1372175598546"
 						name="True"
 					/>
 					<UserParam
-						id="G1372076244302"
+						id="G1372175598545"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244303"/>
+						<Reference name="ParamValue" IdRef="G1372175598546"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244305"
+					id="G1372175598548"
 					name="GenerateClassNameString">
 					<ParamValue
-						id="G1372076244308"
+						id="G1372175598551"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244307"
+						id="G1372175598550"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244308"/>
+						<Reference name="ParamValue" IdRef="G1372175598551"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244310"
+					id="G1372175598553"
 					name="GenerateAttributeNameString">
 					<ParamValue
-						id="G1372076244313"
+						id="G1372175598556"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244312"
+						id="G1372175598555"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244313"/>
+						<Reference name="ParamValue" IdRef="G1372175598556"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244315"
+					id="G1372175598558"
 					name="GenerateGetStaticClassNameMethod">
 					<ParamValue
-						id="G1372076244318"
+						id="G1372175598561"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244317"
+						id="G1372175598560"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244318"/>
+						<Reference name="ParamValue" IdRef="G1372175598561"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244320"
+					id="G1372175598563"
 					name="TransientClass">
 					<ParamValue
-						id="G1372076244323"
+						id="G1372175598566"
 						name=""
 					/>
 					<UserParam
-						id="G1372076244322"
+						id="G1372175598565"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244323"/>
+						<Reference name="ParamValue" IdRef="G1372175598566"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244325"
+					id="G1372175598568"
 					name="TransientInterfaces">
 					<ParamValue
-						id="G1372076244328"
+						id="G1372175598571"
 						name=""
 					/>
 					<UserParam
-						id="G1372076244327"
+						id="G1372175598570"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244328"/>
+						<Reference name="ParamValue" IdRef="G1372175598571"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244330"
+					id="G1372175598573"
 					name="SerialVersionUID">
 					<ParamValue
-						id="G1372076244333"
+						id="G1372175598576"
 						name=""
 					/>
 					<UserParam
-						id="G1372076244332"
+						id="G1372175598575"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244333"/>
+						<Reference name="ParamValue" IdRef="G1372175598576"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 			</ParamCategory>
 			<Param
-				id="G1372076244335"
+				id="G1372175598578"
 				name="Suppress information messages">
 				<ParamValue
-					id="G1372076244338"
+					id="G1372175598581"
 					name="True"
 				/>
 				<UserParam
-					id="G1372076244337"
+					id="G1372175598580"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244338"/>
+					<Reference name="ParamValue" IdRef="G1372175598581"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244340"
+				id="G1372175598583"
 				name="Give warning for undefined parser variables">
 				<ParamValue
-					id="G1372076244343"
+					id="G1372175598586"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244342"
+					id="G1372175598585"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244343"/>
+					<Reference name="ParamValue" IdRef="G1372175598586"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244345"
+				id="G1372175598588"
 				name="Create full Generated tag">
 				<ParamValue
-					id="G1372076244348"
+					id="G1372175598591"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244347"
+					id="G1372175598590"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244348"/>
+					<Reference name="ParamValue" IdRef="G1372175598591"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244350"
+				id="G1372175598593"
 				name="Skip generation of .new files">
 				<ParamValue
-					id="G1372076244353"
+					id="G1372175598596"
 					name="True"
 				/>
 				<UserParam
-					id="G1372076244352"
+					id="G1372175598595"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244353"/>
+					<Reference name="ParamValue" IdRef="G1372175598596"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244355"
+				id="G1372175598598"
 				name="Destination is read only">
 				<ParamValue
-					id="G1372076244358"
+					id="G1372175598601"
 					name="Error"
 				/>
 				<UserParam
-					id="G1372076244357"
+					id="G1372175598600"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244358"/>
+					<Reference name="ParamValue" IdRef="G1372175598601"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244360"
+				id="G1372175598603"
 				name="Template file">
 				<ParamValue
-					id="G1372076244363"
+					id="G1372175598606"
 					name="C:/eclipse/plugins/no.esito.g9.gsn.core_1.3.3.v201306210727/targets/domain-java/ClassModel.ptm"
 				/>
 				<UserParam
-					id="G1372076244362"
+					id="G1372175598605"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244363"/>
+					<Reference name="ParamValue" IdRef="G1372175598606"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244365"
+				id="G1372175598608"
 				name="Target directory">
 				<ParamValue
-					id="G1372076244368"
+					id="G1372175598611"
 					name="C:/Users/ht/Course/Course_domain/src/main"
 				/>
 				<UserParam
-					id="G1372076244367"
+					id="G1372175598610"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244368"/>
+					<Reference name="ParamValue" IdRef="G1372175598611"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 		</ParamCategory>
 	</ParamCategory>
 	<ParamCategory
-		id="G1372076244240"
+		id="G1372175598483"
 		name="Dialog Designer">
 		<ParamCategory
-			id="G1372076244369"
+			id="G1372175598612"
 			name="Java/JFC">
 			<ParamCategory
-				id="G1372076244370"
+				id="G1372175598613"
 				name="Template Parameters">
 				<Param
-					id="G1372076244372"
+					id="G1372175598615"
 					name="Generate all resources">
 					<ParamValue
-						id="G1372076244375"
+						id="G1372175598618"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244374"
+						id="G1372175598617"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244375"/>
+						<Reference name="ParamValue" IdRef="G1372175598618"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244377"
+					id="G1372175598620"
 					name="DialogClassPackage">
 					<ParamValue
-						id="G1372076244380"
-						name="example.dialog"
+						id="G1372175598623"
+						name="no.course.dialog"
 					/>
 					<UserParam
-						id="G1372076244379"
+						id="G1372175598622"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244380"/>
+						<Reference name="ParamValue" IdRef="G1372175598623"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244382"
+					id="G1372175598625"
 					name="DialogFileDir">
 					<ParamValue
-						id="G1372076244385"
-						name="example/dialog"
+						id="G1372175598628"
+						name="no/course/dialog"
 					/>
 					<UserParam
-						id="G1372076244384"
+						id="G1372175598627"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244385"/>
+						<Reference name="ParamValue" IdRef="G1372175598628"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244387"
+					id="G1372175598630"
 					name="UseAccessorMethods">
 					<ParamValue
-						id="G1372076244390"
+						id="G1372175598633"
 						name="True"
 					/>
 					<UserParam
-						id="G1372076244389"
+						id="G1372175598632"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244390"/>
+						<Reference name="ParamValue" IdRef="G1372175598633"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244392"
+					id="G1372175598635"
 					name="GenerateIsAsBooleanPrefix">
 					<ParamValue
-						id="G1372076244395"
+						id="G1372175598638"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244394"
+						id="G1372175598637"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244395"/>
+						<Reference name="ParamValue" IdRef="G1372175598638"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244397"
+					id="G1372175598640"
 					name="GenerateDebug">
 					<ParamValue
-						id="G1372076244400"
+						id="G1372175598643"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244399"
+						id="G1372175598642"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244400"/>
+						<Reference name="ParamValue" IdRef="G1372175598643"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244402"
+					id="G1372175598645"
 					name="DialogConstObjectName">
 					<ParamValue
-						id="G1372076244405"
+						id="G1372175598648"
 						name="DialogObject"
 					/>
 					<UserParam
-						id="G1372076244404"
+						id="G1372175598647"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244405"/>
+						<Reference name="ParamValue" IdRef="G1372175598648"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244407"
+					id="G1372175598650"
 					name="DialogConstOSRoleName">
 					<ParamValue
-						id="G1372076244410"
+						id="G1372175598653"
 						name="OSRoleName"
 					/>
 					<UserParam
-						id="G1372076244409"
+						id="G1372175598652"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244410"/>
+						<Reference name="ParamValue" IdRef="G1372175598653"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244412"
+					id="G1372175598655"
 					name="DialogConstUppercase">
 					<ParamValue
-						id="G1372076244415"
+						id="G1372175598658"
 						name="True"
 					/>
 					<UserParam
-						id="G1372076244414"
+						id="G1372175598657"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244415"/>
+						<Reference name="ParamValue" IdRef="G1372175598658"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244417"
+					id="G1372175598660"
 					name="SkipSelectAfterSave">
 					<ParamValue
-						id="G1372076244420"
+						id="G1372175598663"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244419"
+						id="G1372175598662"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244420"/>
+						<Reference name="ParamValue" IdRef="G1372175598663"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244422"
+					id="G1372175598665"
 					name="SkipDialogSubclasses">
 					<ParamValue
-						id="G1372076244425"
+						id="G1372175598668"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244424"
+						id="G1372175598667"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244425"/>
+						<Reference name="ParamValue" IdRef="G1372175598668"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244427"
+					id="G1372175598670"
 					name="ApplicationName">
 					<ParamValue
-						id="G1372076244430"
+						id="G1372175598673"
 						name=""
 					/>
 					<UserParam
-						id="G1372076244429"
+						id="G1372175598672"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244430"/>
+						<Reference name="ParamValue" IdRef="G1372175598673"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 			</ParamCategory>
 			<Param
-				id="G1372076244432"
+				id="G1372175598675"
 				name="Suppress information messages">
 				<ParamValue
-					id="G1372076244435"
+					id="G1372175598678"
 					name="True"
 				/>
 				<UserParam
-					id="G1372076244434"
+					id="G1372175598677"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244435"/>
+					<Reference name="ParamValue" IdRef="G1372175598678"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244437"
+				id="G1372175598680"
 				name="Give warning for undefined parser variables">
 				<ParamValue
-					id="G1372076244440"
+					id="G1372175598683"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244439"
+					id="G1372175598682"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244440"/>
+					<Reference name="ParamValue" IdRef="G1372175598683"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244442"
+				id="G1372175598685"
 				name="Create full Generated tag">
 				<ParamValue
-					id="G1372076244445"
+					id="G1372175598688"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244444"
+					id="G1372175598687"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244445"/>
+					<Reference name="ParamValue" IdRef="G1372175598688"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244447"
+				id="G1372175598690"
 				name="Skip generation of .new files">
 				<ParamValue
-					id="G1372076244450"
+					id="G1372175598693"
 					name="True"
 				/>
 				<UserParam
-					id="G1372076244449"
+					id="G1372175598692"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244450"/>
+					<Reference name="ParamValue" IdRef="G1372175598693"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244452"
+				id="G1372175598695"
 				name="Destination is read only">
 				<ParamValue
-					id="G1372076244455"
+					id="G1372175598698"
 					name="Error"
 				/>
 				<UserParam
-					id="G1372076244454"
+					id="G1372175598697"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244455"/>
+					<Reference name="ParamValue" IdRef="G1372175598698"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244457"
+				id="G1372175598700"
 				name="Generate all resources">
 				<ParamValue
-					id="G1372076244460"
+					id="G1372175598703"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244459"
+					id="G1372175598702"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244460"/>
+					<Reference name="ParamValue" IdRef="G1372175598703"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244462"
+				id="G1372175598705"
 				name="Template directory">
 				<ParamValue
-					id="G1372076244465"
+					id="G1372175598708"
 					name="C:/eclipse/plugins/no.esito.g9.gsn.dialog_1.3.3.v201306210727/targets/client-jfc"
 				/>
 				<UserParam
-					id="G1372076244464"
+					id="G1372175598707"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244465"/>
+					<Reference name="ParamValue" IdRef="G1372175598708"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244467"
+				id="G1372175598710"
 				name="Target directory">
 				<ParamValue
-					id="G1372076244470"
+					id="G1372175598713"
 					name="C:/Users/ht/Course/Course_domain/src/main/java"
 				/>
 				<UserParam
-					id="G1372076244469"
+					id="G1372175598712"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244470"/>
+					<Reference name="ParamValue" IdRef="G1372175598713"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 		</ParamCategory>
 	</ParamCategory>
 	<ParamCategory
-		id="G1372076244241"
+		id="G1372175598484"
 		name="Service Designer">
 		<ParamCategory
-			id="G1372076244471"
+			id="G1372175598714"
 			name="ServiceSwing">
 			<ParamCategory
-				id="G1372076244472"
+				id="G1372175598715"
 				name="Template Parameters">
 				<Param
-					id="G1372076244474"
+					id="G1372175598717"
 					name="JavaDirectory">
 					<ParamValue
-						id="G1372076244477"
+						id="G1372175598720"
 						name="java"
 					/>
 					<UserParam
-						id="G1372076244476"
+						id="G1372175598719"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244477"/>
+						<Reference name="ParamValue" IdRef="G1372175598720"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244479"
+					id="G1372175598722"
 					name="ConfigDirectory">
 					<ParamValue
-						id="G1372076244482"
-						name="config"
+						id="G1372175598725"
+						name="resources"
 					/>
 					<UserParam
-						id="G1372076244481"
+						id="G1372175598724"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244482"/>
+						<Reference name="ParamValue" IdRef="G1372175598725"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244484"
+					id="G1372175598727"
 					name="GenerateOsManagerProperties">
 					<ParamValue
-						id="G1372076244487"
+						id="G1372175598730"
 						name="True"
 					/>
 					<UserParam
-						id="G1372076244486"
+						id="G1372175598729"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244487"/>
+						<Reference name="ParamValue" IdRef="G1372175598730"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244489"
+					id="G1372175598732"
 					name="GenerateOsMappingProperties">
 					<ParamValue
-						id="G1372076244492"
+						id="G1372175598735"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244491"
+						id="G1372175598734"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244492"/>
+						<Reference name="ParamValue" IdRef="G1372175598735"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244494"
+					id="G1372175598737"
 					name="ServicePackage">
 					<ParamValue
-						id="G1372076244497"
-						name="example.service"
+						id="G1372175598740"
+						name="no.course.service"
 					/>
 					<UserParam
-						id="G1372076244496"
+						id="G1372175598739"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244497"/>
+						<Reference name="ParamValue" IdRef="G1372175598740"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244499"
+					id="G1372175598742"
 					name="GeneratedPackage">
 					<ParamValue
-						id="G1372076244502"
+						id="G1372175598745"
 						name="generated"
 					/>
 					<UserParam
-						id="G1372076244501"
+						id="G1372175598744"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244502"/>
+						<Reference name="ParamValue" IdRef="G1372175598745"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244504"
+					id="G1372175598747"
 					name="SkipServiceSubclasses">
 					<ParamValue
-						id="G1372076244507"
+						id="G1372175598750"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244506"
+						id="G1372175598749"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244507"/>
+						<Reference name="ParamValue" IdRef="G1372175598750"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 				<Param
-					id="G1372076244509"
+					id="G1372175598752"
 					name="GenerateIsAsBooleanPrefix">
 					<ParamValue
-						id="G1372076244512"
+						id="G1372175598755"
 						name="False"
 					/>
 					<UserParam
-						id="G1372076244511"
+						id="G1372175598754"
 						name="Default">
-						<Reference name="ParamValue" IdRef="G1372076244512"/>
+						<Reference name="ParamValue" IdRef="G1372175598755"/>
 						<Reference name="User" IdRef="Default"/>
 					</UserParam>
 				</Param>
 			</ParamCategory>
 			<Param
-				id="G1372076244514"
+				id="G1372175598757"
 				name="Suppress information messages">
 				<ParamValue
-					id="G1372076244517"
+					id="G1372175598760"
 					name="True"
 				/>
 				<UserParam
-					id="G1372076244516"
+					id="G1372175598759"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244517"/>
+					<Reference name="ParamValue" IdRef="G1372175598760"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244519"
+				id="G1372175598762"
 				name="Give warning for undefined parser variables">
 				<ParamValue
-					id="G1372076244522"
+					id="G1372175598765"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244521"
+					id="G1372175598764"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244522"/>
+					<Reference name="ParamValue" IdRef="G1372175598765"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244524"
+				id="G1372175598767"
 				name="Create full Generated tag">
 				<ParamValue
-					id="G1372076244527"
+					id="G1372175598770"
 					name="False"
 				/>
 				<UserParam
-					id="G1372076244526"
+					id="G1372175598769"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244527"/>
+					<Reference name="ParamValue" IdRef="G1372175598770"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244529"
+				id="G1372175598772"
 				name="Skip generation of .new files">
 				<ParamValue
-					id="G1372076244532"
+					id="G1372175598775"
 					name="True"
 				/>
 				<UserParam
-					id="G1372076244531"
+					id="G1372175598774"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244532"/>
+					<Reference name="ParamValue" IdRef="G1372175598775"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244534"
+				id="G1372175598777"
 				name="Destination is read only">
 				<ParamValue
-					id="G1372076244537"
+					id="G1372175598780"
 					name="Error"
 				/>
 				<UserParam
-					id="G1372076244536"
+					id="G1372175598779"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244537"/>
+					<Reference name="ParamValue" IdRef="G1372175598780"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244539"
+				id="G1372175598782"
 				name="Template file">
 				<ParamValue
-					id="G1372076244542"
+					id="G1372175598785"
 					name="C:/eclipse/plugins/no.esito.g9.gsn.dialog_1.3.3.v201306210727/targets/service-java/Application.ptm"
 				/>
 				<UserParam
-					id="G1372076244541"
+					id="G1372175598784"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244542"/>
+					<Reference name="ParamValue" IdRef="G1372175598785"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>
 			<Param
-				id="G1372076244544"
+				id="G1372175598787"
 				name="Target directory">
 				<ParamValue
-					id="G1372076244547"
+					id="G1372175598790"
 					name="C:/Users/ht/Course/Course_domain/src/main"
 				/>
 				<UserParam
-					id="G1372076244546"
+					id="G1372175598789"
 					name="Default">
-					<Reference name="ParamValue" IdRef="G1372076244547"/>
+					<Reference name="ParamValue" IdRef="G1372175598790"/>
 					<Reference name="User" IdRef="Default"/>
 				</UserParam>
 			</Param>

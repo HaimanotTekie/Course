@@ -41,6 +41,48 @@
 			ExternalElement="False"
 			ExternallyUsed="False"
 			MaximumNumberOfInstances="0"
+			ObjectSelectorOID="G1372145902872"
+			PackageRefName="application/office"
+			WindowType="DocumentWindow"
+			id="{CD3606FD-1596-42d4-BB02-A3B4877B5BC0}"
+			name="Answer"
+		/>
+		<DialogModelRef
+			DialogIsLinkable="False"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			MaximumNumberOfInstances="0"
+			ObjectSelectorOID="G1372145902873"
+			PackageRefName="application/office"
+			WindowType="DocumentWindow"
+			id="{90B42956-8695-41e4-984A-1A7D5F312908}"
+			name="Assignment"
+		/>
+		<DialogModelRef
+			DialogIsLinkable="False"
+			MaximumNumberOfInstances="0"
+			ObjectSelectorOID="G1372076193376"
+			PackageRefName=""
+			WindowType="DocumentWindow"
+			id="G1372157474761"
+			name="ChooseStudents"
+		/>
+		<DialogModelRef
+			DialogIsLinkable="False"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			MaximumNumberOfInstances="0"
+			ObjectSelectorOID="G1372145902874"
+			PackageRefName="application/office"
+			WindowType="DocumentWindow"
+			id="{E193F383-364F-4af2-900B-6CBD7D5CC789}"
+			name="Course"
+		/>
+		<DialogModelRef
+			DialogIsLinkable="False"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			MaximumNumberOfInstances="0"
 			ObjectSelectorOID="G1372076193375"
 			PackageRefName="application/office"
 			WindowType="ApplicationWindow"
@@ -72,6 +114,24 @@
 			PackageRefName="application/office"
 			id="G1372076193376"
 			name="Student_os"
+		/>
+		<ObjectSelectionRef
+			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/Answer_os.gosx"
+			PackageRefName="application/office"
+			id="G1372145902872"
+			name="Answer_os"
+		/>
+		<ObjectSelectionRef
+			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/Course_os.gosx"
+			PackageRefName="application/office"
+			id="G1372145902874"
+			name="Course_os"
+		/>
+		<ObjectSelectionRef
+			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/Assignment_os.gosx"
+			PackageRefName="application/office"
+			id="G1372145902873"
+			name="Assignment_os"
 		/>
 	</ObjectSelections>
 	<DatabaseMappings

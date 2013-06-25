@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <DialogModelRoot
 	CaseSensitive="True"
-	DesignProfileRefId="G1284468432457"
-	DesignProfileRefName="Java/ICEfaces"
+	DesignProfileRefId="SN00002"
+	DesignProfileRefName="Java/JFC"
 	DialogTitle=""
 	DialogType="ApplicationWindow"
 	ExternallyUsed="False"
@@ -46,8 +46,46 @@
 				ShownInitially="True"
 				Title="File"
 				id="G1372076193482"
-				name="FileMenu"
-			/>
+				name="FileMenu">
+				<Menu
+					MenuType="User"
+					Title="Course"
+					id="G1372157473492"
+					name="Course">
+					<MenuItem
+						Title="AddNewCourse"
+						id="G1372157473493"
+						name="AddNewCourse">
+						<Event
+							TriggerType="Selected"
+							id="G1372157474124"
+							name="Selected">
+							<Reference name="Method" IdRef="G1372157474125"/>
+						</Event>
+					</MenuItem>
+					<MenuItem
+						Title="AddStudents"
+						id="G1372157474756"
+						name="AddStudents">
+						<Event
+							TriggerType="Selected"
+							id="G1372157474757"
+							name="Selected"
+						/>
+					</MenuItem>
+				</Menu>
+				<MenuItem
+					Title="Exit"
+					id="G1372157474758"
+					name="Exit">
+					<Event
+						TriggerType="Selected"
+						id="G1372157474759"
+						name="Selected">
+						<Reference name="Method" IdRef="G1372076193432"/>
+					</Event>
+				</MenuItem>
+			</Menu>
 			<Menu
 				EnabledInitially="True"
 				MenuType="Edit"
@@ -98,4 +136,16 @@
 		</Event>
 		<Reference name="TabSequence" IdRef=""/>
 	</WindowBlock>
+	<DlgMethod
+		id="G1372157474125"
+		name="openCourse">
+		<Action
+			ActionType="Open"
+			ModelType="WorkspaceModel"
+			TargetId="{E193F383-364F-4af2-900B-6CBD7D5CC789}"
+			TargetName="Course"
+			id="G1372157474126"
+			name="Open"
+		/>
+	</DlgMethod>
 </DialogModelRoot>

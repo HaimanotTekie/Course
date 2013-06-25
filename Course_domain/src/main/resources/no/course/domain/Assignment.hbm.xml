@@ -5,16 +5,22 @@
 
 	<class name="Assignment" table="Assignment">
 
+		<id name="id" column="id" type="integer">
+			<generator class="native">
+			</generator> 
+		</id>
+
 			<property name="assignmentText" column="assignmentText">
 				<type name="string">
 				</type>
 			</property>
 
-			<property name="id" column="id">
-				<type name="gva_int">
-					<param name="default">0</param>
-				</type>
-			</property>
+		<set name="answers" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="assignment_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.Answer"/>
+		</set>
 
 	</class>
 

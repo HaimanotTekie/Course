@@ -7,7 +7,7 @@
 	ModelVersion="9.1.4"
 	CaseSensitive="True"
 	ModelFilename="C:/Users/ht/Course/Course_UML.eap"
-	AllPackages="Model/Domain Model,Model/Domain Model::application,Model/Domain Model::no::course::domain,Model/Domain Model::no::course::service,Model/Domain Model::no::course,Model/Domain Model::no,Model/Domain Model::no::genova::support,Model/Domain Model::no::genova,Model/Domain Model::application::office"
+	AllPackages="Model/Domain Model::application::office,Model/Domain Model::no::course,Model/Domain Model::application,Model/Domain Model::no,Model/Domain Model,Model/Domain Model::no::genova::support,Model/Domain Model::no::course::domain,Model/Domain Model::no::course::service,Model/Domain Model::no::genova"
 	SynchronizedPackages="Model/Domain Model::application,Model/Domain Model::no::course,Model/Domain Model::no::course::domain,Model/Domain Model::no::genova,Model/Domain Model,Model/Domain Model::no,Model/Domain Model::application::office,Model/Domain Model::no::course::service,Model/Domain Model::no::genova::support"
 >
 	<ApplicationModelRef name="ClientApplication" id="G1336567970313"
@@ -35,6 +35,39 @@
 	<ObjectSelections>
 	</ObjectSelections>
 	<DialogModels>
+		<DialogModelRef name="Answer" id="{CD3606FD-1596-42d4-BB02-A3B4877B5BC0}"
+			Description=""
+			PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+			PackageRefName="application/office"
+			DialogType="Dialog"
+			ComponentPackage="application/office"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			ModelFilename=""
+		>
+		</DialogModelRef>
+		<DialogModelRef name="Assignment" id="{90B42956-8695-41e4-984A-1A7D5F312908}"
+			Description=""
+			PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+			PackageRefName="application/office"
+			DialogType="Dialog"
+			ComponentPackage="application/office"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			ModelFilename=""
+		>
+		</DialogModelRef>
+		<DialogModelRef name="Course" id="{E193F383-364F-4af2-900B-6CBD7D5CC789}"
+			Description=""
+			PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
+			PackageRefName="application/office"
+			DialogType="Dialog"
+			ComponentPackage="application/office"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			ModelFilename=""
+		>
+		</DialogModelRef>
 		<DialogModelRef name="CourseApp" id="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"
 			Description=""
 			PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"

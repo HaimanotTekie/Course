@@ -1,0 +1,20 @@
+###### Hibernate connection properties for MySQL
+###### Generated with Genova.
+
+### For use with JDBC connections
+hibernate.connection.username=admin
+hibernate.connection.password=root
+hibernate.connection.pool_size=1
+hibernate.connection.driver_class=com.mysql.jdbc.Driver
+hibernate.connection.url=jdbc:mysql://localhost:3306/coursedb
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+### For use with application server Datasource connections
+# hibernate.connection.datasource=
+# hibernate.transaction.manager_lookup_class=
+# hibernate.jndi.url=
+# hibernate.jndi.class=
+
+### Other properties
+# hibernate.show_sql=true
+# hibernate.format_sql=true

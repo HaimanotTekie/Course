@@ -1,0 +1,2146 @@
+// ---------------------------------------------------------------------
+// Generated with Genova.
+// ---------------------------------------------------------------------
+package no.course.dialog.course;
+
+import javax.swing.border.*;
+import javax.swing.event.*;
+import javax.swing.text.*;
+import javax.swing.table.*;
+import javax.swing.tree.*;
+
+import java.awt.AWTEvent;
+import java.awt.event.*;
+import java.util.*;
+
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.Insets;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.BorderFactory;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultCellEditor;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JComponent;
+import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JPopupMenu;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
+import javax.swing.JSlider;
+import javax.swing.JSeparator;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.JToolBar.Separator;
+import javax.swing.JTree;
+import javax.swing.JDialog;
+import javax.swing.KeyStroke;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.Border;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.ListSelectionModel;
+import javax.swing.DefaultListSelectionModel;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
+import java.util.HashMap;
+
+import no.genova.client.component.GenovaTextField;
+import no.genova.client.component.GenovaPasswordField;
+import no.genova.client.component.GenovaTextArea;
+import no.genova.client.component.GenovaCheckBox;
+import no.genova.client.component.GenovaButtonGroup;
+import no.genova.client.event.GenovaValueChangedEvent;
+import no.genova.client.event.GenovaValueChangedListener;
+import no.genova.client.component.GenovaButton;
+import no.genova.client.component.GenovaRadioButton;
+import no.genova.client.component.GenovaComboBox;
+import no.genova.client.component.menu.GenovaEditMenu;
+import no.genova.client.component.menu.GenovaFileMenu;
+import no.genova.client.component.menu.GenovaHelpMenu;
+import no.genova.client.component.menu.GenovaMenu;
+import no.genova.client.component.menu.GenovaMenuItem;
+import no.genova.client.component.menu.GenovaMenuBar;
+import no.genova.client.component.menu.GenovaViewMenu;
+import no.genova.client.component.menu.GenovaWindowMenu;
+import no.genova.client.component.GenovaToolBar;
+import no.genova.client.component.GenovaDialogBox;
+import no.genova.client.component.GenovaTabPaneManager;
+
+
+/*
+ * The following imports are known to be used. To avoid potentially
+ * errors due to lack of imports no.genova.client.support.*; 
+ * is added last.
+ */ 
+import no.genova.client.support.GenovaDialogFrame;
+import no.genova.client.support.RepositoryProxy;
+import no.genova.client.support.BottomWindow;
+import no.genova.client.support.GenovaTable;
+import no.genova.client.support.ToolTipHeader;
+import no.genova.client.support.RowHeaderRenderer;
+import no.genova.client.support.ListblockLine;
+import no.genova.client.support.JComponentCellEditor;
+import no.genova.client.support.ComponentLink;
+import no.genova.client.support.GenovaRender;
+import no.genova.client.event.GenovaDroppedDownEvent;
+import no.genova.client.event.GenovaEvent;
+import no.genova.client.event.GenovaEventHolder;
+import no.genova.client.event.GenovaKeyEventHolder;
+import no.genova.client.event.GenovaActionEventHolder;
+import no.genova.client.event.GenovaWindowEventHolder;
+import no.genova.client.event.GenovaFocusEventHolder;
+import no.genova.client.event.GenovaComponentEventHolder;
+import no.genova.client.event.GenovaListSelectionEventHolder;
+import no.genova.client.event.GenovaHeaderClickedEventHolder;
+import no.genova.client.event.GenovaMouseEventHolder;
+import no.genova.client.event.GenovaWindowEvent;
+import no.genova.client.event.GenovaWindowAdapter;
+import no.genova.client.event.GenovaItemEventHolder;
+import no.genova.client.event.GenovaSelectionListener;
+import no.genova.client.event.GenovaSelectedEvent;
+import no.genova.client.event.GenovaVetoableSelectionListener;
+import no.genova.client.event.GenovaVetoableSelectionEvent;
+import no.genova.domain.GenovaEnums;
+import no.genova.message.Message;
+import no.genova.message.CRuntimeMsg;
+import no.genova.message.MessageFactory;
+import no.genova.message.MessageSystem;
+import no.genova.domain.DomainUtil;
+import no.genova.client.support.*;
+import no.genova.exception.GenovaClientException;
+
+/**
+ * The following imports are known to be used. To avoid potentially
+ * errors due to lack of imports no.genova.support.*; 
+ * is added last.
+ */ 
+import no.genova.exception.GeneralException;
+import no.genova.exception.DBException;
+import no.genova.support.TypeTool;
+import no.genova.support.*;
+
+// Import of enumerations. 
+
+// Other imports.
+import no.course.domain.Course;
+
+
+/**
+ * Public class interpreting the generated view part of
+ * Course. This class is generated and should not be edited
+ * in. If any changes are needed, do them in CourseView.
+ */ 
+@SuppressWarnings("all")
+public abstract class CourseDefaultView extends GenovaDialogFrame implements BottomWindow {
+    
+    boolean selectItemOK = true;
+    
+    CourseDefaultController controller;
+    GenovaEnums applicationEnums;
+    
+    FocusProc focusProc = new FocusProc();
+    ComponentProc componentProc = new ComponentProc();
+    ActionProc actionProc = new ActionProc();
+    WindowProc windowProc = new WindowProc();
+    GenovaWindowProc genovaWindowProc = new GenovaWindowProc();
+    KeyProc keyProc = new KeyProc();
+    GenovaSelectionListener listSelectionProc = new ListSelectionProc();
+    MouseProc mouseProc = new MouseProc();
+    ItemProc itemProc = new ItemProc();
+    ChangeProc changeProc = new ChangeProc();
+    Vector toolBarElements = new Vector();
+    JInternalFrame theCourseInternalFrame = this;
+    
+    int totalBlockAllEvents = 0;
+    int noFocusException = 0;
+    final int HorizontalAlign_right = SwingConstants.RIGHT;
+    final int HorizontalAlign_RIGHT = SwingConstants.RIGHT;
+    final int HorizontalAlign_left = SwingConstants.LEFT;
+    final int HorizontalAlign_LEFT = SwingConstants.LEFT;
+    final int HorizontalAlign_center = SwingConstants.CENTER;
+    final int HorizontalAlign_CENTER = SwingConstants.CENTER;
+    
+    
+    /* Her kommer generert kode fra WindowBlock:Declaration*/
+    
+    JPanel Window = new JPanel();
+    JPanel Window_outer = new JPanel();
+    int blockWindowEventsWindow = 0;
+    JPanel theOutmostFrame = Window_outer;
+    private JDialog asDialog;
+
+
+    /**
+     * Positions the dialog window
+     */
+    private void positionWindow() {
+        int xpos = 0;
+        int ypos = 0;
+        if (xpos != 0 || ypos != 0) {
+            setLocation(xpos, ypos);
+        }
+    }
+
+
+    /**
+     * Returns <code>true</code> if this is a dialog box.
+     * @return a boolean value, <code>true</code> if this is a dialog box.
+     */
+    protected boolean isDialog() {
+        return false;
+    }
+    /**
+     * Gets a JDialog representation of this dialog.
+     * @return a JDialog representation of this dialog.
+     */
+    protected JDialog getDialog() {
+        if (asDialog == null) {
+            asDialog = new GenovaDialogBox(controller.application.getApplicationWindow());
+            asDialog.setTitle(getTitle());
+            ((GenovaDialogBox) asDialog).setController(getController());
+            asDialog.setContentPane(getContentPane());
+            cleanUpMnemonicButtons();
+            JButton defaultButton = getRootPane().getDefaultButton();
+            if (defaultButton != null) {
+                getRootPane().setDefaultButton(null);
+                asDialog.getRootPane().setDefaultButton(defaultButton);
+            }
+            asDialog.setSize(getSize());
+            asDialog.setModal(isModal());
+            asDialog.setResizable(false);
+            asDialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+            asDialog.addWindowListener(new WindowProc());
+            ((GenovaDialogBox) asDialog).copyActions(this);
+            asDialog.addHierarchyListener(new HierarchyListener() {
+
+                public void hierarchyChanged(HierarchyEvent e) {
+                    if (HierarchyEvent.SHOWING_CHANGED == (e
+                            .getChangeFlags() & HierarchyEvent.SHOWING_CHANGED)) {
+                        JDialog dialog = (JDialog) e.getSource();
+                        if (!dialog.isShowing()) {
+                            fireGenovaWindowEvent(GenovaWindowEvent
+                                    .GENOVA_DIALOG_HIDDEN);
+                        }
+                    }
+                }
+            });
+            int xpos = 0;
+            int ypos = 0;
+            if (xpos == 0 && ypos == 0) {
+                controller.setDialogLocation();
+            } else {
+                asDialog.setLocation(xpos, ypos);
+            }                        
+        }
+
+        return asDialog;
+    }
+    
+    /* Her kommer generert kode fra Menu:Declaration*/
+    
+    GenovaToolBar Toolbar = new GenovaToolBar(this, toolBarElements);
+    
+    /** The CourseClass simple block */
+    protected JPanel CourseClass = new JPanel();
+    
+    /** The CourseData simple block */
+    protected JPanel CourseData = new JPanel();
+    
+    /** The CourseCodeLabel label */
+    protected JLabel CourseCodeLabelLabel = new JLabel("Coursecode");
+    GenovaTextField Course_code = new GenovaTextField("");
+    final Object objectVersionOfCoursecode = Course_code;
+    String oldValueCoursecode;
+    
+    /** The CourseNameLabel label */
+    protected JLabel CourseNameLabelLabel = new JLabel("name");
+    GenovaTextField Course_name = new GenovaTextField("");
+    final Object objectVersionOfCoursename = Course_name;
+    String oldValueCoursename;
+    
+    /** The CourseIsActiveLabel label */
+    protected JLabel CourseIsActiveLabelLabel = new JLabel("");
+    
+    /** The isActive check box */
+    protected GenovaCheckBox Course_isActive = new GenovaCheckBox("");
+    final Object objectVersionOfCourseisActive = Course_isActive;
+    final int numberOfCharsCourseisActive = 0;
+    
+    int blockSelectedionEventCourseisActive = 0;
+    
+    void countUpBlocKSelectionEventCourseisActive() {
+        blockSelectedionEventCourseisActive++;
+    }
+    void countDownBlocKSelectionEventCourseisActive() {
+        blockSelectedionEventCourseisActive--;
+    }
+    
+    String oldValueCourseisActive;
+    
+    /** The CourseButton simple block */
+    protected JPanel CourseButton = new JPanel();
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseClearButton;
+    
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseSaveButton;
+    
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseDeleteButton;
+    
+    
+    /* Her kommer generert kode fra WindowBlock:Declaration*/
+    
+    JPanel Window2 = new JPanel();
+    JPanel Window2_outer = new JPanel();
+    int blockWindowEventsWindow2 = 0;
+    JPanel theOutmostFrame = Window2_outer;
+    private JDialog asDialog;
+
+
+    /**
+     * Positions the dialog window
+     */
+    private void positionWindow() {
+        int xpos = 0;
+        int ypos = 0;
+        if (xpos != 0 || ypos != 0) {
+            setLocation(xpos, ypos);
+        }
+    }
+
+
+    /**
+     * Returns <code>true</code> if this is a dialog box.
+     * @return a boolean value, <code>true</code> if this is a dialog box.
+     */
+    protected boolean isDialog() {
+        return false;
+    }
+    /**
+     * Gets a JDialog representation of this dialog.
+     * @return a JDialog representation of this dialog.
+     */
+    protected JDialog getDialog() {
+        if (asDialog == null) {
+            asDialog = new GenovaDialogBox(controller.application.getApplicationWindow());
+            asDialog.setTitle(getTitle());
+            ((GenovaDialogBox) asDialog).setController(getController());
+            asDialog.setContentPane(getContentPane());
+            cleanUpMnemonicButtons();
+            JButton defaultButton = getRootPane().getDefaultButton();
+            if (defaultButton != null) {
+                getRootPane().setDefaultButton(null);
+                asDialog.getRootPane().setDefaultButton(defaultButton);
+            }
+            asDialog.setSize(getSize());
+            asDialog.setModal(isModal());
+            asDialog.setResizable(false);
+            asDialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+            asDialog.addWindowListener(new WindowProc());
+            ((GenovaDialogBox) asDialog).copyActions(this);
+            asDialog.addHierarchyListener(new HierarchyListener() {
+
+                public void hierarchyChanged(HierarchyEvent e) {
+                    if (HierarchyEvent.SHOWING_CHANGED == (e
+                            .getChangeFlags() & HierarchyEvent.SHOWING_CHANGED)) {
+                        JDialog dialog = (JDialog) e.getSource();
+                        if (!dialog.isShowing()) {
+                            fireGenovaWindowEvent(GenovaWindowEvent
+                                    .GENOVA_DIALOG_HIDDEN);
+                        }
+                    }
+                }
+            });
+            int xpos = 0;
+            int ypos = 0;
+            if (xpos == 0 && ypos == 0) {
+                controller.setDialogLocation();
+            } else {
+                asDialog.setLocation(xpos, ypos);
+            }                        
+        }
+
+        return asDialog;
+    }
+    
+    /* Her kommer generert kode fra Menu:Declaration*/
+    
+    GenovaToolBar Toolbar2 = new GenovaToolBar(this, toolBarElements);
+    
+    /** The CourseClass2 simple block */
+    protected JPanel CourseClass2 = new JPanel();
+    
+    /** The CourseData2 simple block */
+    protected JPanel CourseData2 = new JPanel();
+    
+    /** The CourseButton2 simple block */
+    protected JPanel CourseButton2 = new JPanel();
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseClearButton2;
+    
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseSaveButton2;
+    
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseDeleteButton2;
+    
+    
+    /* Her kommer generert kode fra WindowBlock:Declaration*/
+    
+    JPanel Window3 = new JPanel();
+    JPanel Window3_outer = new JPanel();
+    int blockWindowEventsWindow3 = 0;
+    JPanel theOutmostFrame = Window3_outer;
+    private JDialog asDialog;
+
+
+    /**
+     * Positions the dialog window
+     */
+    private void positionWindow() {
+        int xpos = 0;
+        int ypos = 0;
+        if (xpos != 0 || ypos != 0) {
+            setLocation(xpos, ypos);
+        }
+    }
+
+
+    /**
+     * Returns <code>true</code> if this is a dialog box.
+     * @return a boolean value, <code>true</code> if this is a dialog box.
+     */
+    protected boolean isDialog() {
+        return false;
+    }
+    /**
+     * Gets a JDialog representation of this dialog.
+     * @return a JDialog representation of this dialog.
+     */
+    protected JDialog getDialog() {
+        if (asDialog == null) {
+            asDialog = new GenovaDialogBox(controller.application.getApplicationWindow());
+            asDialog.setTitle(getTitle());
+            ((GenovaDialogBox) asDialog).setController(getController());
+            asDialog.setContentPane(getContentPane());
+            cleanUpMnemonicButtons();
+            JButton defaultButton = getRootPane().getDefaultButton();
+            if (defaultButton != null) {
+                getRootPane().setDefaultButton(null);
+                asDialog.getRootPane().setDefaultButton(defaultButton);
+            }
+            asDialog.setSize(getSize());
+            asDialog.setModal(isModal());
+            asDialog.setResizable(false);
+            asDialog.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+            asDialog.addWindowListener(new WindowProc());
+            ((GenovaDialogBox) asDialog).copyActions(this);
+            asDialog.addHierarchyListener(new HierarchyListener() {
+
+                public void hierarchyChanged(HierarchyEvent e) {
+                    if (HierarchyEvent.SHOWING_CHANGED == (e
+                            .getChangeFlags() & HierarchyEvent.SHOWING_CHANGED)) {
+                        JDialog dialog = (JDialog) e.getSource();
+                        if (!dialog.isShowing()) {
+                            fireGenovaWindowEvent(GenovaWindowEvent
+                                    .GENOVA_DIALOG_HIDDEN);
+                        }
+                    }
+                }
+            });
+            int xpos = 0;
+            int ypos = 0;
+            if (xpos == 0 && ypos == 0) {
+                controller.setDialogLocation();
+            } else {
+                asDialog.setLocation(xpos, ypos);
+            }                        
+        }
+
+        return asDialog;
+    }
+    
+    /* Her kommer generert kode fra Menu:Declaration*/
+    
+    GenovaToolBar Toolbar3 = new GenovaToolBar(this, toolBarElements);
+    
+    /** The CourseClass3 simple block */
+    protected JPanel CourseClass3 = new JPanel();
+    
+    /** The CourseData3 simple block */
+    protected JPanel CourseData3 = new JPanel();
+    
+    /** The CourseButton3 simple block */
+    protected JPanel CourseButton3 = new JPanel();
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseClearButton3;
+    
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseSaveButton3;
+    
+    
+    /* Her kommer generert kode for Button:Declaration*/
+    
+    JButton CourseDeleteButton3;
+    
+    
+    /** If you want to ovveride the close button, you must
+     * setDestroyOnClose to 'true'. Then you must perform your own
+     * destructment of the window in a "WM Close" event in
+     * Genova. In it, use controller.disposeDialog() to remove the
+     * window. 
+     * @param f if <code>true</code> dialog is disposed on close.
+     */
+     public void setDestroyOnClose(boolean f) {
+        setDefaultCloseOperation(f ? JInternalFrame.DISPOSE_ON_CLOSE:JInternalFrame.DO_NOTHING_ON_CLOSE);
+     }
+     
+     public GenovaDialogController getController() {
+        return (GenovaDialogController) controller;
+     }
+   /**
+     * Empty method. Override if needed.
+     * 
+     * @param pane the scroll pane
+     */
+    public void modifyScrollPane(JScrollPane pane) {/*EMPTY override if needed */}
+    /**
+     * Here we can generate code which don't belong anywhere due to missing
+     * sections or whatever. It will not be called by any method. 
+     * @deprecated
+     */
+    void trashDepartment() {
+        modifyKeyCode(3);
+    }
+    public boolean isModal() {
+        return controller.isModal();
+    }
+    /**
+     * @param key the key to get the mnemonic for
+     * @return integer representing the specified key.
+     * @deprecated
+     */
+    int translateMemonic(String key) {
+        String msgID = null;
+        Exception ex = null;
+        String upCase = key.toUpperCase();
+        try {
+            Field f = KeyEvent.class.getField("VK_"+upCase);
+            return f.getInt(KeyEvent.class);
+        } catch (SecurityException e) {
+            ex = e;
+        } catch (NoSuchFieldException e) {
+            ex = e;
+        } catch (IllegalArgumentException e) {
+            ex = e;
+        } catch (IllegalAccessException e) {
+            ex = e;
+        } finally {
+            if (ex != null) {
+                msgID = CRuntimeMsg.CF_UNABLE_TO_ACCESS_FIELD_OR_METHOD;
+                Object[] msgArgs = {this.getClass(), "VK_"+upCase, KeyEvent.class, ex.getMessage()};
+                Message msg = MessageSystem.getMessageFactory().getMessage(msgID, msgArgs);
+                MessageSystem.getMessageDispatcher(MessageSystem.NO_INTERACTION).dispatch(msg);
+            }
+        }            
+        return -1;
+    }
+    /**
+     * Initialize dialog components, set up initial application context.
+     * @param controller the dialog controller
+     * @param applicationEnums the application enumerators.
+     */
+    public CourseDefaultView(final CourseDefaultController controller, GenovaEnums applicationEnums) {
+        super("", true, true, true, true);
+        super("", true, true, true, true);
+        super("", true, true, true, true);
+        this.controller = controller;
+        this.applicationEnums = applicationEnums;
+        positionWindow();
+    }
+    
+    /**
+     * Internal use.
+     * Inits the dialog. 
+     */
+    public void init() {        
+        totalBlockAllEvents++;
+        
+        /* Her kommer generert kode fra WindowBlock:SetupDialogPane*/
+        
+        setTitle("Course");
+        getContentPane().add("Center",Window_outer);
+        setFrameIcon(RepositoryProxy.getImageField("DefaultIcon"));
+        
+        /* Her kommer generert kode fra WindowBlock:SetupDialogPane*/
+        
+        setTitle("Course");
+        getContentPane().add("Center",Window2_outer);
+        setFrameIcon(RepositoryProxy.getImageField("DefaultIcon"));
+        
+        /* Her kommer generert kode fra WindowBlock:SetupDialogPane*/
+        
+        setTitle("Course");
+        getContentPane().add("Center",Window3_outer);
+        setFrameIcon(RepositoryProxy.getImageField("DefaultIcon"));
+        initOuterPanel();
+        initNameComponentMappings();
+        initFocusActions();
+        pack();
+        getRootPane().putClientProperty("defeatSystemEventQueueCheck", Boolean.TRUE);
+        controller.application.commonViewStartup(this, controller);
+        totalBlockAllEvents--;
+    }
+
+
+    private void initNameComponentMappings() {
+        nameToComponent.put("CourseClass", CourseClass);
+        componentToName.put(CourseClass, "CourseClass");
+        nameToComponent.put("CourseData", CourseData);
+        componentToName.put(CourseData, "CourseData");
+        nameToComponent.put("CourseCodeLabel", CourseCodeLabelLabel);
+        componentToName.put(CourseCodeLabelLabel, "CourseCodeLabel");
+        nameToComponent.put("Course.code", Course_code);
+        componentToName.put(Course_code, "Course.code");
+        nameToComponent.put("CourseNameLabel", CourseNameLabelLabel);
+        componentToName.put(CourseNameLabelLabel, "CourseNameLabel");
+        nameToComponent.put("Course.name", Course_name);
+        componentToName.put(Course_name, "Course.name");
+        nameToComponent.put("CourseIsActiveLabel", CourseIsActiveLabelLabel);
+        componentToName.put(CourseIsActiveLabelLabel, "CourseIsActiveLabel");
+        nameToComponent.put("Course.isActive", Course_isActive);
+        componentToName.put(Course_isActive, "Course.isActive");
+        nameToComponent.put("CourseButton", CourseButton);
+        componentToName.put(CourseButton, "CourseButton");
+        nameToComponent.put("CourseClearButton", CourseClearButton);
+        componentToName.put(CourseClearButton, "CourseClearButton");
+        nameToComponent.put("CourseSaveButton", CourseSaveButton);
+        componentToName.put(CourseSaveButton, "CourseSaveButton");
+        nameToComponent.put("CourseDeleteButton", CourseDeleteButton);
+        componentToName.put(CourseDeleteButton, "CourseDeleteButton");
+        nameToComponent.put("CourseClass2", CourseClass2);
+        componentToName.put(CourseClass2, "CourseClass2");
+        nameToComponent.put("CourseData2", CourseData2);
+        componentToName.put(CourseData2, "CourseData2");
+        nameToComponent.put("CourseButton2", CourseButton2);
+        componentToName.put(CourseButton2, "CourseButton2");
+        nameToComponent.put("CourseClearButton2", CourseClearButton2);
+        componentToName.put(CourseClearButton2, "CourseClearButton2");
+        nameToComponent.put("CourseSaveButton2", CourseSaveButton2);
+        componentToName.put(CourseSaveButton2, "CourseSaveButton2");
+        nameToComponent.put("CourseDeleteButton2", CourseDeleteButton2);
+        componentToName.put(CourseDeleteButton2, "CourseDeleteButton2");
+        nameToComponent.put("CourseClass3", CourseClass3);
+        componentToName.put(CourseClass3, "CourseClass3");
+        nameToComponent.put("CourseData3", CourseData3);
+        componentToName.put(CourseData3, "CourseData3");
+        nameToComponent.put("CourseButton3", CourseButton3);
+        componentToName.put(CourseButton3, "CourseButton3");
+        nameToComponent.put("CourseClearButton3", CourseClearButton3);
+        componentToName.put(CourseClearButton3, "CourseClearButton3");
+        nameToComponent.put("CourseSaveButton3", CourseSaveButton3);
+        componentToName.put(CourseSaveButton3, "CourseSaveButton3");
+        nameToComponent.put("CourseDeleteButton3", CourseDeleteButton3);
+        componentToName.put(CourseDeleteButton3, "CourseDeleteButton3");
+    }
+    private void initFocusActions() {
+    }
+    /** 
+     * @deprecated To block or unblock a dialog, invoke 
+     * blockDialog or unblockDialog.
+     */
+    public class Blocker {
+        boolean doDebug = System.getProperty("DEBUG_BLOCK") != null;
+        /**
+         * Prints a debug message to standard out.
+         * @param value the value
+         * @param name the name
+         */
+        void debug(int value, String name) {
+            if(doDebug) {
+                System.out.println("BLOCK: "+name+" Value:"+value);
+            }
+        }
+    }
+    Blocker block = new Blocker();
+    
+     /** Initializes the Window window block */
+    private void initWindow() {
+        Window_outer.setPreferredSize(new Dimension(310, 144));
+        RepositoryProxy.setForegroundColor(Window,"Black");
+        RepositoryProxy.setFont(Window,"Standard");
+        Window_outer.setLayout(null);
+        Window_outer.add(Window);   
+        Window.setLocation(0,0);
+        Window.setSize(310, 144);
+        Window.setLayout(null);
+        
+        addInternalFrameListener(windowProc);
+        addGenovaWindowListener(genovaWindowProc);
+        initToolbar();
+        initCourseClass();
+    }
+    
+    /** Initializes the Toolbar toolbar */
+    private void initToolbar() {
+        setGenovaToolBar(Toolbar);
+    }
+    
+    /** Initializes the CourseClass container */
+    private void initCourseClass() {
+        Window.add(CourseClass);
+        CourseClass.setLocation(11+0,11+0);
+        CourseClass.setSize(288, 122);
+        RepositoryProxy.setBorder(CourseClass,2,"Course");
+        RepositoryProxy.setForegroundColor(CourseClass,"Black");
+        RepositoryProxy.setFont(CourseClass,"Standard");
+        CourseClass.setLayout(null);
+        
+        initCourseData();
+        initCourseButton();
+    }
+    
+    /** Initializes the CourseData container */
+    private void initCourseData() {
+        CourseClass.add(CourseData);
+        CourseData.setLocation(14+3,17+10);
+        CourseData.setSize(225, 72);
+        RepositoryProxy.setBorder(CourseData,1,"Course");
+        RepositoryProxy.setForegroundColor(CourseData,"Black");
+        RepositoryProxy.setFont(CourseData,"Standard");
+        CourseData.setLayout(null);
+        
+        initCourseCodeLabelLabel();
+        initCourse_code();
+        initCourseNameLabelLabel();
+        initCourse_name();
+        initCourseIsActiveLabelLabel();
+        initCourse_isActive();
+    }
+    
+    /** Initializes the CourseButton container */
+    private void initCourseButton() {
+        CourseClass.add(CourseButton);
+        CourseButton.setLocation(250+3,17+10);
+        CourseButton.setSize(24, 78);
+        RepositoryProxy.setBorder(CourseButton,1,"Course");
+        RepositoryProxy.setForegroundColor(CourseButton,"Black");
+        RepositoryProxy.setFont(CourseButton,"Standard");
+        CourseButton.setLayout(null);
+        
+        initCourseClearButton();
+        initCourseSaveButton();
+        initCourseDeleteButton();
+    }
+    
+     /** Initializes the Window2 window block */
+    private void initWindow2() {
+        Window2_outer.setPreferredSize(new Dimension(86, 144));
+        RepositoryProxy.setForegroundColor(Window2,"Black");
+        RepositoryProxy.setFont(Window2,"Standard");
+        Window2_outer.setLayout(null);
+        Window2_outer.add(Window2);   
+        Window2.setLocation(0,0);
+        Window2.setSize(86, 144);
+        Window2.setLayout(null);
+        
+        addInternalFrameListener(windowProc);
+        addGenovaWindowListener(genovaWindowProc);
+        initToolbar2();
+        initCourseClass2();
+    }
+    
+    /** Initializes the Toolbar2 toolbar */
+    private void initToolbar2() {
+        setGenovaToolBar(Toolbar2);
+    }
+    
+    /** Initializes the CourseClass2 container */
+    private void initCourseClass2() {
+        Window2.add(CourseClass2);
+        CourseClass2.setLocation(11+0,11+0);
+        CourseClass2.setSize(64, 122);
+        RepositoryProxy.setBorder(CourseClass2,2,"Course");
+        RepositoryProxy.setForegroundColor(CourseClass2,"Black");
+        RepositoryProxy.setFont(CourseClass2,"Standard");
+        CourseClass2.setLayout(null);
+        
+        initCourseData2();
+        initCourseButton2();
+    }
+    
+    /** Initializes the CourseData2 container */
+    private void initCourseData2() {
+        CourseClass2.add(CourseData2);
+        CourseData2.setLocation(14+3,17+10);
+        CourseData2.setSize(1, 1);
+        RepositoryProxy.setBorder(CourseData2,1,"Course");
+        RepositoryProxy.setForegroundColor(CourseData2,"Black");
+        RepositoryProxy.setFont(CourseData2,"Standard");
+        CourseData2.setLayout(null);
+        
+    }
+    
+    /** Initializes the CourseButton2 container */
+    private void initCourseButton2() {
+        CourseClass2.add(CourseButton2);
+        CourseButton2.setLocation(26+3,17+10);
+        CourseButton2.setSize(24, 78);
+        RepositoryProxy.setBorder(CourseButton2,1,"Course");
+        RepositoryProxy.setForegroundColor(CourseButton2,"Black");
+        RepositoryProxy.setFont(CourseButton2,"Standard");
+        CourseButton2.setLayout(null);
+        
+        initCourseClearButton2();
+        initCourseSaveButton2();
+        initCourseDeleteButton2();
+    }
+    
+     /** Initializes the Window3 window block */
+    private void initWindow3() {
+        Window3_outer.setPreferredSize(new Dimension(86, 144));
+        RepositoryProxy.setForegroundColor(Window3,"Black");
+        RepositoryProxy.setFont(Window3,"Standard");
+        Window3_outer.setLayout(null);
+        Window3_outer.add(Window3);   
+        Window3.setLocation(0,0);
+        Window3.setSize(86, 144);
+        Window3.setLayout(null);
+        
+        addInternalFrameListener(windowProc);
+        addGenovaWindowListener(genovaWindowProc);
+        initToolbar3();
+        initCourseClass3();
+    }
+    
+    /** Initializes the Toolbar3 toolbar */
+    private void initToolbar3() {
+        setGenovaToolBar(Toolbar3);
+    }
+    
+    /** Initializes the CourseClass3 container */
+    private void initCourseClass3() {
+        Window3.add(CourseClass3);
+        CourseClass3.setLocation(11+0,11+0);
+        CourseClass3.setSize(64, 122);
+        RepositoryProxy.setBorder(CourseClass3,2,"Course");
+        RepositoryProxy.setForegroundColor(CourseClass3,"Black");
+        RepositoryProxy.setFont(CourseClass3,"Standard");
+        CourseClass3.setLayout(null);
+        
+        initCourseData3();
+        initCourseButton3();
+    }
+    
+    /** Initializes the CourseData3 container */
+    private void initCourseData3() {
+        CourseClass3.add(CourseData3);
+        CourseData3.setLocation(14+3,17+10);
+        CourseData3.setSize(1, 1);
+        RepositoryProxy.setBorder(CourseData3,1,"Course");
+        RepositoryProxy.setForegroundColor(CourseData3,"Black");
+        RepositoryProxy.setFont(CourseData3,"Standard");
+        CourseData3.setLayout(null);
+        
+    }
+    
+    /** Initializes the CourseButton3 container */
+    private void initCourseButton3() {
+        CourseClass3.add(CourseButton3);
+        CourseButton3.setLocation(26+3,17+10);
+        CourseButton3.setSize(24, 78);
+        RepositoryProxy.setBorder(CourseButton3,1,"Course");
+        RepositoryProxy.setForegroundColor(CourseButton3,"Black");
+        RepositoryProxy.setFont(CourseButton3,"Standard");
+        CourseButton3.setLayout(null);
+        
+        initCourseClearButton3();
+        initCourseSaveButton3();
+        initCourseDeleteButton3();
+    }
+    /**
+     * Initializes the CourseCodeLabel label */
+    private void initCourseCodeLabelLabel() {
+        CourseData.add(CourseCodeLabelLabel);
+        CourseCodeLabelLabel.setLocation(0+0,0+0); 
+        CourseCodeLabelLabel.setSize(68, 17);
+        RepositoryProxy.setForegroundColor(CourseCodeLabelLabel,"Black");
+        RepositoryProxy.setFont(CourseCodeLabelLabel,"Standard");
+    }
+    
+    /** Initializes the Course.code text component */
+    private void initCourse_code() {
+        Course_code.setName("Course.code");
+        CourseData.add(Course_code);
+        Course_code.setLocation(73+0,0+0);
+        { // limit scope of width and height declarations.
+            int width = 152;
+            int height = 22;
+            Course_code.setSize(width, height);
+            if (width == 0 && height == 0) {
+                Course_code.setFocusable(false);
+            }
+        } // end limit scope
+        
+        controller.tabListFromNodeNameCourseData.put("Course.code", Course_code);
+        controller.tabListFromComponentCourseData.put(Course_code, "Course.code");
+        
+           //   Course_code.setEditable(true);
+        Course_code.setEditable(true);
+        
+        //Course_code.setVisible(false || true);
+        //
+        Course_code.setInputJustification(JTextField.LEFT);
+        Course_code.setOutputJustification(JTextField.LEFT);
+        Course_code.setHorizontalAlignment(JTextField.LEFT);
+        Course_code.setSelectAllOnFocus(true);
+        RepositoryProxy.setDatatype(7, Course_code, 0, controller.getApplication().getEnums(), null, 
+              FormatHelper.getDisplayrule(7,"",0,0,0),0,false);
+        RepositoryProxy.setForegroundColor(Course_code,"Black");
+        RepositoryProxy.setFont(Course_code,"Standard");
+        
+        // No Listener
+        
+    }
+    /**
+     * Initializes the CourseNameLabel label */
+    private void initCourseNameLabelLabel() {
+        CourseData.add(CourseNameLabelLabel);
+        CourseNameLabelLabel.setLocation(0+0,28+0); 
+        CourseNameLabelLabel.setSize(33, 17);
+        RepositoryProxy.setForegroundColor(CourseNameLabelLabel,"Black");
+        RepositoryProxy.setFont(CourseNameLabelLabel,"Standard");
+    }
+    
+    /** Initializes the Course.name text component */
+    private void initCourse_name() {
+        Course_name.setName("Course.name");
+        CourseData.add(Course_name);
+        Course_name.setLocation(73+0,28+0);
+        { // limit scope of width and height declarations.
+            int width = 152;
+            int height = 22;
+            Course_name.setSize(width, height);
+            if (width == 0 && height == 0) {
+                Course_name.setFocusable(false);
+            }
+        } // end limit scope
+        
+        controller.tabListFromNodeNameCourseData.put("Course.name", Course_name);
+        controller.tabListFromComponentCourseData.put(Course_name, "Course.name");
+        
+           //   Course_name.setEditable(true);
+        Course_name.setEditable(true);
+        
+        //Course_name.setVisible(false || true);
+        //
+        Course_name.setInputJustification(JTextField.LEFT);
+        Course_name.setOutputJustification(JTextField.LEFT);
+        Course_name.setHorizontalAlignment(JTextField.LEFT);
+        Course_name.setSelectAllOnFocus(true);
+        RepositoryProxy.setDatatype(7, Course_name, 0, controller.getApplication().getEnums(), null, 
+              FormatHelper.getDisplayrule(7,"",0,0,0),0,false);
+        RepositoryProxy.setForegroundColor(Course_name,"Black");
+        RepositoryProxy.setFont(Course_name,"Standard");
+        
+        // No Listener
+        
+    }
+    /**
+     * Initializes the CourseIsActiveLabel label */
+    private void initCourseIsActiveLabelLabel() {
+        CourseData.add(CourseIsActiveLabelLabel);
+        CourseIsActiveLabelLabel.setLocation(0+0,56+0); 
+        CourseIsActiveLabelLabel.setSize(1, 17);
+        RepositoryProxy.setForegroundColor(CourseIsActiveLabelLabel,"Black");
+        RepositoryProxy.setFont(CourseIsActiveLabelLabel,"Standard");
+    }
+    
+    /** Initializes the Course_isActive check button */
+    private void initCourse_isActive() {
+        controller.tabListFromNodeNameCourseData.put("Course.isActive", Course_isActive);
+        controller.tabListFromComponentCourseData.put(Course_isActive, "Course.isActive");
+        
+        CourseData.add(Course_isActive);
+        Course_isActive.setLocation(73+0,56+0);
+        { // limit scope of width and height declarations.
+            int width = 18;
+            int height = 16;
+            Course_isActive.setSize(width, height);
+            if (width == 0 && height == 0) {
+                Course_isActive.setFocusable(false);
+            }
+        } // end limit scope
+        RepositoryProxy.setForegroundColor(Course_isActive,"Black");
+        RepositoryProxy.setFont(Course_isActive,"Standard");
+        
+        
+        if(false) {
+            Course_isActive.addItemListener(itemProc);
+        }
+    }
+    
+    /** Initializes the CourseClearButton button */
+    private void initCourseClearButton() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseClearButton = null;
+        imageCourseClearButton = RepositoryProxy.getImageField("Clear");
+        if (imageCourseClearButton != null) {
+            CourseClearButton = new GenovaButton(imageCourseClearButton);
+        }
+        else {
+            CourseClearButton = new GenovaButton("Clear");
+        }
+        CourseButton.add(CourseClearButton);
+        CourseClearButton.setLocation(0+0,0+0);
+        CourseClearButton.setSize(24, 22);
+        CourseClearButton.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseClearButton,"Black");
+        RepositoryProxy.setFont(CourseClearButton,"Standard");
+        RepositoryProxy.setImage(CourseClearButton,"Clear");
+        CourseClearButton.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton.put("CourseClearButton", CourseClearButton);
+        controller.tabListFromComponentCourseButton.put(CourseClearButton, "CourseClearButton");
+    }
+    
+    /** Initializes the CourseSaveButton button */
+    private void initCourseSaveButton() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseSaveButton = null;
+        imageCourseSaveButton = RepositoryProxy.getImageField("Save");
+        if (imageCourseSaveButton != null) {
+            CourseSaveButton = new GenovaButton(imageCourseSaveButton);
+        }
+        else {
+            CourseSaveButton = new GenovaButton("Save");
+        }
+        CourseButton.add(CourseSaveButton);
+        CourseSaveButton.setLocation(0+0,28+0);
+        CourseSaveButton.setSize(24, 22);
+        CourseSaveButton.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseSaveButton,"Black");
+        RepositoryProxy.setFont(CourseSaveButton,"Standard");
+        RepositoryProxy.setImage(CourseSaveButton,"Save");
+        CourseSaveButton.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton.put("CourseSaveButton", CourseSaveButton);
+        controller.tabListFromComponentCourseButton.put(CourseSaveButton, "CourseSaveButton");
+    }
+    
+    /** Initializes the CourseDeleteButton button */
+    private void initCourseDeleteButton() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseDeleteButton = null;
+        imageCourseDeleteButton = RepositoryProxy.getImageField("Delete");
+        if (imageCourseDeleteButton != null) {
+            CourseDeleteButton = new GenovaButton(imageCourseDeleteButton);
+        }
+        else {
+            CourseDeleteButton = new GenovaButton("Delete");
+        }
+        CourseButton.add(CourseDeleteButton);
+        CourseDeleteButton.setLocation(0+0,56+0);
+        CourseDeleteButton.setSize(24, 22);
+        CourseDeleteButton.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseDeleteButton,"Black");
+        RepositoryProxy.setFont(CourseDeleteButton,"Standard");
+        RepositoryProxy.setImage(CourseDeleteButton,"Delete");
+        CourseDeleteButton.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton.put("CourseDeleteButton", CourseDeleteButton);
+        controller.tabListFromComponentCourseButton.put(CourseDeleteButton, "CourseDeleteButton");
+    }
+    
+    /** Initializes the CourseClearButton2 button */
+    private void initCourseClearButton2() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseClearButton2 = null;
+        imageCourseClearButton2 = RepositoryProxy.getImageField("Clear");
+        if (imageCourseClearButton2 != null) {
+            CourseClearButton2 = new GenovaButton(imageCourseClearButton2);
+        }
+        else {
+            CourseClearButton2 = new GenovaButton("Clear");
+        }
+        CourseButton2.add(CourseClearButton2);
+        CourseClearButton2.setLocation(0+0,0+0);
+        CourseClearButton2.setSize(24, 22);
+        CourseClearButton2.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseClearButton2,"Black");
+        RepositoryProxy.setFont(CourseClearButton2,"Standard");
+        RepositoryProxy.setImage(CourseClearButton2,"Clear");
+        CourseClearButton2.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton2.put("CourseClearButton2", CourseClearButton2);
+        controller.tabListFromComponentCourseButton2.put(CourseClearButton2, "CourseClearButton2");
+    }
+    
+    /** Initializes the CourseSaveButton2 button */
+    private void initCourseSaveButton2() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseSaveButton2 = null;
+        imageCourseSaveButton2 = RepositoryProxy.getImageField("Save");
+        if (imageCourseSaveButton2 != null) {
+            CourseSaveButton2 = new GenovaButton(imageCourseSaveButton2);
+        }
+        else {
+            CourseSaveButton2 = new GenovaButton("Save");
+        }
+        CourseButton2.add(CourseSaveButton2);
+        CourseSaveButton2.setLocation(0+0,28+0);
+        CourseSaveButton2.setSize(24, 22);
+        CourseSaveButton2.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseSaveButton2,"Black");
+        RepositoryProxy.setFont(CourseSaveButton2,"Standard");
+        RepositoryProxy.setImage(CourseSaveButton2,"Save");
+        CourseSaveButton2.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton2.put("CourseSaveButton2", CourseSaveButton2);
+        controller.tabListFromComponentCourseButton2.put(CourseSaveButton2, "CourseSaveButton2");
+    }
+    
+    /** Initializes the CourseDeleteButton2 button */
+    private void initCourseDeleteButton2() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseDeleteButton2 = null;
+        imageCourseDeleteButton2 = RepositoryProxy.getImageField("Delete");
+        if (imageCourseDeleteButton2 != null) {
+            CourseDeleteButton2 = new GenovaButton(imageCourseDeleteButton2);
+        }
+        else {
+            CourseDeleteButton2 = new GenovaButton("Delete");
+        }
+        CourseButton2.add(CourseDeleteButton2);
+        CourseDeleteButton2.setLocation(0+0,56+0);
+        CourseDeleteButton2.setSize(24, 22);
+        CourseDeleteButton2.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseDeleteButton2,"Black");
+        RepositoryProxy.setFont(CourseDeleteButton2,"Standard");
+        RepositoryProxy.setImage(CourseDeleteButton2,"Delete");
+        CourseDeleteButton2.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton2.put("CourseDeleteButton2", CourseDeleteButton2);
+        controller.tabListFromComponentCourseButton2.put(CourseDeleteButton2, "CourseDeleteButton2");
+    }
+    
+    /** Initializes the CourseClearButton3 button */
+    private void initCourseClearButton3() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseClearButton3 = null;
+        imageCourseClearButton3 = RepositoryProxy.getImageField("Clear");
+        if (imageCourseClearButton3 != null) {
+            CourseClearButton3 = new GenovaButton(imageCourseClearButton3);
+        }
+        else {
+            CourseClearButton3 = new GenovaButton("Clear");
+        }
+        CourseButton3.add(CourseClearButton3);
+        CourseClearButton3.setLocation(0+0,0+0);
+        CourseClearButton3.setSize(24, 22);
+        CourseClearButton3.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseClearButton3,"Black");
+        RepositoryProxy.setFont(CourseClearButton3,"Standard");
+        RepositoryProxy.setImage(CourseClearButton3,"Clear");
+        CourseClearButton3.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton3.put("CourseClearButton3", CourseClearButton3);
+        controller.tabListFromComponentCourseButton3.put(CourseClearButton3, "CourseClearButton3");
+    }
+    
+    /** Initializes the CourseSaveButton3 button */
+    private void initCourseSaveButton3() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseSaveButton3 = null;
+        imageCourseSaveButton3 = RepositoryProxy.getImageField("Save");
+        if (imageCourseSaveButton3 != null) {
+            CourseSaveButton3 = new GenovaButton(imageCourseSaveButton3);
+        }
+        else {
+            CourseSaveButton3 = new GenovaButton("Save");
+        }
+        CourseButton3.add(CourseSaveButton3);
+        CourseSaveButton3.setLocation(0+0,28+0);
+        CourseSaveButton3.setSize(24, 22);
+        CourseSaveButton3.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseSaveButton3,"Black");
+        RepositoryProxy.setFont(CourseSaveButton3,"Standard");
+        RepositoryProxy.setImage(CourseSaveButton3,"Save");
+        CourseSaveButton3.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton3.put("CourseSaveButton3", CourseSaveButton3);
+        controller.tabListFromComponentCourseButton3.put(CourseSaveButton3, "CourseSaveButton3");
+    }
+    
+    /** Initializes the CourseDeleteButton3 button */
+    private void initCourseDeleteButton3() {
+        
+        /* Her kommer generert kode for Button:Setup*/
+        
+        ImageIcon imageCourseDeleteButton3 = null;
+        imageCourseDeleteButton3 = RepositoryProxy.getImageField("Delete");
+        if (imageCourseDeleteButton3 != null) {
+            CourseDeleteButton3 = new GenovaButton(imageCourseDeleteButton3);
+        }
+        else {
+            CourseDeleteButton3 = new GenovaButton("Delete");
+        }
+        CourseButton3.add(CourseDeleteButton3);
+        CourseDeleteButton3.setLocation(0+0,56+0);
+        CourseDeleteButton3.setSize(24, 22);
+        CourseDeleteButton3.setMargin(new Insets(0,0,0,0));
+        RepositoryProxy.setForegroundColor(CourseDeleteButton3,"Black");
+        RepositoryProxy.setFont(CourseDeleteButton3,"Standard");
+        RepositoryProxy.setImage(CourseDeleteButton3,"Delete");
+        CourseDeleteButton3.addActionListener(actionProc);
+        
+        controller.tabListFromNodeNameCourseButton3.put("CourseDeleteButton3", CourseDeleteButton3);
+        controller.tabListFromComponentCourseButton3.put(CourseDeleteButton3, "CourseDeleteButton3");
+    }
+    /**
+     * Internal code.
+     */
+    public void initOuterPanel() {
+        initWindow();        
+        initWindow2();        
+        initWindow3();        
+
+        // Disable components that are initially disabled         
+        Iterator it = disabledComponents.iterator();
+        while(it.hasNext()) {
+            super.disableComponent((Component)it.next());
+        }
+
+        // update component tree 
+        SwingUtilities.updateComponentTreeUI(Window);
+        SwingUtilities.updateComponentTreeUI(Window2);
+        SwingUtilities.updateComponentTreeUI(Window3);
+        setComboBoxSelectionManager();
+    }
+    /** 
+     * Sets the selection manager for combo boxes. 
+     */
+    private void setComboBoxSelectionManager() {
+         // Avoid compiler warnings
+        if (false) {
+            int i = 1;
+        }
+    }
+    /**
+     * Returns the outer panel
+     * @return the outer panel
+     */
+    public JPanel getOuterPanel() {
+        return theOutmostFrame;
+    }
+    
+    List acceleratorEvents = new Vector();
+    
+        /**
+         * NODODC
+         */
+    public class AcceleratorEvent {
+        /** the alt modifier */
+        public boolean altModifier = false;
+        /** the ctrl modifier */
+        public boolean ctrlModifier = false;
+        /** the shift modifier */
+        public boolean shiftModifier = false;
+        /** the key code */
+        public int keyCode;
+        /** the method name */
+        public String methodName = "dummy";
+        /** 
+         * Creates a new AcceleratorEvent
+         * @param a value of alt modifier
+         * @param b value of ctrl modifier
+         * @param c value of shift modifier
+         * @param code the key code
+         * @param method the method name
+         */
+        public AcceleratorEvent(boolean a, 
+                                 boolean b,
+                                 boolean c,
+                                 int code,
+                                 String method) {
+            altModifier = a;
+            ctrlModifier = b;
+            shiftModifier = c;
+            keyCode = code;
+            methodName = method;
+        }
+
+        public String toString() {
+            return "Keycode:"+keyCode+" altModifer:"+altModifier+" ctrlModifier:"+ctrlModifier+" shiftModifier:"+shiftModifier;
+        }
+    }
+    
+
+
+
+    /**
+     * Clears the Window window block.
+     */    
+    public void clearWindow() {
+        clearCourseClass(); 
+    }
+
+    /**
+     * Clears the CourseClass 
+     */
+    public void clearCourseClass() {
+        clearCourseData(); 
+        clearCourseButton(); 
+    }
+
+    /**
+     * Clears the CourseData 
+     */
+    public void clearCourseData() {
+        Course_code.setInitialValue(null);
+        Course_code.setValue(null);
+        Course_name.setInitialValue(null);
+        Course_name.setValue(null);
+        Course_isActive.setSelected(false);
+    }
+
+    /**
+     * Clears the CourseButton 
+     */
+    public void clearCourseButton() {
+    }
+
+    /**
+     * Clears the Window2 window block.
+     */    
+    public void clearWindow2() {
+        clearCourseClass2(); 
+    }
+
+    /**
+     * Clears the CourseClass2 
+     */
+    public void clearCourseClass2() {
+        clearCourseData2(); 
+        clearCourseButton2(); 
+    }
+
+    /**
+     * Clears the CourseData2 
+     */
+    public void clearCourseData2() {
+    }
+
+    /**
+     * Clears the CourseButton2 
+     */
+    public void clearCourseButton2() {
+    }
+
+    /**
+     * Clears the Window3 window block.
+     */    
+    public void clearWindow3() {
+        clearCourseClass3(); 
+    }
+
+    /**
+     * Clears the CourseClass3 
+     */
+    public void clearCourseClass3() {
+        clearCourseData3(); 
+        clearCourseButton3(); 
+    }
+
+    /**
+     * Clears the CourseData3 
+     */
+    public void clearCourseData3() {
+    }
+
+    /**
+     * Clears the CourseButton3 
+     */
+    public void clearCourseButton3() {
+    }
+
+    /**
+     * Clears all window blocks in the dialog.    
+     */
+    public void clearCourse() {
+        clearWindow(); 
+        clearWindow2(); 
+        clearWindow3(); 
+    }
+
+    /** 
+     * Internal use.
+     * @param keyEvent the key event 
+     * @return <code>true</code> if a corresponding accelerator is found.
+     */
+    public boolean genovaAccelerator(KeyEvent keyEvent) {
+        boolean found = false;
+        Exception ex = null;
+        for(Iterator i = acceleratorEvents.iterator();i.hasNext();) {
+            AcceleratorEvent event = (AcceleratorEvent)i.next();
+            if(keyEvent.getKeyCode() == event.keyCode &&
+                    keyEvent.isShiftDown() == event.shiftModifier && 
+                    keyEvent.isAltDown() == event.altModifier &&
+                    keyEvent.isControlDown() == event.ctrlModifier) {
+                final Class params[] = {GenovaEventHolder.class};
+                found = true;
+                try {
+                    Method m = controller.getClass().getMethod(event.methodName, params);
+                    GenovaKeyEventHolder holder = new GenovaKeyEventHolder(keyEvent);
+                    final Object args[] = {holder}; 
+                    m.invoke(controller, args);
+                    if(!holder.shouldConsume()) {
+                        found = false;
+                    }
+                } catch (SecurityException e) {
+                    ex = e;
+                } catch (IllegalArgumentException e) {
+                    ex = e;
+                } catch (IllegalAccessException e) {
+                    ex = e;
+                } catch (NoSuchMethodException e) {
+                    ex = e;
+                } catch (InvocationTargetException e) {
+                    ex = e;
+                } finally {
+                    if (ex != null) {
+                        String msgID = CRuntimeMsg.CF_UNABLE_TO_ACCESS_FIELD_OR_METHOD;
+                        Object[] msgArgs = {this.getClass(), event.methodName, event.getClass(), ex.getMessage()};
+                        Message msg = MessageSystem.getMessageFactory().getMessage(msgID, msgArgs);
+                        MessageSystem.getMessageDispatcher(MessageSystem.NO_INTERACTION).dispatch(msg);
+                    }
+                }        
+            }
+        }
+        return found;
+    }
+
+    /** 
+     * Invoked when a combo box is dropped down.
+     * @param theBox the combo box
+     * @param source the source
+     */
+        public void comboBoxDroppedDown(JComboBox theBox, Object source) {
+            try {
+    /* Might be generated empty */
+    if(false) {
+        theBox.getClass();
+        source.getClass();
+    }
+            } catch(Throwable t) {
+                exceptionHandler(t);
+            }
+        }
+    /** 
+     * Internal use.
+     * Invoked as part of a value changed event.
+     * 
+     * @param button the button
+     * @param newValue the new value
+     * @param oldValue the old value
+     * @param e the focus event
+     * @return the result of the value changes test.
+     */
+        public String valueChangedTestCheckButton(JComponent button, String newValue, String oldValue, FocusEvent e) {
+            try {
+    /* Might be generated empty */
+    if(false) {
+        button.getClass();
+        newValue.getClass();
+        oldValue.getClass();
+        e.getClass();
+    }
+            } catch(Throwable t) {
+                exceptionHandler(t);
+            }
+            return null;
+        }
+    /** 
+     * Internal use
+     * @param newlines array of new line numbers
+     * @param oldlines array of old line numbers
+     * @return <code>true</code> if selections are equal
+     */
+        public boolean equalSelection(int[] newlines, int oldlines[]) {
+            if(oldlines == null || newlines.length != oldlines.length) {
+                return false;
+            }
+            for(int i=0; i<newlines.length; i++) {
+                if(newlines[i] != oldlines[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    /** 
+     * Internal use.
+     * Invoked as part of selected event in listblock
+     * @param source 
+     * @param lines 
+     * @param e 
+     */
+        public void selectionInListblockTest(GenovaTable source, int lines[], GenovaSelectedEvent e) {
+            try {
+    /* Might be generated empty */
+    if(false) {
+        source.getClass();
+        lines.getClass();
+        e.getClass();
+    }
+            } catch(Throwable t) {
+                exceptionHandler(t);
+            }
+        }
+    /** 
+     * Invoked as part of value changed in combo box.
+     * @param jc 
+     * @param g
+     * @param e 
+     * @param oldValue 
+     * @return result of value change test
+     */
+        public String valueChangedTestComboBox(JComponent jc, GenovaComboBox g, FocusEvent e, String oldValue) {
+            try {
+    /* Might be generated empty */
+    if(false) {
+        jc.getClass();
+        g.getClass();
+        e.getClass();
+        oldValue.getClass();
+    }
+            } catch(Throwable t) {
+                exceptionHandler(t);
+            }
+            return null;
+        }
+    /** 
+     * Internal use.
+     * Invoked as part of value changed in text field.
+     * @param jc 
+     * @param newValue 
+     * @param oldValue 
+     * @param e 
+     * @return reuslt of test.
+     */
+        public String valueChangedTextField(JComponent jc, String newValue, String oldValue, FocusEvent e ) {
+            try {
+                // Might be generated empty. Silence code-checkers:
+                if (false) {jc.getClass();}
+            }catch(Throwable t) {
+                exceptionHandler(t);
+            }
+            // if nothing is changed, oldValue is returned.
+            return oldValue;
+        }
+    /** 
+     * Internal use
+     * @param theButton 
+     * @param source 
+     * @param e 
+     */
+        public void selectedInCheckButton(JComponent theButton, JComponent source, ItemEvent e) {
+            try {
+    /* Might be generated empty */
+            } catch(Throwable t) {
+                exceptionHandler(t);
+            }
+            if(false) {
+               theButton.getClass();
+               source.getClass();
+               e.getClass();
+           }
+        }
+    /** 
+     * Internal use
+     * @param source 
+     * @param event 
+     */
+    public void selectedInCombobox(JComboBox source, GenovaSelectedEvent event) {
+        try {
+            // Might be generated empty 
+        } catch(Throwable t) {
+            exceptionHandler(t);
+        }
+    }
+    /** 
+     * Internal use
+     * @param s the string to break.
+     * @return the broken string?
+     */
+        public static String breakString(String s) {
+            if(s == null) {
+                return "";
+            }
+            StringBuffer result = new StringBuffer(s.length()*2);
+            java.text.BreakIterator bi = java.text.BreakIterator.getWordInstance();
+            bi.setText(s);
+            int linePos = 0;
+            int start = bi.first();
+            int end = bi.next();
+            while(end != java.text.BreakIterator.DONE) {
+                if(linePos + (end-start) > 50) {
+                    result.append("\n");
+                    linePos = 0;
+                }
+                linePos += (end-start);
+                result.append(s.substring(start,end));
+                start = end;
+                end = bi.next();
+            }
+            return result.toString();
+        }
+        /** 
+         * Internal use.
+         * Handles exceptino in dialog.
+         * @param t the throwable to handle.
+         */
+        public void exceptionHandler(Throwable t) {
+            noFocusException++;
+            Object[] args = {getClass(), t.getMessage()};
+            Message msg = MessageSystem.getMessageFactory().getMessage(CRuntimeMsg.CF_CAUGHT, args);
+            MessageSystem.getMessageDispatcher(MessageSystem.NO_INTERACTION).dispatch(msg);
+            noFocusException--;
+        }
+        /**
+         * Internal use.
+         * Popup class 
+         */
+        class PopupProc implements PopupMenuListener {
+            public void popupMenuCanceled(PopupMenuEvent e) {
+            }
+            public void popupMenuWillBecomeInvisible(PopupMenuEvent e) {
+            }
+            public void popupMenuWillBecomeVisible(PopupMenuEvent e) {
+            }
+        }
+        /**
+         * Internal use.
+         */
+        class FocusProc implements FocusListener {
+            /** Reference to the last focused component */
+            private Component lastFocusedComponent = null;
+            
+                /** Gets the last component to receive focus.
+                 * @return the last focused component.
+                 */
+            public Component getLastFocusedComponent() {
+                return lastFocusedComponent;
+            }
+            
+            public void focusGained(FocusEvent e) {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+                lastFocusedComponent = (Component)e.getSource();
+                
+                /* No focus handling while busy with exceptions */
+                if(noFocusException > 0) {
+                    return;
+                }
+                if(e.getSource() instanceof JTextComponent) {
+                    JTextComponent tc = ((JTextComponent)e.getSource());
+                    if(!(tc.getParent() instanceof JTable)) {
+                        //tc.selectAll();
+                    }                   
+                }
+                
+                try {
+    /* Might be generated empty */
+                }catch(Throwable t) {
+                    exceptionHandler(t);
+                }
+            }
+            
+            public void focusLost(FocusEvent e) {
+                
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+                
+                /* No focus handling while busy with exceptions */
+                if(noFocusException > 0) {
+                    return;
+                }
+                
+                if(e.getSource() instanceof JTextComponent) {
+                    JTextComponent tc = ((JTextComponent)e.getSource());
+                    //tc.setCaretPosition(0);
+                }                
+                noFocusException++;
+                try {
+                    
+                    /* Her kommer generert kode for CheckButton:FocusLost*/
+                    
+                    oldValueCourseisActive = valueChangedTestCheckButton(Course_isActive, TypeTool.convertToString(Course_isActive.isSelected()), oldValueCourseisActive, e);
+                /* Might be generated empty */
+                }catch(Throwable t) {
+                    exceptionHandler(t);
+                }finally {
+                    noFocusException--;
+                }
+            }
+        }
+        /**
+         * ActionProc class that captures all the actions in the dialog, for
+         * instance: buttons pressed, listblock entires selected.  
+         * The action-event is analyzed and the appropriate methods are called. 
+         *
+         */ 
+        
+        class ActionProc implements ActionListener {
+            public void actionPerformed(ActionEvent e) {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+                controller.application.setLastException(null);
+                try {
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseClearButton) {
+                        controller.clearCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseSaveButton) {
+                        controller.saveCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseDeleteButton) {
+                        controller.deleteCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseClearButton2) {
+                        controller.clearCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseSaveButton2) {
+                        controller.saveCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseDeleteButton2) {
+                        controller.deleteCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseClearButton3) {
+                        controller.clearCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseSaveButton3) {
+                        controller.saveCourse(new GenovaActionEventHolder(e));
+                    }
+                    
+                    /* Her kommer generert kode for Button ActionPerformed*/
+                    
+                    if (e.getSource() == CourseDeleteButton3) {
+                        controller.deleteCourse(new GenovaActionEventHolder(e));
+                    }
+    /* Might be generated empty */
+                }catch(Throwable t) {
+                    e.getClass();
+                    exceptionHandler(t);
+                }
+            }
+        }
+        
+        /**
+         * Internal use.
+         */ 
+        class ChangeProc implements ChangeListener {
+            public void stateChanged(ChangeEvent e) {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+                try {
+    /* Might be generated empty */
+                }catch(Throwable t) {
+                    e.getClass();
+                    exceptionHandler(t);
+                }
+            }
+        }
+        
+        /**
+         * Internal use
+         */
+        public class ItemProc implements ItemListener {
+            public void itemStateChanged(ItemEvent e) {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+                try {
+                    
+                    /* Her kommer generert kode for CheckButton:FocusLost*/
+                    
+                    if((e.getStateChange() == ItemEvent.SELECTED ||
+                        e.getStateChange() == ItemEvent.DESELECTED) && 
+                        e.getSource() == Course_isActive) {
+                            selectedInCheckButton((JComponent)e.getSource(), (JComponent)e.getSource(), e);
+                    }
+                    // Might be generated empty
+                } catch(Throwable t) {
+                    exceptionHandler(t);
+                }
+            }
+        }
+        
+        /**
+         * Internal use.
+         */
+        public class MouseProc extends MouseAdapter {
+            public void mousePressed(MouseEvent e) {
+            }
+            public void mouseReleased(MouseEvent e) {
+            }
+            public void mouseClicked(MouseEvent e) {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+                try {
+                    if (e.getClickCount()==1) {
+    /* Might be generated empty */
+                }
+                if (e.getClickCount()==2 
+                        && e.getButton() == MouseEvent.BUTTON1) {
+    /* Might be generated empty */
+                }else if ((e.getModifiers()&InputEvent.BUTTON3_MASK)!=0) {
+                
+                /* Her kommer generert kode fra WindowBlock:PopupTrigger*/
+                
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode fra WindowBlock:PopupTrigger*/
+                
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode fra WindowBlock:PopupTrigger*/
+                
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+                
+                /* Her kommer generert kode for SimpleBlock:PopupTrigger*/
+                
+
+    /* Might be generated empty */
+                }
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+    }
+
+    /**
+     * Internal use.
+     */
+    class ListSelectionProc implements GenovaSelectionListener {
+        public void selectionChanged(GenovaSelectedEvent e) {
+            if(totalBlockAllEvents != 0) {
+                return;
+            }
+            try {
+    /* Might be generated empty */
+            }
+    /* Might be generated empty */
+            catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+    }
+
+    /**
+     * Internal use.
+     */
+    class KeyProc implements KeyListener {
+        public void keyTyped(KeyEvent e) {
+            if(totalBlockAllEvents != 0) {
+                return;
+            }
+            try {
+    /* Might be generated empty */
+            }
+            catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+        public void keyPressed(KeyEvent e) {
+            if(totalBlockAllEvents != 0) {
+                return;
+            }
+            try {
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+        public void keyReleased(KeyEvent e) {
+            if(totalBlockAllEvents != 0) {
+                return;
+            }
+            try {
+                ItemProc ip = new ItemProc();
+    /* Might be generated empty */
+    if(false) { ip.getClass(); }
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+    }
+
+    /**
+     * Internal use.
+     */
+    class WindowProc extends GenovaWindowAdapter {
+        public void dialogActivated(AWTEvent e) {
+            try {
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+ 
+        public void dialogDeiconified(AWTEvent e) {
+            try {
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void dialogIconified(AWTEvent e) {
+            try {
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void dialogClosed(AWTEvent e) {
+            // Unblock windows if the modal window is closed 
+            controller.setModal(false);
+            try {
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void dialogClosing(AWTEvent e) {
+            try {
+        
+        /* Her kommer generert kode fra WindowBlock:WindowClosing*/
+        
+        controller.application.setLastException(null);
+        if (blockWindowEventsWindow == 0) {
+            blockWindowEventsWindow++;
+            controller.closeCourse(new GenovaWindowEventHolder(e));
+            blockWindowEventsWindow--;
+        }
+        
+        /* Her kommer generert kode fra WindowBlock:WindowClosing*/
+        
+        controller.application.setLastException(null);
+        if (blockWindowEventsWindow2 == 0) {
+            blockWindowEventsWindow2++;
+            controller.closeCourse(new GenovaWindowEventHolder(e));
+            blockWindowEventsWindow2--;
+        }
+        
+        /* Her kommer generert kode fra WindowBlock:WindowClosing*/
+        
+        controller.application.setLastException(null);
+        if (blockWindowEventsWindow3 == 0) {
+            blockWindowEventsWindow3++;
+            controller.closeCourse(new GenovaWindowEventHolder(e));
+            blockWindowEventsWindow3--;
+        }
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void dialogDeactivated(AWTEvent e) {
+            try {
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void dialogOpened(AWTEvent e) {
+            // not interessted in this event. In stead, 
+            // we listen for a GenovaWindowEvent in the
+            // GenovaWindowProc-class.
+        }        
+    }
+    class GenovaWindowProc extends GenovaWindowAdapter {
+        public void dialogVisible(GenovaWindowEvent e) {
+        }
+        public void dialogHidden(GenovaWindowEvent e) {
+        }
+    }
+    /**
+     * Internal use.
+     */
+    class ComponentProc implements ComponentListener {
+        public void componentHidden(ComponentEvent e) {
+            if(totalBlockAllEvents != 0) {
+                return;
+            }
+            try {
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void componentShown(ComponentEvent e) {
+            try {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void componentMoved(ComponentEvent e) {
+            try {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+
+        public void componentResized(ComponentEvent e) {
+            try {
+                if(totalBlockAllEvents != 0) {
+                    return;
+                }
+    /* Might be generated empty */
+            }catch(Throwable t) {
+                if(false) { e.getClass(); }
+                exceptionHandler(t);
+            }
+        }
+    }
+    
+    
+    /* Not implemented for Internal Windows
+     */
+}

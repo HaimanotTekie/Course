@@ -1,0 +1,4 @@
+# Course properties. Generated with Genova.
+#2013.06.25 09:40:50
+CourseApp_os=example.service.application.office.courseapp_os.CourseApp_osOsManager
+Student_os=example.service.application.office.student_os.Student_osOsManager

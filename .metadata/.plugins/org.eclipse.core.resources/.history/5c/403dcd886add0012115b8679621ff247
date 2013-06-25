@@ -1,0 +1,57 @@
+// Generated with Genova.
+
+package no.course.domain.generated;
+
+import java.io.Serializable;
+
+/**
+ * This file will be overwritten the next time it is generated from Genova.
+ */
+@SuppressWarnings("all")
+public abstract class AnswerDefault implements Serializable {
+    
+    private String answerText;
+    private int id;
+    
+    /** Default constructor. */
+    protected AnswerDefault() {
+        super();
+    }
+    
+    /**
+     * Access method for answerText.
+     *
+     * @return the current value of answerText
+     */
+    public String getAnswerText() {
+        return answerText;
+    }
+    
+    /**
+     * Setter method for answerText.
+     *
+     * @param aAnswerText the new value for answerText
+     */
+    public void setAnswerText(final String aAnswerText) {
+        answerText = aAnswerText;
+    }
+    
+    /**
+     * Access method for id.
+     *
+     * @return the current value of id
+     */
+    public int getId() {
+        return id;
+    }
+    
+    /**
+     * Setter method for id.
+     *
+     * @param aId the new value for id
+     */
+    public void setId(final int aId) {
+        id = aId;
+    }
+    
+}

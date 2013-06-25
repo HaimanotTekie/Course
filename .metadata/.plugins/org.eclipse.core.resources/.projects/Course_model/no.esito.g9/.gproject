@@ -11,6 +11,7 @@
 	ProjectType="UI"
 	StyleGuideRefId="G41b5b14c0296193"
 	StyleGuideRefName="RegistrationStyleGuide"
+	_Resources="model/default.grdx"
 	name="">
 	<Builds
 		name="Builds">
@@ -46,8 +47,16 @@
 			GeneratorTarget="Java/JFC"
 			GeneratorType="DialogModel"
 			Target="Course_domain"
-			name="Java/JFC"
-		/>
+			name="Java/JFC">
+			<GeneratorParameter
+				Value="no/course/dialog"
+				name="DialogFileDir"
+			/>
+			<GeneratorParameter
+				Value="no.course.dialog"
+				name="DialogClassPackage"
+			/>
+		</GeneratorTarget>
 		<GeneratorTarget
 			GeneratorTarget="MySQL"
 			GeneratorType="DatabaseSchema"
@@ -58,8 +67,16 @@
 			GeneratorTarget="Java"
 			GeneratorType="Service"
 			Target="Course_domain"
-			name="ServiceSwing"
-		/>
+			name="ServiceSwing">
+			<GeneratorParameter
+				Value="resources"
+				name="ConfigDirectory"
+			/>
+			<GeneratorParameter
+				Value="no.course.service"
+				name="ServicePackage"
+			/>
+		</GeneratorTarget>
 	</Generators>
 	<SyncFolder
 		name="SyncFolder">

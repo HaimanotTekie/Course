@@ -1,0 +1,4 @@
+#
+# Genova configuration file
+#
+ServiceApplication.CourseMain.DefaultServicePackage=no.course.service.application.office

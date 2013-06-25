@@ -5,11 +5,10 @@
 
 	<class name="StudentCourse" table="StudentCourse">
 
-			<property name="id" column="id">
-				<type name="gva_int">
-					<param name="default">0</param>
-				</type>
-			</property>
+		<id name="id" column="id" type="integer">
+			<generator class="native">
+			</generator> 
+		</id>
 
 	</class>
 
