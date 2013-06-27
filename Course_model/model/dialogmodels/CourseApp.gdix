@@ -8,8 +8,8 @@
 	ExternallyUsed="False"
 	IsConsistent="True"
 	ModelVersion="9.1.4"
-	ObjectSelectionRefId="G1372076193375"
-	ObjectSelectionRefName="CourseApp_os"
+	ObjectSelectionRefId="G1372314937861"
+	ObjectSelectionRefName="Empty_os"
 	PackageRefId=""
 	PackageRefName="application/office"
 	StyleGuideRefId="G41b5b14c0296191"
@@ -27,12 +27,15 @@
 		/>
 	</DlgMethod>
 	<WindowBlock
-		Height="262"
+		Height="600"
 		MessageBar="True"
+		MinimumHeight="1500"
+		MinimumWidth="1500"
 		RoleName=""
 		SkinRefId="G41b5b14c02961"
 		SkinRefName="Standard_Skin"
 		Title=""
+		Width="1000"
 		WindowType="ApplicationWindow"
 		id="G1372076193480"
 		name="Window">
@@ -70,8 +73,26 @@
 						<Event
 							TriggerType="Selected"
 							id="G1372157474757"
-							name="Selected"
-						/>
+							name="Selected">
+							<Reference name="Method" IdRef="G1372315070394"/>
+						</Event>
+					</MenuItem>
+				</Menu>
+				<Menu
+					MenuType="User"
+					Title="Student"
+					id="G1372315050933"
+					name="Student">
+					<MenuItem
+						Title="AddNewStudent"
+						id="G1372315050934"
+						name="AddNewStudent">
+						<Event
+							TriggerType="Selected"
+							id="G1372315050935"
+							name="Selected">
+							<Reference name="Method" IdRef="G1372229168197"/>
+						</Event>
 					</MenuItem>
 				</Menu>
 				<MenuItem
@@ -145,6 +166,30 @@
 			TargetId="{E193F383-364F-4af2-900B-6CBD7D5CC789}"
 			TargetName="Course"
 			id="G1372157474126"
+			name="Open"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372229168197"
+		name="openStudent">
+		<Action
+			ActionType="Open"
+			ModelType="WorkspaceModel"
+			TargetId="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"
+			TargetName="Student"
+			id="G1372315050936"
+			name="Open"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372315070394"
+		name="openAddStudentsToCourse">
+		<Action
+			ActionType="Open"
+			ModelType="WorkspaceModel"
+			TargetId="{2F31A715-DC62-4fbb-9FB6-3163A658899B}"
+			TargetName="AddStudentsToCourse"
+			id="G1372315070395"
 			name="Open"
 		/>
 	</DlgMethod>

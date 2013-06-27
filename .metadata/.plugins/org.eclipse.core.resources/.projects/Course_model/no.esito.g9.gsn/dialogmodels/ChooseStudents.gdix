@@ -9,7 +9,7 @@
 	IsConsistent="True"
 	MaximumNumberOfInstances="0"
 	ModelVersion="9.1.4"
-	ObjectSelectionRefId="G1372076193376"
+	ObjectSelectionRefId="G1372229094719"
 	ObjectSelectionRefName="Student_os"
 	PackageRefId=""
 	StyleGuideRefId="G41b5b14c0296195"
@@ -52,10 +52,10 @@
 			PreviewHH="24"
 			PreviewLH="120"
 			PreviewRH="21"
-			PreviewW="424"
+			PreviewW="561"
 			PreviewX="11"
 			PreviewY="11"
-			RoleId="G1372076193381"
+			RoleId="G1372229094721"
 			RoleName="Student"
 			id="G1372157477908"
 			name="chooseStudentsListBloack">
@@ -67,14 +67,14 @@
 				<Reference name="GeneratedBy" IdRef="G1372157478530"/>
 			</LabelControl>
 			<VarField
-				AttributeID="G1372076193382"
+				AttributeID="G1372229094722"
 				AttributeName="age"
 				Editable="True"
 				EnabledInitially="True"
 				FrameCode="Inherit"
 				PreviewCW="137"
 				PreviewCX="0"
-				RoleId="G1372076193381"
+				RoleId="G1372229094721"
 				RoleName="Student"
 				SelectOnFocus="True"
 				ShownInitially="True"
@@ -91,14 +91,14 @@
 				<Reference name="GeneratedBy" IdRef="G1372157478534"/>
 			</LabelControl>
 			<VarField
-				AttributeID="G1372076193384"
+				AttributeID="G1372229094724"
 				AttributeName="name"
 				Editable="True"
 				EnabledInitially="True"
 				FrameCode="Inherit"
 				PreviewCW="144"
 				PreviewCX="137"
-				RoleId="G1372076193381"
+				RoleId="G1372229094721"
 				RoleName="Student"
 				SelectOnFocus="True"
 				ShownInitially="True"
@@ -115,14 +115,14 @@
 				<Reference name="GeneratedBy" IdRef="G1372157478536"/>
 			</LabelControl>
 			<VarField
-				AttributeID="G1372076193385"
+				AttributeID="G1372229094725"
 				AttributeName="studentNr"
 				Editable="True"
 				EnabledInitially="True"
 				FrameCode="Inherit"
 				PreviewCW="137"
 				PreviewCX="281"
-				RoleId="G1372076193381"
+				RoleId="G1372229094721"
 				RoleName="Student"
 				SelectOnFocus="True"
 				ShownInitially="True"
@@ -130,6 +130,30 @@
 				VarFieldType="Text"
 				id="G1372157478536"
 				name="studentNr"
+			/>
+			<LabelControl
+				ModelTitle=""
+				Title="id"
+				id="G1372229140542"
+				name="StudentIdLabel">
+				<Reference name="GeneratedBy" IdRef="G1372229140543"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372229094723"
+				AttributeName="id"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				PreviewCW="137"
+				PreviewCX="418"
+				RoleId="G1372229094721"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				Title="id"
+				VarFieldType="Text"
+				id="G1372229140543"
+				name="id"
 			/>
 			<CustomProperty
 				Generator="Java/ICEfaces2"
@@ -169,6 +193,7 @@
 			<Reference name="SortSequence" IdRef="G1372157478530"/>
 			<Reference name="SortSequence" IdRef="G1372157478534"/>
 			<Reference name="SortSequence" IdRef="G1372157478536"/>
+			<Reference name="SortSequence" IdRef="G1372229140543"/>
 		</ListBlock>
 		<CustomProperty
 			Generator="Java/ICEfaces2"

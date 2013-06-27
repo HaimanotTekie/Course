@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ObjectSelectionRoot
+	CaseSensitive="True"
+	ModelCategory=""
+	ModelVersion="9.1.4"
+	PackageRefName="application/office"
+	id="G1372315058405"
+	name="AddStudentsToCourse_os">
+	<OSRole
+		ClassID="{F5797098-A483-4a94-A4B3-7C6C45DEAE27}"
+		ClassName="Course"
+		id="G1372315059021"
+		name="Course">
+		<OSLink
+			AssociationID="{9FC94407-E604-4788-A8E5-AFC6CDACAB8A}"
+			AssociationName="course_studentCourses"
+			SecondRole="False"
+			id="G1372315059026"
+			name="course_studentCourses">
+			<OSRole
+				ClassID="{5ED2BFCA-45E3-419f-8D13-24F3F22A49BA}"
+				ClassName="StudentCourse"
+				id="G1372315059027"
+				name="studentCourses">
+				<OSLink
+					AssociationID="{6E9F121A-CF82-4917-951A-49A0AAD1B4EC}"
+					AssociationName="student_studentCourses"
+					SecondRole="False"
+					id="G1372315064164"
+					name="student_studentCourses">
+					<OSRole
+						ClassID="{BCDF85D8-A301-4afd-863A-7693245ED1BF}"
+						ClassName="Student"
+						id="G1372315064165"
+						name="student"
+					/>
+				</OSLink>
+			</OSRole>
+		</OSLink>
+	</OSRole>
+</ObjectSelectionRoot>

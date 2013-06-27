@@ -44,7 +44,7 @@
 		name="DatabaseMappings">
 		<DatabaseMappingRef
 			ModelFilename="C:/Users/ht/Course/Course_model/model/databasemappings/courseDB.gdmx"
-			id="G1372157433060"
+			id="G1372314925267"
 			name="courseDB"
 		/>
 	</DatabaseMappings>

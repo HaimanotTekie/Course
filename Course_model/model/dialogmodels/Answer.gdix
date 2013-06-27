@@ -23,11 +23,11 @@
 		SkinRefName="Standard_Skin"
 		Title="Answer"
 		WindowType="DocumentWindow"
-		id="G1372157465294"
+		id="G1372341951870"
 		name="Window">
 		<ToolBar
 			Title="Toolbar"
-			id="G1372157465295"
+			id="G1372341951871"
 			name="Toolbar"
 		/>
 		<SimpleBlock
@@ -35,21 +35,20 @@
 			RoleId="G1372145906566"
 			RoleName="Answer"
 			Title="Answer"
-			id="G1372157465296"
+			id="G1372341951872"
 			name="AnswerClass">
 			<SimpleBlock
 				CompType="DataBlock"
-				NumColumns="1"
 				RoleId="G1372145906566"
 				RoleName="Answer"
 				Title="Answer"
-				id="G1372157465297"
+				id="G1372341951873"
 				name="AnswerData">
 				<LabelControl
 					ModelTitle="AnswerText"
-					id="G1372157465298"
+					id="G1372341951874"
 					name="AnswerAnswerTextLabel">
-					<Reference name="GeneratedBy" IdRef="G1372157465299"/>
+					<Reference name="GeneratedBy" IdRef="G1372341951875"/>
 				</LabelControl>
 				<VarField
 					AttributeID="G1372145906567"
@@ -62,17 +61,17 @@
 					SelectOnFocus="True"
 					ShownInitially="True"
 					VarFieldType="Text"
-					id="G1372157465299"
+					id="G1372341951875"
 					name="answerText"
 				/>
 				<LabelControl
 					ModelTitle="id"
-					id="G1372157465300"
+					id="G1372341951876"
 					name="AnswerIdLabel">
-					<Reference name="GeneratedBy" IdRef="G1372157465301"/>
+					<Reference name="GeneratedBy" IdRef="G1372341951877"/>
 				</LabelControl>
 				<VarField
-					AttributeID="G1372157466596"
+					AttributeID="G1372341952538"
 					AttributeName="id"
 					Editable="True"
 					EnabledInitially="True"
@@ -82,7 +81,7 @@
 					SelectOnFocus="True"
 					ShownInitially="True"
 					VarFieldType="Text"
-					id="G1372157465301"
+					id="G1372341951877"
 					name="id"
 				/>
 			</SimpleBlock>
@@ -91,20 +90,20 @@
 				RoleId="G1372145906566"
 				RoleName="Answer"
 				Title="Answer"
-				id="G1372157465302"
+				id="G1372341951878"
 				name="AnswerButton">
 				<ButtonControl
 					HasIcon="True"
 					ImageId="G41b5b14c0296172"
 					ImageName="Clear"
 					Title="Clear"
-					id="G1372157465303"
+					id="G1372341951879"
 					name="AnswerClearButton">
 					<Event
 						TriggerType="Clicked"
-						id="G1372157465306"
+						id="G1372341951882"
 						name="Clicked">
-						<Reference name="Method" IdRef="G1372157465304"/>
+						<Reference name="Method" IdRef="G1372341951880"/>
 					</Event>
 				</ButtonControl>
 				<ButtonControl
@@ -112,13 +111,13 @@
 					ImageId="G41b5b14c0296177"
 					ImageName="Save"
 					Title="Save"
-					id="G1372157465307"
+					id="G1372341951883"
 					name="AnswerSaveButton">
 					<Event
 						TriggerType="Clicked"
-						id="G1372157465310"
+						id="G1372341951886"
 						name="Clicked">
-						<Reference name="Method" IdRef="G1372157465308"/>
+						<Reference name="Method" IdRef="G1372341951884"/>
 					</Event>
 				</ButtonControl>
 				<ButtonControl
@@ -126,74 +125,74 @@
 					ImageId="G41b5b14c0296189"
 					ImageName="Delete"
 					Title="Delete"
-					id="G1372157465311"
+					id="G1372341951887"
 					name="AnswerDeleteButton">
 					<Event
 						TriggerType="Clicked"
-						id="G1372157465314"
+						id="G1372341951890"
 						name="Clicked">
-						<Reference name="Method" IdRef="G1372157465312"/>
+						<Reference name="Method" IdRef="G1372341951888"/>
 					</Event>
 				</ButtonControl>
 			</SimpleBlock>
 		</SimpleBlock>
 		<Event
 			TriggerType="WM Close"
-			id="G1372157465317"
+			id="G1372341951893"
 			name="WM Close">
-			<Reference name="Method" IdRef="G1372157465315"/>
+			<Reference name="Method" IdRef="G1372341951891"/>
 		</Event>
-		<Reference name="TabSequence" IdRef="G1372157465299"/>
-		<Reference name="TabSequence" IdRef="G1372157465301"/>
-		<Reference name="TabSequence" IdRef="G1372157465303"/>
-		<Reference name="TabSequence" IdRef="G1372157465307"/>
-		<Reference name="TabSequence" IdRef="G1372157465311"/>
+		<Reference name="TabSequence" IdRef="G1372341951875"/>
+		<Reference name="TabSequence" IdRef="G1372341951877"/>
+		<Reference name="TabSequence" IdRef="G1372341951879"/>
+		<Reference name="TabSequence" IdRef="G1372341951883"/>
+		<Reference name="TabSequence" IdRef="G1372341951887"/>
 	</WindowBlock>
 	<DlgMethod
-		id="G1372157465304"
+		id="G1372341951880"
 		name="clearAnswer">
 		<Action
 			ActionType="Clear"
 			ModelType="ObjectSelectionModel"
 			TargetId="G1372145906566"
 			TargetName="Answer"
-			id="G1372157465305"
+			id="G1372341951881"
 			name="Clear"
 		/>
 	</DlgMethod>
 	<DlgMethod
-		id="G1372157465308"
+		id="G1372341951884"
 		name="saveAnswer">
 		<Action
 			ActionType="Save"
 			ModelType="ObjectSelectionModel"
 			TargetId="G1372145906566"
 			TargetName="Answer"
-			id="G1372157465309"
+			id="G1372341951885"
 			name="Save"
 		/>
 	</DlgMethod>
 	<DlgMethod
-		id="G1372157465312"
+		id="G1372341951888"
 		name="deleteAnswer">
 		<Action
 			ActionType="Delete"
 			ModelType="ObjectSelectionModel"
 			TargetId="G1372145906566"
 			TargetName="Answer"
-			id="G1372157465313"
+			id="G1372341951889"
 			name="Delete"
 		/>
 	</DlgMethod>
 	<DlgMethod
-		id="G1372157465315"
+		id="G1372341951891"
 		name="closeAnswer">
 		<Action
 			ActionType="Close"
 			ModelType="WorkspaceModel"
 			TargetId="{CD3606FD-1596-42d4-BB02-A3B4877B5BC0}"
 			TargetName="Answer"
-			id="G1372157465316"
+			id="G1372341951892"
 			name="Close"
 		/>
 	</DlgMethod>

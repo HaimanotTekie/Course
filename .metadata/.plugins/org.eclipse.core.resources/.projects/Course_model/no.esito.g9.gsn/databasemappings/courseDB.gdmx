@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='ISO-8859-1' ?>
-<DatabaseMappingRoot name="courseDB" id="G1372157433060"
+<DatabaseMappingRoot name="courseDB" id="G1372314925267"
 	Description=""
 	DBModelTargetDb="MySQL"
 	MappingProfileRefId="SN10002"
@@ -7,18 +7,18 @@
 	ModelVersion="9.1.4"
 	CaseSensitive="True"
 >
-	<DBModel id="G51c9776902f07802"
+	<DBModel id="G51cbeeb0001613154"
 		Description=""
 		ModelId=""
 	>
-		<DBTable name="Answer" id="G51c9776902f07803"
+		<DBTable name="Answer" id="G51cbeeb0001613155"
 			Description=""
 			SequenceNo="1"
 			OriginalName="Answer"
 			ClassID="{6F6F2116-34D8-4d22-ADB7-27720BC93E02}"
 			IsRelation="False"
 		>
-			<DBColumn name="answerText" id="G51c9776902f07804"
+			<DBColumn name="answerText" id="G51cbeeb0001613156"
 				Description=""
 				SequenceNo="1"
 				TableMemberID="{A2019575-1198-4ca2-B29A-CE0786DEEEEE}"
@@ -42,9 +42,8 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="id" id="G51c9776902f07805"
+			<DBColumn name="id" id="G51cbeeb0001613157"
 				Description=""
-				AttributeDbDataType="identity"
 				SequenceNo="2"
 				TableMemberID="{267F0385-8C34-4d33-8AAA-77ACA669211C}"
 				AssociationID=""
@@ -67,7 +66,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="assignment_id" id="G51c9776902f07821"
+			<DBColumn name="assignment_id" id="G51cbeeb0001613173"
 				Description=""
 				SequenceNo="3"
 				TableMemberID="{4693C866-19C4-467b-99FC-76336204BABE}"
@@ -91,7 +90,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="student_id" id="G51c9776902f07824"
+			<DBColumn name="student_id" id="G51cbeeb0001613176"
 				Description=""
 				SequenceNo="4"
 				TableMemberID="{EA1B5142-8F39-4c80-8211-007127AFC85A}"
@@ -116,14 +115,14 @@
 				</OriginalProperties>
 			</DBColumn>
 		</DBTable>
-		<DBTable name="Assignment" id="G51c9776902f07806"
+		<DBTable name="Assignment" id="G51cbeeb0001613158"
 			Description=""
 			SequenceNo="2"
 			OriginalName="Assignment"
 			ClassID="{7FE9A369-10CA-4b8b-BD35-3465C00809DE}"
 			IsRelation="False"
 		>
-			<DBColumn name="assignmentText" id="G51c9776902f07807"
+			<DBColumn name="assignmentText" id="G51cbeeb0001613159"
 				Description=""
 				SequenceNo="1"
 				TableMemberID="{A0EDA54D-253B-4908-867D-47EF199E1CAE}"
@@ -147,9 +146,8 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="id" id="G51c9776902f07808"
+			<DBColumn name="id" id="G51cbeeb0001613160"
 				Description=""
-				AttributeDbDataType="identity"
 				SequenceNo="2"
 				TableMemberID="{4693C866-19C4-467b-99FC-76336204BABE}"
 				AssociationID=""
@@ -172,7 +170,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="course_id" id="G51c9776902f07822"
+			<DBColumn name="course_id" id="G51cbeeb0001613174"
 				Description=""
 				SequenceNo="3"
 				TableMemberID="{3EDF48DE-854E-4ae4-8C80-A07C9B800A35}"
@@ -197,14 +195,14 @@
 				</OriginalProperties>
 			</DBColumn>
 		</DBTable>
-		<DBTable name="Course" id="G51c9776902f07809"
+		<DBTable name="Course" id="G51cbeeb0001613161"
 			Description=""
 			SequenceNo="3"
 			OriginalName="Course"
 			ClassID="{F5797098-A483-4a94-A4B3-7C6C45DEAE27}"
 			IsRelation="False"
 		>
-			<DBColumn name="code" id="G51c9776902f07810"
+			<DBColumn name="code" id="G51cbeeb0001613162"
 				Description=""
 				SequenceNo="1"
 				TableMemberID="{27335791-57B6-4bcc-8838-8B5954DC6624}"
@@ -228,9 +226,8 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="id" id="G51c9776902f07811"
+			<DBColumn name="id" id="G51cbeeb0001613163"
 				Description=""
-				AttributeDbDataType="identity"
 				SequenceNo="2"
 				TableMemberID="{3EDF48DE-854E-4ae4-8C80-A07C9B800A35}"
 				AssociationID=""
@@ -253,7 +250,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="isActive" id="G51c9776902f07812"
+			<DBColumn name="isActive" id="G51cbeeb0001613164"
 				Description=""
 				SequenceNo="3"
 				TableMemberID="{D657C0C7-69C2-4b7e-9B96-7EF9C2E5EB25}"
@@ -277,7 +274,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="name" id="G51c9776902f07813"
+			<DBColumn name="name" id="G51cbeeb0001613165"
 				Description=""
 				SequenceNo="4"
 				TableMemberID="{83ED026F-4B98-4a76-B669-13FC9E7955D6}"
@@ -302,14 +299,14 @@
 				</OriginalProperties>
 			</DBColumn>
 		</DBTable>
-		<DBTable name="Student" id="G51c9776902f07814"
+		<DBTable name="Student" id="G51cbeeb0001613166"
 			Description=""
 			SequenceNo="4"
 			OriginalName="Student"
 			ClassID="{BCDF85D8-A301-4afd-863A-7693245ED1BF}"
 			IsRelation="False"
 		>
-			<DBColumn name="age" id="G51c9776902f07815"
+			<DBColumn name="age" id="G51cbeeb0001613167"
 				Description=""
 				SequenceNo="1"
 				TableMemberID="{18133F7D-1C27-4776-ABE6-A59C07E269A6}"
@@ -333,9 +330,8 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="id" id="G51c9776902f07816"
+			<DBColumn name="id" id="G51cbeeb0001613168"
 				Description=""
-				AttributeDbDataType="identity"
 				SequenceNo="2"
 				TableMemberID="{EA1B5142-8F39-4c80-8211-007127AFC85A}"
 				AssociationID=""
@@ -358,7 +354,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="name" id="G51c9776902f07817"
+			<DBColumn name="name" id="G51cbeeb0001613169"
 				Description=""
 				SequenceNo="3"
 				TableMemberID="{681114C5-10DF-483b-818A-DB75CCE815F4}"
@@ -382,7 +378,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="studentNr" id="G51c9776902f07818"
+			<DBColumn name="studentNr" id="G51cbeeb0001613170"
 				Description=""
 				SequenceNo="4"
 				TableMemberID="{7BEF40FF-43E3-49b3-A819-E292E40C5548}"
@@ -407,16 +403,15 @@
 				</OriginalProperties>
 			</DBColumn>
 		</DBTable>
-		<DBTable name="StudentCourse" id="G51c9776902f07819"
+		<DBTable name="StudentCourse" id="G51cbeeb0001613171"
 			Description=""
 			SequenceNo="5"
 			OriginalName="StudentCourse"
 			ClassID="{5ED2BFCA-45E3-419f-8D13-24F3F22A49BA}"
 			IsRelation="False"
 		>
-			<DBColumn name="id" id="G51c9776902f07820"
+			<DBColumn name="id" id="G51cbeeb0001613172"
 				Description=""
-				AttributeDbDataType="identity"
 				SequenceNo="1"
 				TableMemberID="{1B1619ED-0B8D-4b6c-9A59-B3242314A334}"
 				AssociationID=""
@@ -439,7 +434,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="course_id" id="G51c9776902f07823"
+			<DBColumn name="course_id" id="G51cbeeb0001613175"
 				Description=""
 				SequenceNo="2"
 				TableMemberID="{3EDF48DE-854E-4ae4-8C80-A07C9B800A35}"
@@ -463,7 +458,7 @@
 				>
 				</OriginalProperties>
 			</DBColumn>
-			<DBColumn name="student_id" id="G51c9776902f07825"
+			<DBColumn name="student_id" id="G51cbeeb0001613177"
 				Description=""
 				SequenceNo="3"
 				TableMemberID="{EA1B5142-8F39-4c80-8211-007127AFC85A}"
@@ -488,7 +483,7 @@
 				</OriginalProperties>
 			</DBColumn>
 		</DBTable>
-		<DBRelation name="assignment_answers" id="G51c9776902f07826"
+		<DBRelation name="assignment_answers" id="G51cbeeb0001613178"
 			Description=""
 			DBRelationMustRel="False"
 			DBRelationNavigable="False"
@@ -497,11 +492,11 @@
 			RoleForeignName="answers"
 			AssociationID="{9766E2FA-1C81-4ffa-95F1-74BBFD9C540B}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07808"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07821"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07803"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613160"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613173"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613155"/>
 		</DBRelation>
-		<DBRelation name="assignment_answers" id="G51c9776902f07827"
+		<DBRelation name="assignment_answers" id="G51cbeeb0001613179"
 			Description=""
 			DBRelationMustRel="True"
 			DBRelationNavigable="True"
@@ -510,11 +505,11 @@
 			RoleForeignName="assignment"
 			AssociationID="{9766E2FA-1C81-4ffa-95F1-74BBFD9C540B}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07821"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07808"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07803"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613173"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613160"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613155"/>
 		</DBRelation>
-		<DBRelation name="course_assignments" id="G51c9776902f07828"
+		<DBRelation name="course_assignments" id="G51cbeeb0001613180"
 			Description=""
 			DBRelationMustRel="False"
 			DBRelationNavigable="False"
@@ -523,11 +518,11 @@
 			RoleForeignName="assignments"
 			AssociationID="{E0027DC6-7B70-495c-97F4-398852BD15A0}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07811"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07822"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07806"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613163"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613174"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613158"/>
 		</DBRelation>
-		<DBRelation name="course_assignments" id="G51c9776902f07829"
+		<DBRelation name="course_assignments" id="G51cbeeb0001613181"
 			Description=""
 			DBRelationMustRel="True"
 			DBRelationNavigable="True"
@@ -536,24 +531,24 @@
 			RoleForeignName="course"
 			AssociationID="{E0027DC6-7B70-495c-97F4-398852BD15A0}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07822"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07811"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07806"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613174"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613163"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613158"/>
 		</DBRelation>
-		<DBRelation name="course_studentCourses" id="G51c9776902f07830"
+		<DBRelation name="course_studentCourses" id="G51cbeeb0001613182"
 			Description=""
 			DBRelationMustRel="False"
-			DBRelationNavigable="False"
+			DBRelationNavigable="True"
 			Cardinality="1"
 			RoleName="course"
 			RoleForeignName="studentCourses"
 			AssociationID="{9FC94407-E604-4788-A8E5-AFC6CDACAB8A}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07811"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07823"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07819"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613163"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613175"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613171"/>
 		</DBRelation>
-		<DBRelation name="course_studentCourses" id="G51c9776902f07831"
+		<DBRelation name="course_studentCourses" id="G51cbeeb0001613183"
 			Description=""
 			DBRelationMustRel="True"
 			DBRelationNavigable="True"
@@ -562,11 +557,11 @@
 			RoleForeignName="course"
 			AssociationID="{9FC94407-E604-4788-A8E5-AFC6CDACAB8A}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07823"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07811"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07819"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613175"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613163"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613171"/>
 		</DBRelation>
-		<DBRelation name="student_answers" id="G51c9776902f07832"
+		<DBRelation name="student_answers" id="G51cbeeb0001613184"
 			Description=""
 			DBRelationMustRel="False"
 			DBRelationNavigable="False"
@@ -575,11 +570,11 @@
 			RoleForeignName="answers"
 			AssociationID="{82D8DF6B-9E3B-470b-976A-5C0D22DA35E5}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07816"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07824"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07803"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613168"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613176"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613155"/>
 		</DBRelation>
-		<DBRelation name="student_answers" id="G51c9776902f07833"
+		<DBRelation name="student_answers" id="G51cbeeb0001613185"
 			Description=""
 			DBRelationMustRel="True"
 			DBRelationNavigable="True"
@@ -588,24 +583,24 @@
 			RoleForeignName="student"
 			AssociationID="{82D8DF6B-9E3B-470b-976A-5C0D22DA35E5}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07824"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07816"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07803"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613176"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613168"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613155"/>
 		</DBRelation>
-		<DBRelation name="student_studentCourses" id="G51c9776902f07834"
+		<DBRelation name="student_studentCourses" id="G51cbeeb0001613186"
 			Description=""
 			DBRelationMustRel="False"
-			DBRelationNavigable="False"
+			DBRelationNavigable="True"
 			Cardinality="1"
 			RoleName="student"
 			RoleForeignName="studentCourses"
 			AssociationID="{6E9F121A-CF82-4917-951A-49A0AAD1B4EC}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07816"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07825"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07819"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613168"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613177"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613171"/>
 		</DBRelation>
-		<DBRelation name="student_studentCourses" id="G51c9776902f07835"
+		<DBRelation name="student_studentCourses" id="G51cbeeb0001613187"
 			Description=""
 			DBRelationMustRel="True"
 			DBRelationNavigable="True"
@@ -614,9 +609,9 @@
 			RoleForeignName="student"
 			AssociationID="{6E9F121A-CF82-4917-951A-49A0AAD1B4EC}"
 		>
-			<Reference name="FromColumn" IdRef="G51c9776902f07825"/>
-			<Reference name="ToColumn" IdRef="G51c9776902f07816"/>
-			<Reference name="MemberTable" IdRef="G51c9776902f07819"/>
+			<Reference name="FromColumn" IdRef="G51cbeeb0001613177"/>
+			<Reference name="ToColumn" IdRef="G51cbeeb0001613168"/>
+			<Reference name="MemberTable" IdRef="G51cbeeb0001613171"/>
 		</DBRelation>
 	</DBModel>
 </DatabaseMappingRoot>

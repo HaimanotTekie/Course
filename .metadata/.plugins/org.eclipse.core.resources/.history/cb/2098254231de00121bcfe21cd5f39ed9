@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ObjectSelectionRoot
+	CaseSensitive="True"
+	ModelCategory=""
+	ModelVersion="9.1.4"
+	PackageRefName="application/office"
+	id="G1372076193376"
+	name="Student_os">
+	<OSRole
+		ClassID="{BCDF85D8-A301-4afd-863A-7693245ED1BF}"
+		ClassName="Student"
+		id="G1372076193381"
+		name="Student">
+		<OSAttribute
+			AttributeID="{18133F7D-1C27-4776-ABE6-A59C07E269A6}"
+			AttributeName="age"
+			ItemRemoved="False"
+			id="G1372076193382"
+			name="age"
+		/>
+		<OSAttribute
+			AttributeID="{EA1B5142-8F39-4c80-8211-007127AFC85A}"
+			AttributeName="id"
+			ItemRemoved="False"
+			id="G1372076193383"
+			name="id"
+		/>
+		<OSAttribute
+			AttributeID="{681114C5-10DF-483b-818A-DB75CCE815F4}"
+			AttributeName="name"
+			ItemRemoved="False"
+			id="G1372076193384"
+			name="name"
+		/>
+		<OSAttribute
+			AttributeID="{7BEF40FF-43E3-49b3-A819-E292E40C5548}"
+			AttributeName="studentNr"
+			ItemRemoved="False"
+			id="G1372076193385"
+			name="studentNr"
+		/>
+	</OSRole>
+</ObjectSelectionRoot>

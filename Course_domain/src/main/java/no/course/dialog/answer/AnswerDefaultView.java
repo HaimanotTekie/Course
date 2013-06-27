@@ -272,7 +272,7 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
     String oldValueAnsweranswerText;
     
     /** The AnswerIdLabel label */
-    protected JLabel AnswerIdLabelLabel = new JLabel("Id");
+    protected JLabel AnswerIdLabelLabel = new JLabel("id");
     GenovaTextField Answer_id = new GenovaTextField("");
     final Object objectVersionOfAnswerid = Answer_id;
     String oldValueAnswerid;
@@ -435,13 +435,13 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
     
      /** Initializes the Window window block */
     private void initWindow() {
-        Window_outer.setPreferredSize(new Dimension(311, 144));
+        Window_outer.setPreferredSize(new Dimension(490, 144));
         RepositoryProxy.setForegroundColor(Window,"Black");
         RepositoryProxy.setFont(Window,"Standard");
         Window_outer.setLayout(null);
         Window_outer.add(Window);   
         Window.setLocation(0,0);
-        Window.setSize(311, 144);
+        Window.setSize(490, 144);
         Window.setLayout(null);
         
         addInternalFrameListener(windowProc);
@@ -459,7 +459,7 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
     private void initAnswerClass() {
         Window.add(AnswerClass);
         AnswerClass.setLocation(11+0,11+0);
-        AnswerClass.setSize(289, 122);
+        AnswerClass.setSize(468, 122);
         RepositoryProxy.setBorder(AnswerClass,2,"Answer");
         RepositoryProxy.setForegroundColor(AnswerClass,"Black");
         RepositoryProxy.setFont(AnswerClass,"Standard");
@@ -473,7 +473,7 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
     private void initAnswerData() {
         AnswerClass.add(AnswerData);
         AnswerData.setLocation(14+3,17+10);
-        AnswerData.setSize(226, 50);
+        AnswerData.setSize(405, 22);
         RepositoryProxy.setBorder(AnswerData,1,"Answer");
         RepositoryProxy.setForegroundColor(AnswerData,"Black");
         RepositoryProxy.setFont(AnswerData,"Standard");
@@ -488,7 +488,7 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
     /** Initializes the AnswerButton container */
     private void initAnswerButton() {
         AnswerClass.add(AnswerButton);
-        AnswerButton.setLocation(251+3,17+10);
+        AnswerButton.setLocation(430+3,17+10);
         AnswerButton.setSize(24, 78);
         RepositoryProxy.setBorder(AnswerButton,1,"Answer");
         RepositoryProxy.setForegroundColor(AnswerButton,"Black");
@@ -547,8 +547,8 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
      * Initializes the AnswerIdLabel label */
     private void initAnswerIdLabelLabel() {
         AnswerData.add(AnswerIdLabelLabel);
-        AnswerIdLabelLabel.setLocation(0+0,28+0); 
-        AnswerIdLabelLabel.setSize(12, 17);
+        AnswerIdLabelLabel.setLocation(237+0,0+0); 
+        AnswerIdLabelLabel.setSize(11, 17);
         RepositoryProxy.setForegroundColor(AnswerIdLabelLabel,"Black");
         RepositoryProxy.setFont(AnswerIdLabelLabel,"Standard");
     }
@@ -557,9 +557,9 @@ public abstract class AnswerDefaultView extends GenovaDialogFrame implements Bot
     private void initAnswer_id() {
         Answer_id.setName("Answer.id");
         AnswerData.add(Answer_id);
-        Answer_id.setLocation(74+0,28+0);
+        Answer_id.setLocation(253+0,0+0);
         { // limit scope of width and height declarations.
-            int width = 145;
+            int width = 152;
             int height = 22;
             Answer_id.setSize(width, height);
             if (width == 0 && height == 0) {

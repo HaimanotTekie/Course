@@ -1,0 +1,87 @@
+// ---------------------------------------------------------------------
+// Generated with Genova.
+// ---------------------------------------------------------------------
+package no.course.dialog.choosestudents;
+
+
+/**
+ * Interface declaring string constants used in the ChooseStudents.
+ */
+public interface ChooseStudentsConst {
+
+
+    /**
+     * Constants used in the dialog from the object selection     
+     * node Student.
+     */
+    public static interface Student {
+
+        /** The role name */
+        String OSRoleName = "Student";
+
+        /** The age data field */        
+        String AGE = "Student.age";
+
+        /** The name data field */        
+        String NAME = "Student.name";
+
+        /** The studentNr data field */        
+        String STUDENT_NR = "Student.studentNr";
+
+        /** The id data field */        
+        String ID = "Student.id";
+    }
+
+
+    /**
+     * Name constants for all dialog objects in ChooseStudents except
+     * data items.
+     */
+    public static interface DialogObject {
+
+
+        // WindowBlock
+
+        /** The WindowBlock Window component */
+        String WINDOW = "Window";
+
+
+        // SimpleBlock
+
+
+        // MenuBar
+
+
+        // Menu
+
+
+        // MenuItem
+
+
+        // ToolBar
+
+        /** The ToolBar Toolbar component */
+        String TOOLBAR = "Toolbar";
+
+
+        // Notebook
+
+
+        // ListBlock
+
+        /** The ListBlock chooseStudentsListBloack component */
+        String CHOOSE_STUDENTS_LIST_BLOACK = "chooseStudentsListBloack";
+
+
+        // Button
+
+
+        // Label
+
+
+        // Text
+
+
+        // ImageBox
+    }
+}

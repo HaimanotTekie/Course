@@ -41,6 +41,17 @@
 			ExternalElement="False"
 			ExternallyUsed="False"
 			MaximumNumberOfInstances="0"
+			ObjectSelectorOID="G1372315058405"
+			PackageRefName="application"
+			WindowType="DocumentWindow"
+			id="{2F31A715-DC62-4fbb-9FB6-3163A658899B}"
+			name="AddStudentsToCourse"
+		/>
+		<DialogModelRef
+			DialogIsLinkable="False"
+			ExternalElement="False"
+			ExternallyUsed="False"
+			MaximumNumberOfInstances="0"
 			ObjectSelectorOID="G1372145902872"
 			PackageRefName="application/office"
 			WindowType="DocumentWindow"
@@ -61,7 +72,7 @@
 		<DialogModelRef
 			DialogIsLinkable="False"
 			MaximumNumberOfInstances="0"
-			ObjectSelectorOID="G1372076193376"
+			ObjectSelectorOID="G1372229094719"
 			PackageRefName=""
 			WindowType="DocumentWindow"
 			id="G1372157474761"
@@ -83,7 +94,7 @@
 			ExternalElement="False"
 			ExternallyUsed="False"
 			MaximumNumberOfInstances="0"
-			ObjectSelectorOID="G1372076193375"
+			ObjectSelectorOID="G1372314937861"
 			PackageRefName="application/office"
 			WindowType="ApplicationWindow"
 			id="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"
@@ -94,7 +105,7 @@
 			ExternalElement="False"
 			ExternallyUsed="False"
 			MaximumNumberOfInstances="0"
-			ObjectSelectorOID="G1372076193376"
+			ObjectSelectorOID="G1372229094719"
 			PackageRefName="application/office"
 			WindowType="DocumentWindow"
 			id="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"
@@ -111,8 +122,8 @@
 		/>
 		<ObjectSelectionRef
 			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/Student_os.gosx"
-			PackageRefName="application/office"
-			id="G1372076193376"
+			PackageRefName=""
+			id="G1372229094719"
 			name="Student_os"
 		/>
 		<ObjectSelectionRef
@@ -128,10 +139,22 @@
 			name="Course_os"
 		/>
 		<ObjectSelectionRef
+			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/Empty_os.gosx"
+			PackageRefName=""
+			id="G1372314937861"
+			name="Empty_os"
+		/>
+		<ObjectSelectionRef
 			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/Assignment_os.gosx"
 			PackageRefName="application/office"
 			id="G1372145902873"
 			name="Assignment_os"
+		/>
+		<ObjectSelectionRef
+			ModelFilename="C:/Users/ht/Course/Course_model/model/objectselections/AddStudentsToCourse_os.gosx"
+			PackageRefName="application/office"
+			id="G1372315058405"
+			name="AddStudentsToCourse_os"
 		/>
 	</ObjectSelections>
 	<DatabaseMappings

@@ -517,7 +517,7 @@
 		<Image
 			Description=""
 			Editable="True"
-			Filename="findSmall.bmp"
+			Filename="findSmall.gif"
 			id="G41b5b14c0296188"
 			name="FindAll"
 		/>
@@ -1381,8 +1381,11 @@
 			Height="0"
 			Width="0"
 			id="G41b5b14c029622"
-			name="ImageEtched"
-		/>
+			name="ImageEtched">
+			<Reference name="BackgroundColor" IdRef="G41b5b14c0296125"/>
+			<Reference name="Font" IdRef="G41b5b14c0296150"/>
+			<Reference name="ForegroundColor" IdRef="G41b5b14c0296125"/>
+		</Style>
 		<Style
 			Description=""
 			Editable="True"
@@ -1392,6 +1395,8 @@
 			id="G41b5b14c029616"
 			name="ImageNoFrame">
 			<Reference name="BackgroundColor" IdRef="G41b5b14c0296125"/>
+			<Reference name="Font" IdRef="G41b5b14c0296150"/>
+			<Reference name="ForegroundColor" IdRef="G41b5b14c0296125"/>
 		</Style>
 		<Style
 			Description=""
@@ -2114,7 +2119,7 @@
 			<StyleGuideDocument
 				MoreRelated_Branch="ListBlockOnly"
 				MoreRelated_Leaf="ListBlockOnly"
-				OneRelated_Branch="SimpleBlockOnly"
+				OneRelated_Branch="ParentsBlock"
 				OneRelated_Leaf="ParentsBlock"
 				Root_Root="SimpleBlockOnly"
 				SkinRefName="Standard_Skin"

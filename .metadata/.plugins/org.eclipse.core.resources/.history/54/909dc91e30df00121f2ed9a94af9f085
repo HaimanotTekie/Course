@@ -1,0 +1,209 @@
+// Generated with Genova.
+
+package no.course.domain.generated;
+
+import java.util.Set;
+import no.course.domain.StudentCourse;
+import no.course.domain.Answer;
+import java.io.Serializable;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * This file will be overwritten the next time it is generated from Genova.
+ */
+@SuppressWarnings("all")
+public abstract class StudentDefault implements Serializable {
+    
+    /** Primary key. */
+    protected static final String PK = "id";
+    private int age;
+    private int id;
+    private String name;
+    private int studentNr;
+    private Set<StudentCourse> studentCourses;
+    private Set<Answer> answers;
+    
+    /** Default constructor. */
+    protected StudentDefault() {
+        super();
+    }
+    
+    /**
+     * Access method for age.
+     *
+     * @return the current value of age
+     */
+    public int getAge() {
+        return age;
+    }
+    
+    /**
+     * Setter method for age.
+     *
+     * @param aAge the new value for age
+     */
+    public void setAge(final int aAge) {
+        age = aAge;
+    }
+    
+    /**
+     * Access method for id.
+     *
+     * @return the current value of id
+     */
+    public int getId() {
+        return id;
+    }
+    
+    /**
+     * Setter method for id.
+     *
+     * @param aId the new value for id
+     */
+    public void setId(final int aId) {
+        id = aId;
+    }
+    
+    /**
+     * Access method for name.
+     *
+     * @return the current value of name
+     */
+    public String getName() {
+        return name;
+    }
+    
+    /**
+     * Setter method for name.
+     *
+     * @param aName the new value for name
+     */
+    public void setName(final String aName) {
+        name = aName;
+    }
+    
+    /**
+     * Access method for studentNr.
+     *
+     * @return the current value of studentNr
+     */
+    public int getStudentNr() {
+        return studentNr;
+    }
+    
+    /**
+     * Setter method for studentNr.
+     *
+     * @param aStudentNr the new value for studentNr
+     */
+    public void setStudentNr(final int aStudentNr) {
+        studentNr = aStudentNr;
+    }
+    
+    /**
+     * Access method for studentCourses.
+     *
+     * @return the current value of studentCourses
+     */
+    public Set<StudentCourse> getStudentCourses() {
+        return studentCourses;
+    }
+    
+    /**
+     * Setter method for studentCourses.
+     *
+     * @param aStudentCourses the new value for studentCourses
+     */
+    public void setStudentCourses(final Set<StudentCourse> aStudentCourses) {
+        studentCourses = aStudentCourses;
+    }
+    
+    /**
+     * Access method for answers.
+     *
+     * @return the current value of answers
+     */
+    public Set<Answer> getAnswers() {
+        return answers;
+    }
+    
+    /**
+     * Setter method for answers.
+     *
+     * @param aAnswers the new value for answers
+     */
+    public void setAnswers(final Set<Answer> aAnswers) {
+        answers = aAnswers;
+    }
+    
+    /**
+     * Compares the key for this instance with another Student.
+     *
+     * @param other The object to compare to
+     * @return True if other object is instance of class Student and the key objects are equal.
+     */
+    private boolean equalKeys(Object other) {
+        if (this==other) {
+            return true;
+        }
+        if (!(other instanceof StudentDefault)) {
+            return false;
+        }
+        StudentDefault that = (StudentDefault) other;
+        if (this.getId() != that.getId()) {
+            return false;
+        }
+        return true;
+    }
+    
+    /**
+     * Compares this instance with another Student.
+     *
+     * @param other The object to compare to
+     * @return True if the objects are the same
+     */
+    @Override
+    public boolean equals(Object other) {
+        return this.equalKeys(other) && ((StudentDefault)other).equalKeys(this);
+    }
+    
+    /**
+     * Returns a hash code for this instance.
+     *
+     * @return Hash code
+     */
+    @Override
+    public int hashCode() {
+        int i;
+        int result = 17;
+        i = getId();
+        result = 37*result + i;
+        return result;
+    }
+    
+    /**
+     * Returns a debug-friendly String representation of this instance
+     *
+     * @return String representation of this instance
+     */
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer("[Student |");
+        sb.append(" id=").append(getId());
+        sb.append("]");
+        return sb.toString();
+    }
+    
+    /**
+     * Return all elements of the primary key.
+     *
+     * @return Map of key names to values
+     */
+    public Map<String, Object> getPrimaryKey() {
+        Map<String, Object> ret = new LinkedHashMap<String, Object>(6);
+        ret.put("id", new Integer(getId()));
+        return ret;
+    }
+    
+}

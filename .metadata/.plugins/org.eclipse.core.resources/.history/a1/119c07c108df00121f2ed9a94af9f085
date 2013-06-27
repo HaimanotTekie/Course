@@ -1,0 +1,129 @@
+// ---------------------------------------------------------------------
+// Generated with Genova.
+// ---------------------------------------------------------------------
+package no.course.dialog.course;
+
+
+/**
+ * Interface declaring string constants used in the Course.
+ */
+public interface CourseConst {
+
+
+    /**
+     * Constants used in the dialog from the object selection     
+     * node Course.
+     */
+    public static interface Course {
+
+        /** The role name */
+        String OSRoleName = "Course";
+
+        /** The code_2 data field */        
+        String CODE_2 = "Course.code.2";
+
+        /** The isActive_2 data field */        
+        String IS_ACTIVE_2 = "Course.isActive.2";
+
+        /** The name_2 data field */        
+        String NAME_2 = "Course.name.2";
+
+        /** The id_2 data field */        
+        String ID_2 = "Course.id.2";
+
+        /** The code data field */        
+        String CODE = "Course.code";
+
+        /** The isActive data field */        
+        String IS_ACTIVE = "Course.isActive";
+
+        /** The name data field */        
+        String NAME = "Course.name";
+
+        /** The id data field */        
+        String ID = "Course.id";
+    }
+
+
+    /**
+     * Name constants for all dialog objects in Course except
+     * data items.
+     */
+    public static interface DialogObject {
+
+
+        // WindowBlock
+
+        /** The WindowBlock Window component */
+        String WINDOW = "Window";
+
+
+        // SimpleBlock
+
+        /** The SimpleBlock CourseClass component */
+        String COURSE_CLASS = "CourseClass";
+
+        /** The SimpleBlock CourseData component */
+        String COURSE_DATA = "CourseData";
+
+        /** The SimpleBlock CourseButton component */
+        String COURSE_BUTTON = "CourseButton";
+
+        /** The SimpleBlock tableBlock component */
+        String TABLE_BLOCK = "tableBlock";
+
+
+        // MenuBar
+
+
+        // Menu
+
+
+        // MenuItem
+
+
+        // ToolBar
+
+        /** The ToolBar Toolbar component */
+        String TOOLBAR = "Toolbar";
+
+
+        // Notebook
+
+
+        // ListBlock
+
+        /** The ListBlock courseList component */
+        String COURSE_LIST = "courseList";
+
+
+        // Button
+
+        /** The Button CourseClearButton component */
+        String COURSE_CLEAR_BUTTON = "CourseClearButton";
+
+        /** The Button CourseSaveButton component */
+        String COURSE_SAVE_BUTTON = "CourseSaveButton";
+
+        /** The Button CourseDeleteButton component */
+        String COURSE_DELETE_BUTTON = "CourseDeleteButton";
+
+
+        // Label
+
+        /** The Label CourseCodeLabel2 component */
+        String COURSE_CODE_LABEL2 = "CourseCodeLabel2";
+
+        /** The Label CourseNameLabel2 component */
+        String COURSE_NAME_LABEL2 = "CourseNameLabel2";
+
+        /** The Label CourseIdLabel2 component */
+        String COURSE_ID_LABEL2 = "CourseIdLabel2";
+
+
+        // Text
+
+
+        // ImageBox
+    }
+}

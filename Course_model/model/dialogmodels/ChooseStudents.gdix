@@ -8,7 +8,7 @@
 	ExternallyUsed="False"
 	IsConsistent="True"
 	ModelVersion="9.1.4"
-	ObjectSelectionRefId="G1372076193376"
+	ObjectSelectionRefId="G1372229094719"
 	ObjectSelectionRefName="Student_os"
 	PackageRefId=""
 	StyleGuideRefId="G41b5b14c0296195"
@@ -37,7 +37,7 @@
 			<Reference name="Method" IdRef="G1372157474764"/>
 		</Event>
 		<ListBlock
-			RoleId="G1372076193381"
+			RoleId="G1372229094721"
 			RoleName="Student"
 			id="G1372157477908"
 			name="chooseStudentsListBloack">
@@ -48,12 +48,12 @@
 				<Reference name="GeneratedBy" IdRef="G1372157478530"/>
 			</LabelControl>
 			<VarField
-				AttributeID="G1372076193382"
+				AttributeID="G1372229094722"
 				AttributeName="age"
 				Editable="True"
 				EnabledInitially="True"
 				FrameCode="Inherit"
-				RoleId="G1372076193381"
+				RoleId="G1372229094721"
 				RoleName="Student"
 				SelectOnFocus="True"
 				ShownInitially="True"
@@ -68,12 +68,12 @@
 				<Reference name="GeneratedBy" IdRef="G1372157478534"/>
 			</LabelControl>
 			<VarField
-				AttributeID="G1372076193384"
+				AttributeID="G1372229094724"
 				AttributeName="name"
 				Editable="True"
 				EnabledInitially="True"
 				FrameCode="Inherit"
-				RoleId="G1372076193381"
+				RoleId="G1372229094721"
 				RoleName="Student"
 				SelectOnFocus="True"
 				ShownInitially="True"
@@ -88,12 +88,12 @@
 				<Reference name="GeneratedBy" IdRef="G1372157478536"/>
 			</LabelControl>
 			<VarField
-				AttributeID="G1372076193385"
+				AttributeID="G1372229094725"
 				AttributeName="studentNr"
 				Editable="True"
 				EnabledInitially="True"
 				FrameCode="Inherit"
-				RoleId="G1372076193381"
+				RoleId="G1372229094721"
 				RoleName="Student"
 				SelectOnFocus="True"
 				ShownInitially="True"
@@ -102,9 +102,30 @@
 				id="G1372157478536"
 				name="studentNr"
 			/>
+			<LabelControl
+				ModelTitle=""
+				id="G1372229140542"
+				name="StudentIdLabel">
+				<Reference name="GeneratedBy" IdRef="G1372229140543"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372229094723"
+				AttributeName="id"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				RoleId="G1372229094721"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				VarFieldType="Text"
+				id="G1372229140543"
+				name="id"
+			/>
 			<Reference name="SortSequence" IdRef="G1372157478530"/>
 			<Reference name="SortSequence" IdRef="G1372157478534"/>
 			<Reference name="SortSequence" IdRef="G1372157478536"/>
+			<Reference name="SortSequence" IdRef="G1372229140543"/>
 		</ListBlock>
 		<Reference name="TabSequence" IdRef="G1372157477908"/>
 	</WindowBlock>

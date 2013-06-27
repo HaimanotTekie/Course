@@ -19,13 +19,6 @@
 			name="code"
 		/>
 		<OSAttribute
-			AttributeID="{C0FD80CB-0432-46ed-A11F-F8EB89EB6C9E}"
-			AttributeName="id"
-			ItemRemoved="True"
-			id="G1372145904110"
-			name="id"
-		/>
-		<OSAttribute
 			AttributeID="{D657C0C7-69C2-4b7e-9B96-7EF9C2E5EB25}"
 			AttributeName="isActive"
 			ItemRemoved="False"
@@ -37,6 +30,47 @@
 			AttributeName="name"
 			ItemRemoved="False"
 			id="G1372145904112"
+			name="name"
+		/>
+		<OSAttribute
+			AttributeID="{3EDF48DE-854E-4ae4-8C80-A07C9B800A35}"
+			AttributeName="id"
+			ItemRemoved="False"
+			id="G1372229096014"
+			name="id"
+		/>
+	</OSRole>
+	<OSRole
+		ClassID="{F5797098-A483-4a94-A4B3-7C6C45DEAE27}"
+		ClassName="Course"
+		id="G1372314960504"
+		name="Course2">
+		<OSAttribute
+			AttributeID="{27335791-57B6-4bcc-8838-8B5954DC6624}"
+			AttributeName="code"
+			ItemRemoved="False"
+			id="G1372314960505"
+			name="code"
+		/>
+		<OSAttribute
+			AttributeID="{3EDF48DE-854E-4ae4-8C80-A07C9B800A35}"
+			AttributeName="id"
+			ItemRemoved="False"
+			id="G1372314960506"
+			name="id"
+		/>
+		<OSAttribute
+			AttributeID="{D657C0C7-69C2-4b7e-9B96-7EF9C2E5EB25}"
+			AttributeName="isActive"
+			ItemRemoved="False"
+			id="G1372314960507"
+			name="isActive"
+		/>
+		<OSAttribute
+			AttributeID="{83ED026F-4B98-4a76-B669-13FC9E7955D6}"
+			AttributeName="name"
+			ItemRemoved="False"
+			id="G1372314960508"
 			name="name"
 		/>
 	</OSRole>

@@ -1,0 +1,18 @@
+-- Generated with Genova.
+--
+-- Run this schema script against MySQL as follows: 
+-- mysql -u root -p courseDB < coursedb-drop.sql
+
+-- First: DROP foreign keys
+ALTER TABLE Answer DROP FOREIGN KEY Answer_assignment_idF;
+ALTER TABLE Answer DROP FOREIGN KEY Answer_student_idF;
+ALTER TABLE Assignment DROP FOREIGN KEY Assignment_course_idF;
+ALTER TABLE StudentCourse DROP FOREIGN KEY StudentCourse_course_idF;
+ALTER TABLE StudentCourse DROP FOREIGN KEY StudentCourse_student_idF;
+
+-- Second: DROP tables
+DROP TABLE IF EXISTS Answer;
+DROP TABLE IF EXISTS Assignment;
+DROP TABLE IF EXISTS Course;
+DROP TABLE IF EXISTS Student;
+DROP TABLE IF EXISTS StudentCourse;

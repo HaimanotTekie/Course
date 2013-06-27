@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ObjectSelectionRoot
+	CaseSensitive="True"
+	ModelCategory=""
+	ModelVersion="9.1.4"
+	PackageRefName=""
+	id="G1372314959268"
+	name="CourseFindAll_os">
+	<OSRole
+		ClassID="{F5797098-A483-4a94-A4B3-7C6C45DEAE27}"
+		ClassName="Course"
+		id="G1372314959884"
+		name="Course">
+		<OSAttribute
+			AttributeID="{27335791-57B6-4bcc-8838-8B5954DC6624}"
+			AttributeName="code"
+			ItemRemoved="False"
+			id="G1372314959885"
+			name="code"
+		/>
+		<OSAttribute
+			AttributeID="{3EDF48DE-854E-4ae4-8C80-A07C9B800A35}"
+			AttributeName="id"
+			ItemRemoved="False"
+			id="G1372314959886"
+			name="id"
+		/>
+		<OSAttribute
+			AttributeID="{D657C0C7-69C2-4b7e-9B96-7EF9C2E5EB25}"
+			AttributeName="isActive"
+			ItemRemoved="False"
+			id="G1372314959887"
+			name="isActive"
+		/>
+		<OSAttribute
+			AttributeID="{83ED026F-4B98-4a76-B669-13FC9E7955D6}"
+			AttributeName="name"
+			ItemRemoved="False"
+			id="G1372314959888"
+			name="name"
+		/>
+	</OSRole>
+</ObjectSelectionRoot>

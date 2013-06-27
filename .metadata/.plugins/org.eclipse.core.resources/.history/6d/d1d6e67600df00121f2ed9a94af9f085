@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Generated with Genova. -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="no.course.domain">
+
+	<class name="Assignment" table="Assignment">
+
+		<id name="id" column="id" type="integer">
+			<generator class="native">
+			</generator> 
+		</id>
+
+			<property name="assignmentText" column="assignmentText">
+				<type name="string">
+				</type>
+			</property>
+
+		<set name="answers" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="assignment_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.Answer"/>
+		</set>
+
+	</class>
+
+</hibernate-mapping>

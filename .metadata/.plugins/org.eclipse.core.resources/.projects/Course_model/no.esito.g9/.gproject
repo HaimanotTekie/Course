@@ -23,6 +23,10 @@
 			name="NoGen"
 		/>
 		<GeneratorSet
+			Generators="ServiceSwing"
+			name="Service"
+		/>
+		<GeneratorSet
 			Generators="Java/JFC"
 			name="Swing"
 		/>
@@ -85,7 +89,6 @@
 			ModelTool="EA"
 			name="default">
 			<Package
-				Sync="True"
 				id="{2D3E3A69-15B8-4432-BA8F-D01CB316AD80}"
 				name=".">
 				<Package
@@ -118,11 +121,9 @@
 						/>
 					</Package>
 					<Package
-						Sync="True"
 						id="{B2CB9352-F002-43e7-8924-D0AB941EC7EA}"
 						name="genova">
 						<Package
-							Sync="True"
 							id="{A2055666-EA76-4ec3-BA8B-26CA3343BACA}"
 							name="support"
 						/>

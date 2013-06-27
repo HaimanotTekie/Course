@@ -3,40 +3,74 @@
 	CaseSensitive="True"
 	ModelCategory=""
 	ModelVersion="9.1.4"
-	PackageRefName="application/office"
-	id="G1372076193376"
+	PackageRefName=""
+	id="G1372229094719"
 	name="Student_os">
 	<OSRole
 		ClassID="{BCDF85D8-A301-4afd-863A-7693245ED1BF}"
 		ClassName="Student"
-		id="G1372076193381"
+		id="G1372229094721"
 		name="Student">
 		<OSAttribute
 			AttributeID="{18133F7D-1C27-4776-ABE6-A59C07E269A6}"
 			AttributeName="age"
 			ItemRemoved="False"
-			id="G1372076193382"
+			id="G1372229094722"
 			name="age"
 		/>
 		<OSAttribute
 			AttributeID="{EA1B5142-8F39-4c80-8211-007127AFC85A}"
 			AttributeName="id"
 			ItemRemoved="False"
-			id="G1372076193383"
+			id="G1372229094723"
 			name="id"
 		/>
 		<OSAttribute
 			AttributeID="{681114C5-10DF-483b-818A-DB75CCE815F4}"
 			AttributeName="name"
 			ItemRemoved="False"
-			id="G1372076193384"
+			id="G1372229094724"
 			name="name"
 		/>
 		<OSAttribute
 			AttributeID="{7BEF40FF-43E3-49b3-A819-E292E40C5548}"
 			AttributeName="studentNr"
 			ItemRemoved="False"
-			id="G1372076193385"
+			id="G1372229094725"
+			name="studentNr"
+		/>
+	</OSRole>
+	<OSRole
+		ClassID="{BCDF85D8-A301-4afd-863A-7693245ED1BF}"
+		ClassName="Student"
+		id="G1372315039670"
+		name="Student2">
+		<OSAttribute
+			AttributeID="{18133F7D-1C27-4776-ABE6-A59C07E269A6}"
+			AttributeName="age"
+			ItemRemoved="False"
+			id="G1372315039671"
+			name="age"
+		/>
+		<OSAttribute
+			AttributeID="{EA1B5142-8F39-4c80-8211-007127AFC85A}"
+			AttributeName="id"
+			ItemRemoved="False"
+			id="G1372315039672"
+			name="id"
+		/>
+		<OSAttribute
+			AttributeID="{681114C5-10DF-483b-818A-DB75CCE815F4}"
+			AttributeName="name"
+			ItemRemoved="False"
+			id="G1372315039673"
+			name="name"
+		/>
+		<OSAttribute
+			AttributeID="{7BEF40FF-43E3-49b3-A819-E292E40C5548}"
+			AttributeName="studentNr"
+			ItemRemoved="False"
+			id="G1372315039674"
 			name="studentNr"
 		/>
 	</OSRole>

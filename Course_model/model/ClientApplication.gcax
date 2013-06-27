@@ -12,6 +12,17 @@
 		ExternalElement="False"
 	>
 	</Application>
+	<DialogModelRef name="AddStudentsToCourse" id="{2F31A715-DC62-4fbb-9FB6-3163A658899B}"
+		Description=""
+		PackageRefId="{0711CAA8-01CE-49da-9ED7-A7BBDE503742}"
+		PackageRefName="application"
+		DialogType="Dialog"
+		ComponentPackage="application"
+		ExternalElement="False"
+		ExternallyUsed="False"
+		ModelFilename=""
+	>
+	</DialogModelRef>
 	<DialogModelRef name="Answer" id="{CD3606FD-1596-42d4-BB02-A3B4877B5BC0}"
 		Description=""
 		PackageRefId="{715AB826-26D3-40f7-9CDE-4AA84AD4C497}"
@@ -80,8 +91,16 @@
 		<Reference name="To" IdRef="{90B42956-8695-41e4-984A-1A7D5F312908}"/>
 	</Activates>
 	<Activates>
+		<Reference name="From" IdRef="{E193F383-364F-4af2-900B-6CBD7D5CC789}"/>
+		<Reference name="To" IdRef="{2F31A715-DC62-4fbb-9FB6-3163A658899B}"/>
+	</Activates>
+	<Activates>
 		<Reference name="From" IdRef="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"/>
 		<Reference name="To" IdRef="{70A0CA90-29BE-4767-8A9F-70F1F0A738DB}"/>
+	</Activates>
+	<Activates>
+		<Reference name="From" IdRef="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"/>
+		<Reference name="To" IdRef="{2F31A715-DC62-4fbb-9FB6-3163A658899B}"/>
 	</Activates>
 	<Activates>
 		<Reference name="From" IdRef="{C479A477-5522-47f6-A2CE-1F6163C01FCC}"/>

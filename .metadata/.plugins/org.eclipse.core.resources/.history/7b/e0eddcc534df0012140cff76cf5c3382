@@ -1,0 +1,130 @@
+// Generated with Genova.
+
+package no.course.domain.generated;
+
+import java.io.Serializable;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * This file will be overwritten the next time it is generated from Genova.
+ */
+@SuppressWarnings("all")
+public abstract class AnswerDefault implements Serializable {
+    
+    /** Primary key. */
+    protected static final String PK = "id";
+    private String answerText;
+    private int id;
+    
+    /** Default constructor. */
+    protected AnswerDefault() {
+        super();
+    }
+    
+    /**
+     * Access method for answerText.
+     *
+     * @return the current value of answerText
+     */
+    public String getAnswerText() {
+        return answerText;
+    }
+    
+    /**
+     * Setter method for answerText.
+     *
+     * @param aAnswerText the new value for answerText
+     */
+    public void setAnswerText(final String aAnswerText) {
+        answerText = aAnswerText;
+    }
+    
+    /**
+     * Access method for id.
+     *
+     * @return the current value of id
+     */
+    public int getId() {
+        return id;
+    }
+    
+    /**
+     * Setter method for id.
+     *
+     * @param aId the new value for id
+     */
+    public void setId(final int aId) {
+        id = aId;
+    }
+    
+    /**
+     * Compares the key for this instance with another Answer.
+     *
+     * @param other The object to compare to
+     * @return True if other object is instance of class Answer and the key objects are equal.
+     */
+    private boolean equalKeys(Object other) {
+        if (this==other) {
+            return true;
+        }
+        if (!(other instanceof AnswerDefault)) {
+            return false;
+        }
+        AnswerDefault that = (AnswerDefault) other;
+        if (this.getId() != that.getId()) {
+            return false;
+        }
+        return true;
+    }
+    
+    /**
+     * Compares this instance with another Answer.
+     *
+     * @param other The object to compare to
+     * @return True if the objects are the same
+     */
+    @Override
+    public boolean equals(Object other) {
+        return this.equalKeys(other) && ((AnswerDefault)other).equalKeys(this);
+    }
+    
+    /**
+     * Returns a hash code for this instance.
+     *
+     * @return Hash code
+     */
+    @Override
+    public int hashCode() {
+        int i;
+        int result = 17;
+        i = getId();
+        result = 37*result + i;
+        return result;
+    }
+    
+    /**
+     * Returns a debug-friendly String representation of this instance
+     *
+     * @return String representation of this instance
+     */
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer("[Answer |");
+        sb.append(" id=").append(getId());
+        sb.append("]");
+        return sb.toString();
+    }
+    
+    /**
+     * Return all elements of the primary key.
+     *
+     * @return Map of key names to values
+     */
+    public Map<String, Object> getPrimaryKey() {
+        Map<String, Object> ret = new LinkedHashMap<String, Object>(6);
+        ret.put("id", new Integer(getId()));
+        return ret;
+    }
+    
+}

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DialogModelRoot
+	CaseSensitive="True"
+	DesignProfileRefId="SN00002"
+	DesignProfileRefName="Java/JFC"
+	DialogTitle=""
+	DialogType="DocumentWindow"
+	ExternallyUsed="False"
+	IsConsistent="True"
+	ModelVersion="9.1.4"
+	ObjectSelectionRefId="G1372315058405"
+	ObjectSelectionRefName="AddStudentsToCourse"
+	PackageRefId=""
+	PackageRefName="application"
+	StyleGuideRefId="G41b5b14c0296191"
+	StyleGuideRefName="Standard_Styleguide"
+	id="G1372315064132"
+	name="AddStudentsToCourse">
+	<WindowBlock
+		RoleId="G1372315059021"
+		RoleName="Course"
+		SkinRefId="G41b5b14c02961"
+		SkinRefName="Standard_Skin"
+		Title="Course"
+		Width="657"
+		WindowType="DocumentWindow"
+		id="G1372315064133"
+		name="Window">
+		<ToolBar
+			Title="Toolbar"
+			id="G1372315064134"
+			name="Toolbar"
+		/>
+		<SimpleBlock
+			CompType="EntityBlock"
+			RoleId="G1372315059021"
+			RoleName="Course"
+			Title="Course"
+			id="G1372315064135"
+			name="CourseClass">
+			<SimpleBlock
+				CompType="DataBlock"
+				RoleId="G1372315059021"
+				RoleName="Course"
+				Title="Course"
+				id="G1372315064136"
+				name="CourseData">
+				<LabelControl
+					ModelTitle="Coursecode"
+					id="G1372315064137"
+					name="CourseCodeLabel">
+					<Reference name="GeneratedBy" IdRef="G1372315064138"/>
+				</LabelControl>
+				<VarField
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					RoleId="G1372315059021"
+					RoleName="Course"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					VarFieldType="Text"
+					id="G1372315064138"
+					name="code"
+				/>
+				<VarField
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					RoleId="G1372315059021"
+					RoleName="Course"
+					ShownInitially="True"
+					VarFieldType="CheckButton"
+					id="G1372315064141"
+					name="code.2"
+				/>
+				<LabelControl
+					ModelTitle=""
+					id="G1372315064142"
+					name="CourseNameLabel">
+					<Reference name="GeneratedBy" IdRef="G1372315064143"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372341907217"
+					AttributeName="name"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					NumberOfLines="1"
+					RoleId="G1372315059021"
+					RoleName="Course"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					VarFieldType="Text"
+					id="G1372315064143"
+					name="name"
+				/>
+			</SimpleBlock>
+			<SimpleBlock
+				CompType="ButtonBlock"
+				RoleId="G1372315059021"
+				RoleName="Course"
+				Title="Course"
+				id="G1372315064144"
+				name="CourseButton">
+				<ButtonControl
+					HasIcon="True"
+					ImageId="G41b5b14c0296172"
+					ImageName="Clear"
+					Title="Clear"
+					id="G1372315064145"
+					name="CourseClearButton">
+					<Event
+						TriggerType="Clicked"
+						id="G1372315064148"
+						name="Clicked">
+						<Reference name="Method" IdRef="G1372315064146"/>
+					</Event>
+				</ButtonControl>
+				<ButtonControl
+					HasIcon="True"
+					ImageId="G41b5b14c0296177"
+					ImageName="Save"
+					Title="Save"
+					id="G1372315064149"
+					name="CourseSaveButton">
+					<Event
+						TriggerType="Clicked"
+						id="G1372315064152"
+						name="Clicked">
+						<Reference name="Method" IdRef="G1372315064150"/>
+					</Event>
+				</ButtonControl>
+				<ButtonControl
+					HasIcon="True"
+					ImageId="G41b5b14c0296189"
+					ImageName="Delete"
+					Title="Delete"
+					id="G1372315064153"
+					name="CourseDeleteButton">
+					<Event
+						TriggerType="Clicked"
+						id="G1372315064156"
+						name="Clicked">
+						<Reference name="Method" IdRef="G1372315064154"/>
+					</Event>
+				</ButtonControl>
+			</SimpleBlock>
+		</SimpleBlock>
+		<SimpleBlock
+			CompType="EntityBlock"
+			RoleId="G1372315059027"
+			RoleName="studentCourses"
+			Title="studentCourses"
+			id="G1372315064157"
+			name="StudentCoursesClass">
+			<ListBlock
+				RoleId="G1372315059027"
+				RoleName="studentCourses"
+				ShowEditFields="True"
+				id="G1372315064158"
+				name="StudentCoursesList">
+				<LabelControl
+					ModelTitle="id"
+					id="G1372315064159"
+					name="StudentCoursesIdLabel">
+					<Reference name="GeneratedBy" IdRef="G1372315064160"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372341907218"
+					AttributeName="id"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					RoleId="G1372315059027"
+					RoleName="studentCourses"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					VarFieldType="Text"
+					id="G1372315064160"
+					name="id"
+				/>
+				<LabelControl
+					ModelTitle=""
+					id="G1372315064172"
+					name="StudentAgeLabel">
+					<Reference name="GeneratedBy" IdRef="G1372315064173"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372341907219"
+					AttributeName="age"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					RoleId="G1372315064165"
+					RoleName="student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					VarFieldType="Text"
+					id="G1372315064173"
+					name="age"
+				/>
+				<LabelControl
+					ModelTitle=""
+					id="G1372315064174"
+					name="StudentNameLabel">
+					<Reference name="GeneratedBy" IdRef="G1372315064175"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372341907221"
+					AttributeName="name"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					RoleId="G1372315064165"
+					RoleName="student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					VarFieldType="Text"
+					id="G1372315064175"
+					name="name"
+				/>
+				<LabelControl
+					ModelTitle=""
+					id="G1372315064176"
+					name="StudentStudentNrLabel">
+					<Reference name="GeneratedBy" IdRef="G1372315064177"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1372341907222"
+					AttributeName="studentNr"
+					Editable="True"
+					EnabledInitially="True"
+					FrameCode="Inherit"
+					RoleId="G1372315064165"
+					RoleName="student"
+					SelectOnFocus="True"
+					ShownInitially="True"
+					VarFieldType="Text"
+					id="G1372315064177"
+					name="studentNr">
+					<Event
+						TriggerType="Value Changed"
+						id="G1372315064192"
+						name="Value Changed">
+						<Reference name="Method" IdRef="G1372315064193"/>
+					</Event>
+				</VarField>
+				<Reference name="SortSequence" IdRef="G1372315064160"/>
+				<Reference name="SortSequence" IdRef="G1372315064173"/>
+				<Reference name="SortSequence" IdRef="G1372315064175"/>
+				<Reference name="SortSequence" IdRef="G1372315064177"/>
+			</ListBlock>
+			<ButtonControl
+				HasIcon="True"
+				ImageId="G41b5b14c0296177"
+				ImageName="Save"
+				Title="AddStudentsToCourseButton"
+				id="G1372315064188"
+				name="AddStudentsToCourseButton"
+			/>
+		</SimpleBlock>
+		<Event
+			TriggerType="WM Close"
+			id="G1372315064163"
+			name="WM Close">
+			<Reference name="Method" IdRef="G1372315064161"/>
+		</Event>
+		<Reference name="TabSequence" IdRef="G1372315064138"/>
+		<Reference name="TabSequence" IdRef="G1372315064141"/>
+		<Reference name="TabSequence" IdRef="G1372315064143"/>
+		<Reference name="TabSequence" IdRef="G1372315064145"/>
+		<Reference name="TabSequence" IdRef="G1372315064149"/>
+		<Reference name="TabSequence" IdRef="G1372315064153"/>
+		<Reference name="TabSequence" IdRef="G1372315064158"/>
+		<Reference name="TabSequence" IdRef="G1372315064160"/>
+		<Reference name="TabSequence" IdRef="G1372315064173"/>
+		<Reference name="TabSequence" IdRef="G1372315064175"/>
+		<Reference name="TabSequence" IdRef="G1372315064177"/>
+		<Reference name="TabSequence" IdRef="G1372315064188"/>
+	</WindowBlock>
+	<DlgMethod
+		id="G1372315064146"
+		name="clearCourse">
+		<Action
+			ActionType="Clear"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372315059021"
+			TargetName="Course"
+			id="G1372315064147"
+			name="Clear"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372315064150"
+		name="saveCourse">
+		<Action
+			ActionType="Save"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372315059021"
+			TargetName="Course"
+			id="G1372315064151"
+			name="Save"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372315064154"
+		name="deleteCourse">
+		<Action
+			ActionType="Delete"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372315059021"
+			TargetName="Course"
+			id="G1372315064155"
+			name="Delete"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372315064161"
+		name="closeAddStudentsToCourse">
+		<Action
+			ActionType="Close"
+			ModelType="WorkspaceModel"
+			TargetId="G1372315064132"
+			TargetName="AddStudentsToCourse"
+			id="G1372315064162"
+			name="Close"
+		/>
+	</DlgMethod>
+	<DlgMethod
+		id="G1372315064193"
+		name="findStudent">
+		<Action
+			ActionType="Find"
+			ModelType="ObjectSelectionModel"
+			TargetId="G1372315064165"
+			TargetName="student"
+			id="G1372315064194"
+			name="Find"
+		/>
+	</DlgMethod>
+</DialogModelRoot>

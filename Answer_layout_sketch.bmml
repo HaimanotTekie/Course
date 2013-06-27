@@ -1,0 +1,79 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="864" measuredH="502" mockupW="864" mockupH="472">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="396" y="30" w="468" h="472" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="406" y="155" w="103" h="-1" measuredW="72" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answer%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::ButtonBar" x="410" y="220" w="-1" h="-1" measuredW="223" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Find%2C%20Clear%2C%20Save%2C%20Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TabBar" x="406" y="289" w="443" h="169" measuredW="223" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Answers%2C%20Assignments</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::DataGrid" x="0" y="176" w="386" h="124" measuredW="424" measuredH="69" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Course%20code%5E%2C%20Course%20name%5Cr%2C%20Assignment%20text%20%5E%2C%20Due%20date%20%5E%2C%0A1001%5Cr%2C%20G9%5Cr%2C%20Some%20assignment%20text%5Cr%2C%2023.12.2013%5Cr%2C%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextArea" x="687" y="127" w="147" h="117" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Feed%20back%20text%20area</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextArea" x="521" y="155" w="155" h="55" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Some%20answer%20text</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::TextInput" x="522" y="60" w="138" h="-1" measuredW="79" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="406" y="63" w="103" h="-1" measuredW="76" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Course%20code</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="522" y="88" w="138" h="-1" measuredW="79" measuredH="26" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="406" y="91" w="103" h="-1" measuredW="64" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Student%20nr.</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::TextInput" x="522" y="120" w="138" h="-1" measuredW="79" measuredH="26" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="406" y="123" w="103" h="-1" measuredW="85" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Assignment%20id</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::DataGrid" x="411" y="325" w="386" h="124" measuredW="417" measuredH="69" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Course%20code%20%5E%2C%20Assignment%20id%20%5Cr%2C%20Student%20nr%20%5E%2C%20Answer%20text%0A1001%5Cr%2C%201%5Cr%2C%20163488%5Cr%2C%20some%20answer%20text%5Cr%2C%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::StickyNote" x="61" y="281" w="142" h="56" measuredW="109" measuredH="123" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Assignments%20tab</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

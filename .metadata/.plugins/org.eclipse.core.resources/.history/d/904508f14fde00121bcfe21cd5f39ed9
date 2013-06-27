@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<DialogModelRoot
+	CaseSensitive="True"
+	DesignProfileRefId="SN00002"
+	DesignProfileRefName="Java/JFC"
+	DialogTitle=""
+	DialogType="DocumentWindow"
+	ExternallyUsed="False"
+	IsConsistent="True"
+	ModelVersion="9.1.4"
+	ObjectSelectionRefId="G1372229094719"
+	ObjectSelectionRefName="Student_os"
+	PackageRefId=""
+	StyleGuideRefId="G41b5b14c0296195"
+	StyleGuideRefName="SearchStyleGuideComplex"
+	id="G1372157474761"
+	name="ChooseStudents">
+	<WindowBlock
+		Height="337"
+		RoleName=""
+		SkinRefId="G41b5b14c02961"
+		SkinRefName="Standard_Skin"
+		Title=""
+		Width="755"
+		WindowType="DocumentWindow"
+		id="G1372157474762"
+		name="Window">
+		<ToolBar
+			Title="Toolbar"
+			id="G1372157474763"
+			name="Toolbar"
+		/>
+		<Event
+			TriggerType="WM Close"
+			id="G1372157474766"
+			name="WM Close">
+			<Reference name="Method" IdRef="G1372157474764"/>
+		</Event>
+		<ListBlock
+			RoleId="G1372229094721"
+			RoleName="Student"
+			id="G1372157477908"
+			name="chooseStudentsListBloack">
+			<LabelControl
+				ModelTitle=""
+				id="G1372157478529"
+				name="StudentAgeLabel">
+				<Reference name="GeneratedBy" IdRef="G1372157478530"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372076193382"
+				AttributeName="age"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				VarFieldType="Text"
+				id="G1372157478530"
+				name="age"
+			/>
+			<LabelControl
+				ModelTitle=""
+				id="G1372157478533"
+				name="StudentNameLabel">
+				<Reference name="GeneratedBy" IdRef="G1372157478534"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372076193384"
+				AttributeName="name"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				VarFieldType="Text"
+				id="G1372157478534"
+				name="name"
+			/>
+			<LabelControl
+				ModelTitle=""
+				id="G1372157478535"
+				name="StudentStudentNrLabel">
+				<Reference name="GeneratedBy" IdRef="G1372157478536"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372076193385"
+				AttributeName="studentNr"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				RoleId="G1372076193381"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				Title="Student nr"
+				VarFieldType="Text"
+				id="G1372157478536"
+				name="studentNr"
+			/>
+			<LabelControl
+				ModelTitle=""
+				id="G1372229140542"
+				name="StudentIdLabel">
+				<Reference name="GeneratedBy" IdRef="G1372229140543"/>
+			</LabelControl>
+			<VarField
+				AttributeID="G1372229094723"
+				AttributeName="id"
+				Editable="True"
+				EnabledInitially="True"
+				FrameCode="Inherit"
+				RoleId="G1372229094721"
+				RoleName="Student"
+				SelectOnFocus="True"
+				ShownInitially="True"
+				VarFieldType="Text"
+				id="G1372229140543"
+				name="id"
+			/>
+			<Reference name="SortSequence" IdRef="G1372157478530"/>
+			<Reference name="SortSequence" IdRef="G1372157478534"/>
+			<Reference name="SortSequence" IdRef="G1372157478536"/>
+			<Reference name="SortSequence" IdRef="G1372229140543"/>
+		</ListBlock>
+		<Reference name="TabSequence" IdRef="G1372157477908"/>
+	</WindowBlock>
+	<DlgMethod
+		id="G1372157474764"
+		name="closeChooseStudents">
+		<Action
+			ActionType="Close"
+			ModelType="WorkspaceModel"
+			TargetId="G1372157474761"
+			TargetName="ChooseStudents"
+			id="G1372157474765"
+			name="Close"
+		/>
+	</DlgMethod>
+</DialogModelRoot>

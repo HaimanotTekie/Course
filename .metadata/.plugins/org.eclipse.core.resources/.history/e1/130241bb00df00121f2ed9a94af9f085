@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- Generated with Genova. -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="no.course.domain">
+
+	<class name="Student" table="Student">
+
+		<id name="id" column="id">
+				<type name="gva_int">
+				</type>
+			<generator class="assigned"/>
+		</id>
+
+			<property name="age" column="age">
+				<type name="gva_int">
+					<param name="default">0</param>
+				</type>
+			</property>
+
+			<property name="name" column="name">
+				<type name="string">
+				</type>
+			</property>
+
+			<property name="studentNr" column="studentNr">
+				<type name="gva_int">
+					<param name="default">0</param>
+				</type>
+			</property>
+
+		<set name="answers" optimistic-lock="false" cascade="none">
+			<key>
+				<column name="student_id" not-null="true"/>
+			</key>
+			<one-to-many class="no.course.domain.Answer"/>
+		</set>
+
+		<set name="studentCourses" optimistic-lock="false" cascade="none" inverse="true">
+			<key>
+				<column name="student_id"/>
+			</key>
+			<one-to-many class="no.course.domain.StudentCourse"/>
+		</set>
+
+	</class>
+
+</hibernate-mapping>

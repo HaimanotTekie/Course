@@ -1,0 +1,712 @@
+// ---------------------------------------------------------------------
+// Generated with Genova.
+// ---------------------------------------------------------------------
+package no.course.dialog.course;
+import no.genova.domain.GenovaEnums;
+import no.genova.client.support.ObjectSelectionNode;
+import no.genova.client.support.AbstractNode;
+import no.genova.client.support.GenovaDialogController;
+import no.genova.client.support.ListblockLine;
+
+import no.genova.support.TypeTool;
+
+import no.genova.domain.DomainUtil;
+import no.genova.domain.DomainProxy;
+import no.genova.domain.DomainObjectProxy;
+import no.genova.client.event.GenovaValueState;
+
+import no.genova.exception.GenovaClientException;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.Iterator;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.HashMap;
+
+import java.io.Serializable;
+import java.awt.Color;
+import java.lang.reflect.Method;
+
+import javax.swing.SwingUtilities;
+import no.course.domain.Answer;
+import no.course.domain.Assignment;
+import no.course.domain.Course;
+import no.course.domain.Student;
+import no.course.domain.StudentCourse;
+
+/** 
+ * Access methods for studentCourses2. Use variable thestudentCourses2 to access
+ * methods in this class.
+ * <p><strong>State handling</strong></p>
+ *
+ * When calling reset() the current object selection state will be
+ * copied to the old object state. This object is accessible
+ * through getOld(). Upon displaying data to the structure, the
+ * old value is also updated. If old data and new data differes
+ * the isChanged method will return true.
+ */
+@SuppressWarnings("all")
+public class StudentCourses2Methods extends AbstractNode<StudentCourse> {
+
+    CourseDefaultView view;
+    GenovaEnums genovaEnums;
+    CourseDefaultController controller;
+    ObjectSelectionNode parentNode;
+    List childNodes = new ArrayList();
+    StudentCourses2Methods(CourseDefaultView view, CourseDefaultController controller, GenovaEnums genovaEnums) {
+        this.view = view;
+        this.genovaEnums = genovaEnums;
+        this.controller = controller;
+    }
+
+    public ObjectSelectionNode getParentNode() {
+        return parentNode;
+    }
+
+    public void setParentNode(ObjectSelectionNode parentNode) {
+        this.parentNode = parentNode;
+        parentNode.addChild(this);
+    }
+
+
+    public ObjectSelectionNode getRootNode() {
+        ObjectSelectionNode parent = getParentNode();
+        if (parent == null) return this;
+
+        while (parent.getParentNode() != null) {
+            parent = parent.getParentNode();
+        }
+
+        return parent;
+    }
+
+
+    public List getChildren() {
+        return childNodes;
+    }
+    public String getRoleName() {
+        return "studentCourses2";
+    }
+
+
+    public void addChild(ObjectSelectionNode child) {
+        childNodes.add(child);
+    }
+    public boolean callHookBeforeDisplay(Object objectToDisplay, String roleName) {
+       return controller.hookBeforeDisplay(objectToDisplay, roleName);
+    }
+
+
+    public boolean callCheckSaveHook() {
+        return controller.callCheckSaveHook("studentCourses2");
+    }
+
+
+    public boolean callCheckDeleteHook() {
+        return controller.callCheckDeleteHook("studentCourses2");
+    }
+
+
+    public boolean callCheckCloseHook() {
+        return controller.callCheckCloseHook("studentCourses2");
+    }
+
+
+    public boolean callCheckClearHook() {
+        return controller.callCheckClearHook("studentCourses2");
+    }
+
+
+    public boolean callCheckFindHook() {
+        return controller.callCheckFindHook("studentCourses2");
+    }
+
+
+    public boolean callCheckChangeHook() {
+        return controller.callCheckChangeHook("studentCourses2");
+    }
+
+
+    public boolean callCheckRowSelectHook(int currentSelectionIndex, int newSelectionIndex) {
+        return controller.callCheckRowSelectHook("studentCourses2", currentSelectionIndex, newSelectionIndex);
+    }
+
+
+    public GenovaDialogController getController() {
+        return controller;
+    }
+
+
+    /**
+     * Returns an object representing the relation studentCourses2 from the
+     * dialog. This method does exactly the same as {@link #obtain()}, and
+     * differs only in the return type, specified in the interface.
+     * @return Object of StudentCourse with attributes from the OS.
+     */
+    public Object obtainAsObject() {
+        return obtain();
+    }    
+    public Object getEmptyDomainObject() {
+        return new StudentCourse();
+    }
+    public Class getRepresentingClass() {
+        return StudentCourse.class;
+    }
+    /** 
+     * Returns an object representing the relation studentCourses2 from the
+     * dialog. If studentCourses2 is displayed in the dialog, 
+     * the studentCourses2 domain object is used, else a new studentCourses2 object 
+     * is created. Attributes present in the dialog are then 
+     * copied into the studentCourses2 object. 
+     * 
+     * <p>Before returning, the controller's hookAfterObtainstudentCourses2 method 
+     * is invoked, giving the application programmer 
+     * the possibility to manipulate or replace the object.
+     * 
+     * @return Object of StudentCourse updated from the dialog.
+     */
+    public StudentCourse obtain() {
+        if (objectProxy == null) {
+            StudentCourse tmpstudentCourses2 = new StudentCourse();
+            objectProxy = controller
+                    .getProxy(tmpstudentCourses2, "studentCourses2");
+        }
+
+       StudentCourse obtainedObject = (StudentCourse) objectProxy.getObject();
+       StudentCourse manipulated = controller.hookAfterObtainstudentCourses2(obtainedObject);
+       if (manipulated != null) {
+           obtainedObject = manipulated;
+       }
+       return obtainedObject;
+    }
+
+    public String obtain(String attr) {
+        attr = TypeTool.stripRoleNamePrefix(attr, getRoleName());
+
+       return null; // field not found!
+    }
+
+
+   /**
+    * Updates data of this object selection node in the dialog, and sets
+    * the state to CLEAN.
+    *
+    * @param domainObject Attributes are copied from this object.
+    */
+    public void display(Object domainObject) {
+        if (domainObject instanceof StudentCourse) {
+            display((StudentCourse) domainObject);
+        }
+    }
+
+   /**
+    * Updates data of the StudentCourse node in the dialog, and sets
+    * the state to CLEAN.
+    *
+    * @param tmpstudentCourses2 Attributes are copied from this object.
+    */
+    public void display(StudentCourse tmpstudentCourses2) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            displayOnEDT(tmpstudentCourses2);
+            return;
+        }
+        if (tmpstudentCourses2 == null) {
+            tmpstudentCourses2= new StudentCourse();
+        }
+        controller.resetProxy();
+        objectProxy = controller.getNewProxy(tmpstudentCourses2, "studentCourses2");
+        boolean resetState = true;
+        setState(ObjectSelectionNode.CLEAN, false);
+    }
+    public boolean isConsistant() {
+        return true;
+     }    
+
+    public boolean hasValue() {
+       return true;
+    }
+    public boolean hasOneValue() {
+       return false;
+    }
+
+    public boolean hasValue(String field) {
+        field = TypeTool.stripRoleNamePrefix(field, getRoleName());
+       return true;
+    }
+
+    public void setStyle(Color foreground, Color background) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            setStyleOnEDT(foreground, background);
+            return;
+        }
+    }
+    public void osDisplay(Object value, String attribute, 
+            boolean resetState) {
+        if (value instanceof StudentCourse) {
+            display(((StudentCourse) value), attribute, resetState);
+        } else {
+            display(attribute, value, resetState);
+        }
+    }
+
+    /**
+     * Updates data of given attriubte in object selection in the dialog.
+     *
+     * @param attributeName Name of attribute to update.
+     * @param value The new value.
+     */
+    public void display(String attributeName, Object value) {
+        display(attributeName, value, true);
+    }
+
+    /**
+     * Updates data of given attriubte in object selection in the dialog.
+     *
+     * @param attributeName Name of attribute to update.
+     * @param value The new value.
+     * @param resetState Set to false to avoid resetting the attribute state.
+     */
+    public void display(String attributeName, Object value, boolean resetState) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            displayOnEDT(attributeName, value, resetState);
+            return;
+        }
+        view.noFocusException++;
+        attributeName = TypeTool
+                .stripRoleNamePrefix(attributeName, getRoleName());
+        view.noFocusException--;
+    }
+
+    /**
+     * Updates data of given attriubte in object selection in the dialog.
+     *
+     * @param tmpstudentCourses2 Attributes are copied from this object.
+     * @param s The attribute to set.
+     */
+    public void display(StudentCourse tmpstudentCourses2, String s) {
+        display(tmpstudentCourses2, s, true);
+    }
+
+    @Override
+    public void display(StudentCourse tmpstudentCourses2, String attributeName, boolean resetState) {
+        if (!SwingUtilities.isEventDispatchThread()){
+            displayOnEDT(tmpstudentCourses2, attributeName, resetState);
+            return;
+        }
+        attributeName = TypeTool
+                .stripRoleNamePrefix(attributeName, getRoleName());
+       if (tmpstudentCourses2 != null) {
+           Object value = null;
+           display(attributeName, value, resetState);
+       }
+    }
+    /**
+     * @param s the name of the attribute
+     * @param val the setShowZero property
+     * @deprecated - use display rules to set this display rule.
+     */
+    public void setShowZero(String s, boolean val) {
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+       val = !val;
+        /* Might be generated empty */
+        if(false) {
+            if(val) {
+                s.getClass();
+            }
+        }
+    }
+    public void clear() {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            clearOnEDT();
+            return;
+        }
+        view.noFocusException++;
+        nullProxy();
+        setState(ObjectSelectionNode.CLEARED, false);
+        view.noFocusException--;
+    }
+    /** 
+      * Clears all fields exept the fields representing part of 
+      * the objects key.
+      */ 
+    public void clearKeepKeys() {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            clearKeepKeysOnEDT();
+            return;
+        }
+
+        view.noFocusException++;
+        clear("id");
+        view.noFocusException--;
+    }
+    public void clear(String s) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            clearOnEDT(s);
+            return;
+        }
+        view.noFocusException++;
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+        view.noFocusException--;
+    }
+    public void setEnabled(boolean b) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            setEnabledOnEDT(b);
+            return;
+        }
+    }
+    public void setEnabled(boolean b, String s) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            setEnabledOnEDT(b, s);
+            return;
+        }
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+    }
+    public boolean isEnabled() {
+        boolean b = false;
+       return b;
+    }
+    public boolean isEnabled(String s) {
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+        boolean b = false;
+       return b;
+    }
+    public void setShown(boolean b) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            setShownOnEDT(b);
+            return;
+        }
+    }
+    public void setShown(boolean b, String s) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            setShownOnEDT(b, s);
+            return;
+        }
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+    }
+    public boolean isShown() {
+        boolean b = false;
+        return b;
+    }
+    public boolean isShown(String s) {
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+        boolean b = false;
+       return b;
+    }
+
+    public void setFocus(String s) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            setFocusOnEDT(s);
+            return;
+        }
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+    }
+    public boolean hasFocus(String s) {
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+        boolean b = false;
+        return b;
+    }
+    @Override
+    public void append(StudentCourse tmpstudentCourses2, String s) {
+        if (!SwingUtilities.isEventDispatchThread()) {
+            appendOnEDT(tmpstudentCourses2, s);
+            return;
+        }
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+        view.noFocusException++;
+        if(tmpstudentCourses2 == null) {
+            tmpstudentCourses2= new StudentCourse();
+        }
+        view.noFocusException--;
+    }
+    /** Resets current state of relation studentCourses2 in the dialog. Sets changed to false and sets old object to be the current object. 
+     * @return Reference to the object that was the new object, that now is the old. 
+     */
+    public StudentCourse reset() {
+        setOld(obtain());
+        setChanged(false);
+        return getOld();
+     }
+    /**
+     * Returns true if the specified parameter is part of this role's 
+     * key.
+     * @param attributeName the name of the attribute
+     * @return <code>true</code> if part of key
+     */
+    private boolean isPartOfKey(String attributeName) {
+        attributeName = TypeTool
+                .stripRoleNamePrefix(attributeName, getRoleName());
+        return false;
+   }  
+    private StudentCourse oldstudentCourses2 = new StudentCourse();
+    private boolean isMarkedChanged = false;
+    
+    
+    /** Sets the old version of the object selection node.
+     * NOTE: The object is not copied, it is referenced.
+     * @param inst The new object to be used as the old. 
+     * 
+     */
+    public void setOld(StudentCourse inst) {
+        oldstudentCourses2 = inst;
+    }
+    
+    
+   /** 
+    * Returns the old object. The object is not copied.
+    * @return The object.
+    */
+    public StudentCourse getOld() {
+        return oldstudentCourses2;
+    }
+    
+    
+    /**
+     * Returns the string representing the main key attribute of this role.
+     * @return the main key
+     */
+    public String getTargetMainKey() {
+        return "";
+    }
+    public void setChanged (boolean b, String s) {
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());        
+     }
+    public void setChanged(boolean b) {
+        isMarkedChanged = b;
+     }
+    /** 
+     * Returns whether studentCourses2 has changed state since last 
+     * call on resetstudentCourses2().<br>
+     * It will both parse the current state of the block
+     * and compare with the dialogattribute named in input String s.
+     * @param s The attribute to check.
+     * @param tmpstudentCourses2 The object to compare with.
+     * @return True if changed, false if not.
+     * @deprecated use ObjectSelectionNode#isChanged(String)
+     */
+    public boolean isChanged(String s, StudentCourse tmpstudentCourses2) {
+        s = TypeTool.stripRoleNamePrefix(s, getRoleName());
+        boolean bChanged = false;
+        if(isMarkedChanged) return true;
+         return bChanged;
+     }
+    
+    
+    /** 
+     * Returns whether studentCourses2 has changed state since last call on
+     * resetstudentCourses2().  It will both parse the current state of the
+     * block and compare with the dialogattributes of tmpstudentCourses2.  
+     * @param tmpstudentCourses2 The object to compare with.
+     * @return <code>true</code> if changed, <code>false</code> if not.
+     * @deprecated use ObjectSelection#getState()
+     */
+    public boolean isChanged(StudentCourse tmpstudentCourses2) {
+        if(isMarkedChanged) return true;
+    if(false) {
+        tmpstudentCourses2.getClass();
+    }
+        return isMarkedChanged;
+    }
+
+    public Set getChangedFields() {
+        Set changedFields = new HashSet();
+        Object component = null;
+
+
+        return changedFields;
+    }
+
+    public Set getChangedKeyFields() {
+        Set changedFields = new HashSet();
+        Object component = null;
+
+
+        return changedFields;
+    }
+
+    public void resetFields() {
+        Object component = null;
+
+    }
+    
+    /**
+     * Displays domain objects which lies above the target in the object selection.
+     * @param studentCourses2Collection the collection of domain objects to display
+     * @param pathToTarget a list of nodes representing the path to the target
+     * @param findAll if <code>true</code> displaying is done as part of 
+     *      a find all action.
+     */
+    public void displayAboveTarget(Collection studentCourses2Collection, List pathToTarget, boolean findAll) {
+        if (pathToTarget.size() == 1 && pathToTarget.get(0) == this) {
+            if (!findAll && studentCourses2Collection instanceof List) {
+                Iterator it = studentCourses2Collection.iterator();
+                if (it.hasNext()) {
+                    StudentCourse studentCourses2single = (StudentCourse) it.next();
+                    recursiveDisplay(studentCourses2single);
+                }
+            } else { 
+                recursiveDisplay(studentCourses2Collection);
+            }
+        } else {
+            Iterator it = studentCourses2Collection.iterator();
+            if (it.hasNext()) {
+                StudentCourse studentCourses2single = (StudentCourse) it.next();
+                displayAboveTarget(studentCourses2single, pathToTarget, findAll);
+            }
+        }
+    }
+
+    /**
+     * Displays domain object which lies above the target in the object selection.
+     * @param studentCourses2Object the domain object to display
+     * @param pathToTarget a list of nodes representing the path to the target
+     * @param findAll if <code>true</code> the display is a result of a find 
+     * all action. CursorCommon.pre
+     */
+    public void displayAboveTarget(StudentCourse studentCourses2Object, List pathToTarget, boolean findAll) {
+        if (pathToTarget.size() == 1 && pathToTarget.get(0) == this) {
+            recursiveDisplay(studentCourses2Object);
+        } else {
+            pathToTarget.remove(this);
+            display(studentCourses2Object);
+        }
+    }
+
+
+    public void mergeAssociations(Object domainObject, List pathToTarget, boolean error) {
+        mergeAssociations((StudentCourse) domainObject, pathToTarget,error);
+    }
+
+
+    /**
+     * Internal use.
+     * Merges the association on the specified parent object
+     * @param parentObject the parent object
+     * @param pathToTarget the list representing path to target
+     */
+    protected void mergeAssociations(StudentCourse parentObject, List pathToTarget,boolean error) {
+        pathToTarget.remove(this);
+
+        if (pathToTarget.size() <= 1) {      
+            Object targetNode = pathToTarget.size() > 0 ? pathToTarget.get(0) : null;
+            return;
+        }
+
+        // Since pathToTarget is destroyed on the way, keep a reference
+        // to the node next in line.
+        Object nextOnPath = pathToTarget.get(0);
+
+        // Merge next node on path befor other children (depth first)
+
+       // Replace children not on path with stored children.
+   }
+
+    /** 
+     * Recursivly displays the object representing the studentCourses2-role.
+     * First, the object is displayed, then, each child is displayed. 
+     *
+     * @param somestudentCourses2 the (domain) object to display.
+     */
+    public void recursiveDisplay(StudentCourse somestudentCourses2) {
+        if (callHookBeforeDisplay(somestudentCourses2, "studentCourses2")) {
+            if (somestudentCourses2 == null) {
+                return; // nothing more to display!
+            }
+            display(somestudentCourses2);
+        }
+    }
+
+    /**
+     * Recursive obtains this node
+     * @param pathToTarget the path to the target node
+     * @param singleObtain a boolean used to flag if more-related should be
+     *        obtained as many or just the one (defaults to true)
+     * @return the obtained object
+     */
+    public Object recursiveObtainObject(List pathToTarget, boolean singleObtain) {
+        return (Object) recursiveObtain(pathToTarget, singleObtain);
+    }
+
+    public Object recursiveObtainObject(List pathToTarget) {
+        return (Object) recursiveObtain(pathToTarget, true);
+    }
+
+    /**
+     * Recursivly obtains a Set of  studentCourses2 objects from the dialog.
+     * Depending on the position of this node in regards to the target node, 
+     * the set is either obtained from the corresponding list block, or from
+     * the edit fields, unless <code>singleObtain</code> is <code>true</code>. If 
+     * so the set is always obtained from the edit fields.
+     * @param pathToTarget a list of nodes representing the path to the target.
+     * @param singleObtain if set to <code>true</code> obtain is always done from edit fields.
+     * @return the obtained Set of studentCourses2 objects.
+     */
+    public Set recursiveObtain(List pathToTarget, boolean singleObtain) {
+        Set thestudentCourses2Set = TypeTool.getDefaultSet();
+        if (pathToTarget.size() == 0 && !singleObtain) {
+            thestudentCourses2Set = obtainSet(false);
+        } else {
+            boolean hasValue = getState() != ObjectSelectionNode.CLEARED;
+            pathToTarget.remove(this);
+            boolean belowTarget = pathToTarget.size() == 0;
+            if (hasValue) {
+                StudentCourse thestudentCourses2Single = obtain();
+                saveAssociations(thestudentCourses2Single);
+                removeAssociations(thestudentCourses2Single);
+                thestudentCourses2Set.add(thestudentCourses2Single);
+            }
+        }
+        return thestudentCourses2Set;
+    }
+    public void setAssociation(Object self, String associationRoleName, 
+            Object association) {
+
+        StudentCourse member = (StudentCourse) self;
+        // Might be generated empty - silence compiler warnings
+        if (member != null) {
+            member = null;
+        }
+    }
+    public boolean isNavigableToParent() {
+        return false;
+    }
+
+
+    private void saveAssociations(StudentCourse parentObject) {
+        // might be generated empty, silience any warnings...
+        int foo = 0;
+        foo++;
+    }
+
+
+    private void removeAssociations(StudentCourse parentObject) {
+        // might be generated empty, silence any warnings...
+        int foo = 0;
+        foo++;
+    }
+
+    /**
+     * Internal use.
+     * Creates a shallow copy of the specified instance.
+     * @param fromObject the object to copy from
+     * @return a new, copied instance
+     */
+    public StudentCourse createObjectCopy(StudentCourse fromObject) {
+        StudentCourse retVal = new StudentCourse();
+        retVal.setId(fromObject.getId());
+        return retVal;
+    }
+    /**
+     * Inserts the specified instance in the specified listblock line.
+     * @param obj the object to insert
+     * @param line the line to insert in.
+     */
+    public void insertInListblockLine(StudentCourse obj, ListblockLine line) {
+        if (obj == null) {
+            return;
+        }
+        line.insertObject("studentCourses2", obj);
+    }
+}
